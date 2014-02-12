@@ -18,7 +18,7 @@
 
 * Theme name: Frozen
 * Slogan: freeze your mind
-* Theme by: Felipe Martinin
+* Theme Author: Felipe Martinin
 * URL: felipemartinin.com.br
 
 Frozen is a theme for Sublime Text and Google Chrome DevTools. It was developed with the aim to be a theme with a modern look, congenial and never bores the views after hours coding.
