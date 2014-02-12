@@ -28,17 +28,22 @@ The name "Frozen" was given due to the use of cool colors. The color palette use
 Start using Frozen now, and have a new experience in making codes.
 
 
-
 ## Sublime Text
 
 ![Sublime Text Preview](https://raw2.github.com/FelipeMartinin/frozen/master/frozen-for-sublime-text/screen/sublime-screen.png)
 
 #### Install manually
 
+Complete installation guide in the folder.
+
 ## Chrome DevTools
+![Chrome Preview](https://raw2.github.com/FelipeMartinin/frozen/master/frozen-for-chrome/Screen/chrome-screen.png)
 
 
+#### Information
 
-#### Features
+Unfortunately, after updating Google Chrome v32, compatibility with custom themes was lost. I'm working to fix that. 
 
-#### Install manually
+If you want to meet the frozen, i have made available for download Google Chrome v31 Portable with frozen. 
+
+Hope you enjoy!
