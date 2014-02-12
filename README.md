@@ -1,6 +1,6 @@
 # Frozen - Freeze Your Mind
 
-![Frozen](http://felipemartinin.com.br/wp-content/uploads/2014/01/Frozen-Logo.png)
+![Frozen](https://github.com/FelipeMartinin/frozen/blob/master/Frozen-Logo.png)
 
 > A Sublime Text and Google Chrome DevTools Theme
 
