@@ -1,0 +1,86 @@
+{
+   "browser": {
+      "check_default_browser": false,
+      "ntp": {
+         "theme_promo_remaining": -2
+      },
+      "window_placement": {
+         "bottom": 1030,
+         "left": 10,
+         "maximized": false,
+         "right": 955,
+         "top": 10,
+         "work_area_bottom": 1040,
+         "work_area_left": 0,
+         "work_area_right": 1920,
+         "work_area_top": 0
+      }
+   },
+   "countryid_at_install": 21843,
+   "default_search_provider": {
+      "id": "2",
+      "name": "Google",
+      "prepopulate_id": "1",
+      "search_url": "{google:baseURL}search?{google:RLZ}{google:acceptedSuggestion}{google:originalQueryForSuggestion}sourceid=chrome&ie={inputEncoding}&q={searchTerms}",
+      "suggest_url": "{google:baseSuggestURL}search?client=chrome&hl={language}&q={searchTerms}"
+   },
+   "dns_prefetching": {
+      "host_referral_list": [ 2 ],
+      "startup_list": [ 1, "http://wpad/" ]
+   },
+   "download": {
+      "directory_upgrade": true,
+      "extensions_to_open": ""
+   },
+   "extensions": {
+      "autoupdate": {
+         "next_check": "12960675165947929"
+      },
+      "chrome_url_overrides": {
+         "bookmarks": [ "chrome-extension://eemcgdkfndhakfknompkggombfjjjeno/main.html" ]
+      }
+   },
+   "http_throttling": {
+      "enabled": false
+   },
+   "ntp": {
+      "alt_logo_end": 0.0,
+      "alt_logo_resource_server": "https://www.google.com/support/chrome/bin/topic/30248/inproduct",
+      "alt_logo_start": 0.0,
+      "pinned_urls": {
+         "af4775052a19379b5cfb577f90adaf0d": {
+            "direction": "ltr",
+            "index": 0,
+            "title": "PortableApps.com - Portable software for USB drives",
+            "url": "http://portableapps.com/"
+         }
+      },
+      "pref_version": 3,
+      "promo_build": 2,
+      "promo_closed": false,
+      "promo_end": 1316246340.0,
+      "promo_group": 11,
+      "promo_group_max": 1,
+      "promo_group_timeslice": 0,
+      "promo_line": "Like Chrome? You might like the Chromebook, too. \u003Ca href=\"http://www.google.com/chromebook/buynow.html#utm_campaign=en&utm_source=en-ntp-na-us-bkws&utm_medium=ntp\"\u003ELearn more.\u003C/a\u003E",
+      "promo_resource_cache_update": "1316201100.631371",
+      "promo_start": 1315641480.0,
+      "shown_sections": 1,
+      "web_resource_cache_update": "1289679884.902772",
+      "webstore_last_promo_id": "1335115"
+   },
+   "plugins": {
+      "enabled_internal_pdf3": true,
+      "enabled_nacl": true
+   },
+   "profile": {
+      "content_settings": {
+         "pref_version": 1
+      },
+      "exited_cleanly": true
+   },
+   "tabs": {
+      "use_compact_navigation_bar": false,
+      "use_vertical_tabs": false
+   }
+}

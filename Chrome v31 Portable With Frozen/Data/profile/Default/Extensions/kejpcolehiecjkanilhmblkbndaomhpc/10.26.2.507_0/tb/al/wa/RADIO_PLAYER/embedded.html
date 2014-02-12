@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    
+    <style type="text/css">
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            font-family: Tahoma;
+            font-size: 6pt;
+            color: #000;
+            background-color: transparent;
+        }
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+	        -webkit-touch-callout: none;
+	        -webkit-user-select: none;
+	        -khtml-user-select: none;
+	        -moz-user-select: none;
+	        -ms-user-select: none;
+	        user-select: none;
+        }
+        #newBox
+        {
+            top: 0px;
+            position: absolute;
+        }
+        #canvas
+        {
+            overflow: hidden;
+            width: 204px;
+            height: 26px;
+        }
+        #newBox *
+        {
+            position: absolute;
+        }
+        #launcher
+        {
+            left: 0px;
+            width: 18px;
+            height: 26px;
+            background: url('http://radio.webapps.conduitapps.com/embedded/open-app_closed_normal3.png') no-repeat;
+        }
+        #launcher:hover
+        {
+            background-image: url('http://radio.webapps.conduitapps.com/embedded/open-app_closed_rollover3.png');
+        }
+        
+        #smallPanel
+        {
+            left: 18px;
+            width: 27px;
+            height: 26px;
+            background: url(http://radio.webapps.conduitapps.com/embedded/bg-closed3.png) no-repeat;
+        }
+        #bigPanel
+        {
+            display: none;
+            left: 18px;
+            width: 167px;
+            height: 26px;
+            background: url('http://radio.webapps.conduitapps.com/embedded/bg_open4.png') no-repeat;
+        }
+        #stopBtn, #playBtn
+        {
+            left: 22px;
+            top: 3px;
+            width: 20px;
+            height: 20px;
+        }
+        #stopBtn
+        {
+            background-image: url(http://radio.webapps.conduitapps.com/embedded/Pause_normal3.png);
+        }
+        #stopBtn:hover
+        {
+            background-image: url(http://radio.webapps.conduitapps.com/embedded/Pause_rollover3.png);
+        }
+        #playBtn
+        {
+            background-image: url(http://radio.webapps.conduitapps.com/embedded/play_normal3.png);
+        }
+        #playBtn:hover
+        {
+            background-image: url(http://radio.webapps.conduitapps.com/embedded/play_rollover3.png);
+        }
+        #expand
+        {
+            width: 18px;
+            height: 26px;
+            left: 28px;
+            background-image: url(http://radio.webapps.conduitapps.com/embedded/maximize_closed_normal3.png);
+        }
+        #expand:hover
+        {
+            background-image: url(http://radio.webapps.conduitapps.com/embedded/maximize_closed_rollover3.png);
+        }
+        
+        #thePanel
+        {
+            top: 4px;
+            left: 32px;
+            width: 82px;
+            height: 17px;
+            font-family: Tahoma;
+            color: #4c4c4c;
+            font-size: 10px;
+            -webkit-touch-callout: none;
+	        -webkit-user-select: none;
+	        -khtml-user-select: none;
+	        -moz-user-select: none;
+	        -ms-user-select: none;
+	        user-select: none;
+        }
+        #thePanelLeft
+        {
+            height: 17px;
+            width: 5px;
+            background-image: url(http://radio.webapps.conduitapps.com/embedded/station-panel_left.png);
+        }
+        #thePanelMid
+        {
+            left: 5px;
+            height: 17px;
+            width: 74px;
+            background: url(http://radio.webapps.conduitapps.com/embedded/station-panel_middle.png) repeat-x;
+        }
+        #thePanelRight
+        {
+            left: 79px;
+            height: 17px;
+            width: 3px;
+            background-image: url(http://radio.webapps.conduitapps.com/embedded/station-panel_right.png);
+        }
+        #thePanelMid img#opener
+        {
+            left: 65px;
+            top: 8px;
+        }
+        #equalizerPlaying, #equalizerStopped
+        {
+            margin-top: 5px;
+        }
+        
+        #equalizerStopped
+        {
+            display: none;
+        }
+        
+        #equalizerPlaying
+        {
+            opacity: 0.6;
+        }
+        
+        #eq_connecting
+        {
+            display: none;
+            margin-top: 4px;
+            margin-left: 25px;
+        }
+        
+        #eq_error
+        {
+            margin-top: 4px;
+            display: none;
+        }
+        #thePanel #currentState
+        {
+            cursor: default;
+            margin-left: 15px;
+            margin-top: 3px;
+        }
+        
+        
+        #volumeBarContainer
+        {
+            display: none;
+            position: absolute;
+            left: 33px;
+            z-index: 1;
+            margin-top: 0px;
+            width: 88px;
+            height: 26px;
+        }
+        
+        #volumeBarContainer *
+        {
+            position: absolute;
+        }
+        .volumeBar
+        {
+            height: 2px !important;
+            width: 74px;
+            margin-top: 11px;
+            margin-left: 18px;
+            float: left;
+        }
+        #greenLineContainer
+        {
+            left: -3px;
+            width: 0px;
+            overflow: hidden;
+            height: 5px;
+        }
+        #volumeBarLeft
+        {
+            left: 2px;
+            width: 2px;
+            height: 5px;
+            background: url(http://radio.webapps.conduitapps.com/embedded/volume-scale_left.png) no-repeat;
+        }
+        #volumeBarMid
+        {
+            left: 4px;
+            width: 76px;
+            height: 5px;
+            background: url(http://radio.webapps.conduitapps.com/embedded/volume-scale_middle.png) repeat-x;
+        }
+        #volumeBarRight
+        {
+            left: 78px;
+            width: 2px;
+            height: 5px;
+            background: url(http://radio.webapps.conduitapps.com/embedded/volume-scale_right.png) no-repeat;
+        }
+        
+        .volumeBar .ui-widget-header
+        {
+            z-index: 1;
+            background: none;
+        }
+        .volumeBar .ui-slider-handle
+        {
+            cursor: default;
+            margin-left: -5px !important;
+            top: -2px;
+            width: 10px !important;
+            height: 9px !important;
+            background: url('http://radio.webapps.conduitapps.com/embedded/Volume-button_normal.png') no-repeat;
+        }
+        
+        .volumeBar .ui-slider-handle:hover
+        {
+            background: url('http://radio.webapps.conduitapps.com/embedded/Volume-button_rollover.png') no-repeat;
+        }
+        .volumeBar .ui-state-default
+        {
+            border: none;
+        }
+        
+        #volumeBtn
+        {
+            top: 8px;
+            left: 123px;
+            width: 8px;
+            height: 10px;
+            background-image: url(http://radio.webapps.conduitapps.com/embedded/volume_normal.png);
+        }
+        #volumeBtn:hover
+        {
+            background-image: url(http://radio.webapps.conduitapps.com/embedded/volume_rollover2.png);
+        }
+        #volumeBtn.mute
+        {
+            top: 7px;
+            width: 11px;
+            height: 11px;
+            background-image: url(http://radio.webapps.conduitapps.com/embedded/volume_disabled.png);
+        }
+        #shrink
+        {
+            width: 18px;
+            height: 26px;
+            left: 140px;
+            background-image: url(http://radio.webapps.conduitapps.com/embedded/minimize_open_normal.png);
+        }
+        #shrink:hover
+        {
+            background-image: url(http://radio.webapps.conduitapps.com/embedded/minimize_open_rollover.png);
+        }
+        #preloader
+        {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas" style="display:block">
+        <div id="newBox">
+            <div unselectable="on" id="launcher">
+            </div>
+            <div id="smallPanel">
+                <div id="expand">
+                </div>
+            </div>
+                <div unselectable="on" id="bigPanel">
+                <div id="thePanel">
+                    <div unselectable="on" id="thePanelLeft">
+                    </div>
+                    <div unselectable="on" id="thePanelMid">
+                        <img id="eq_connecting" src="http://radio.webapps.conduitapps.com/embedded/ajax-loader2.gif" />
+                        <img id="eq_error" src="http://radio.webapps.conduitapps.com/embedded/equalizer_error2.gif" />
+                        <img id="equalizerPlaying" src="http://radio.webapps.conduitapps.com/embedded/equalizer_playing3.gif" />
+                        <img id="equalizerStopped" src="http://radio.webapps.conduitapps.com/embedded/equalizer_stopped3.gif" />
+                        <img id="opener" src="http://radio.webapps.conduitapps.com/embedded/station-panel_arrow.png" />
+                        <span unselectable="on" id="currentState"></span>
+                    </div>
+                    <div unselectable="on" id="thePanelRight">
+                    </div>
+                </div>
+                <div id="volumeBtn">
+                </div>
+                <div id="shrink">
+                </div>
+            </div>
+            <div id="stopBtn">
+            </div>
+            <div id="playBtn">
+            </div>
+        </div>
+        <div id="volumeBarContainer">
+            <div class="volumeBar">
+                <div id="greenLineContainer">
+                    <div id="volumeBarLeft">
+                    </div>
+                    <div id="volumeBarMid">
+                    </div>
+                    <div id="volumeBarRight">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="preloader">
+        </div>
+    </div>
+	<script type="text/javascript" src="../../../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../browserAppApi.js"></script>    
+    <script type="text/javascript" src="js/embeddedEarly.js"></script>
+    <script type="text/javascript" src="js/resources/utils.js"></script>
+    <script type="text/javascript" src="js/resources/radioCommon.js"></script>
+    <script type="text/javascript" src="js/resources/system.js"></script>
+    <script type="text/javascript" src="js/resources/BrowserDetect.js"></script>
+    <script type="text/javascript" src="js/resources/jquery-ui-1.8.10.custom.min.js"></script>
+    <script type="text/javascript" src="js/localization.js"> </script>
+    <script type="text/javascript" src="js/embedded.js"></script>
+    
+</body>
+
+</html>

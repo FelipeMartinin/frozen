@@ -1,0 +1,242 @@
+/*
+ * Basic Reset
+ */
+body {
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+body .rtl {
+	direction: rtl;
+}
+
+* {	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor:default !important;
+}
+
+ul {
+	list-style: none;
+	clear: both;
+	margin: 0;
+    padding: 0;
+    zoom: 1;
+}
+
+li {
+	display:block;
+	clear:both;
+	overflow: hidden;              /* "overflow" value must be different from "visible" */ 
+}
+
+a {
+	color: #000;
+	text-decoration: none !important;
+	display: inline-block;
+	outline: none;
+}
+
+img {
+	border: 0 none;
+}
+
+
+/*
+ * Menu
+ */
+.popup {
+    position: relative;
+	background: #fafafa;
+    font: 11px/25px tahoma, sans-serif;
+    color: #000;
+	border: 1px solid #7d7d7d;
+	border-top: none;
+	white-space: nowrap;
+	z-index: 2;
+    width: 250px; /* not needed, now menues are dynamicly control their width : conmment this to implement dynamic width */ 
+	overflow-x: hidden;
+	overflow-y:hidden;
+
+    /* TODO: Make these work on IE */
+	-moz-box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+	box-shadow: 	 1px 2px 2px rgba(0,0,0,0.3);
+	
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft:	3px;
+	border-bottom-right-radius:		3px;
+	border-bottom-left-radius:		3px;
+}
+
+.rtl .popup {float:right}
+
+.popup *    { white-space: nowrap; }
+
+.menu       { position: relative; }
+.menuWrap   { overflow: hidden;}
+.menuWrap .root {padding: 8px 0;}
+
+.loading * {cursor: progress !important;}
+
+a { 
+	display: block; 
+	position: relative; 
+	height: 23px; 
+	border-top: solid 1px Transparent;
+	border-bottom: solid 1px Transparent;
+ /* padding-left starts at 18px for root level, dynamically declared from template */
+ }
+ 
+
+a:hover     { 
+	background-color: #e7e7e7; 
+	border-top: solid 1px #d4d4d4;
+	border-bottom: solid 1px #fff;
+}
+
+.icon-wrap     { width: 16px; height: 21px; line-height: 19px; display: inline-block; text-align: left; vertical-align: middle;}
+.icon-wrap img { max-width: 16px; max-height: 16px; }
+.text-wrap     {
+	margin-left: 2px; white-space: nowrap;
+    width: 100%;                   /* IE6 needs any width */
+    overflow: hidden; /* "overflow" value must be different from "visible" */
+    -o-text-overflow: ellipsis;    /* Opera 9-10 */
+    text-overflow:    ellipsis;    /* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 */
+}
+
+.rtl .text-wrap
+{
+    margin-right: 5px;    
+}
+
+/*
+ * Sub Menus
+ */
+
+/* Sub Menu Toggle Arrows */
+.parent a {
+    /* background-position: 6px 8px; for root level, dynamically declared from template */
+    background-repeat: no-repeat;
+}
+
+/* TODO: Make these selectors work in IE7, which doesn't support the child combinator */
+.parent.opened > a {
+    background-image: url('../img/arrow-down.png');
+}
+
+.rtl .parent.opened > a{
+   background-position:237px 8px !important;
+}
+
+.parent.opened:hover > a {
+    background-image: url('../img/arrow-down-strong.png');
+}
+
+.rtl .parent.opened:hover > a {
+   background-position:237px 8px !important;
+}
+
+.parent.closed > a {
+    background-image: url('../img/arrow-right.png');
+}
+
+.rtl .parent.closed > a {
+    background-image: url('../img/arrow-left.png');
+	background-position:237px 8px !important;
+}
+
+.parent.closed:hover > a {
+    background-image: url('../img/arrow-right-strong.png');
+}
+
+.rtl .parent.closed:hover > a {
+    background-image: url('../img/arrow-left-strong.png');
+    background-position:237px 8px !important;
+}
+
+.active-parent {
+    background-color: #efefef;
+}
+
+/* Separator */
+.separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    width: 97%;
+    margin: 5px auto;
+    clear:both
+}
+
+/* Scrollers */
+.scroll {
+	width: 100%; height: 18px; position: absolute; z-index: 10;
+	background: #f0f0f0;
+	background: -moz-linear-gradient(top, #f0f0f0 0%, #e7e7e7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f0f0), color-stop(100%,#e7e7e7));
+	background: -webkit-linear-gradient(top, #f0f0f0 0%,#e7e7e7 100%);
+	background: -o-linear-gradient(top, #f0f0f0 0%,#e7e7e7 100%);
+	background: -ms-linear-gradient(top, #f0f0f0 0%,#e7e7e7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#e7e7e7',GradientType=0 );
+	background: linear-gradient(top, #f0f0f0 0%,#e7e7e7 100%);
+}
+.scroll.up  {border-bottom:  1px solid #e2e2e4; top: 0;}
+.scroll.down {border-top:  1px solid #e2e2e4; bottom: 0;}
+
+.scroll.enabled:hover {
+	border-color: #dcdcdd;
+	background: #f6f6f6;
+	background: -moz-linear-gradient(top, #f6f6f6 0%, #e7e7e7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#e7e7e7));
+	background: -webkit-linear-gradient(top, #f6f6f6 0%,#e7e7e7 100%);
+	background: -o-linear-gradient(top, #f6f6f6 0%,#e7e7e7 100%);
+	background: -ms-linear-gradient(top, #f6f6f6 0%,#e7e7e7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#e7e7e7',GradientType=0 );
+	background: linear-gradient(top, #f6f6f6 0%,#e7e7e7 100%);
+}
+
+.scroll.disabled, .scroll.hidden {
+	display: none;
+}
+
+.scroll p {
+	background: url('../img/arrows.png') no-repeat;
+	position: relative;
+	top: 6px;
+	margin: 0 auto;
+	width: 8px;
+	height: 4px;
+	line-height: 13px; 
+}
+
+.scroll.up p            		{background-position: 0 -6px;}
+.scroll.enabled.up:hover p      {background-position: -10px -6px; top: 5px;}
+
+.scroll.down p          		{background-position: 0 0;}
+.scroll.enabled.down:hover p    {background-position: -10px 0; top: 7px;}
+
+#topBorder div{
+	border-top: 1px solid #7d7d7d;
+	height: 1px;
+	position: absolute;
+	top: 0;
+	z-index: 999999;
+}
+#topBorder div#topBorderLeft{ left: 0; }
+#topBorder div#topBorderRight{ right: 0; }
+
+.rtl #topBorder div#topBorderLeft{ right: 0; left: auto }
+.rtl #topBorder div#topBorderRight{ left: 0; right: auto}
+
+.rtl .item a {
+ padding-right : 22px;
+ padding-left : 15px;
+}
+
+.item a {
+ padding-right : 15px;
+ padding-left : 22px;
+}

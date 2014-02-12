@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />                    
+        <link href="css/gadget.css" rel="stylesheet" type="text/css"/>
+        <!--[if IE]><link href="css/iestyle.css" rel="stylesheet" type="text/css"/><![endif]-->
+        <!--[if IE 7]><link href="css/ie7styles.css" rel="stylesheet" type="text/css"/><![endif]-->
+    </head>
+
+    <body id="bdy" class="bdy" style="margin: 0; padding: 0;">
+        <div id="nodata">                              
+            <!--img src="http://weather.webapps.conduitapps.com/loadingConduit.gif" /-->
+        </div>
+        <div id="canvas" style="display: none;">            
+            <div id="current">
+                <p id="change" >change location</p>
+                <p id="more" >more details <span class="moreShev">>></span></p>
+                <img id="topBg" src="http://weather.webapps.conduitapps.com/day/rec_top_main.png" width="294" height="164" alt="" />
+                <div id="top">
+                    <img id="logo" src="http://weather.webapps.conduitapps.com/logo.png" width="54" height="51" alt="logo"/>
+                    <img id="toggle" src="http://weather.webapps.conduitapps.com/toggle-right.png" alt=""/>
+                    <p id="toggle_f">F°</p>
+                    <p id="toggle_c">C°</p>
+                    <p id="location">&nbsp;</p>
+                    <img id="nowImg" src="http://weather.webapps.conduitapps.com/sun_large.png" width="85" height="85" alt=""/>
+                    <p id="nowTmpr">27&deg;c</p>
+                    <p id="highLowTmpr"><span id="nowTmprHigh">27&deg;c</span> / <span id="nowTmprLow">10&deg;c</span></p>
+                    <p id="feels"><span id="flik_lbl">Feels likes</span> <span id="flik_val">17&deg;c</span></p>
+                    <p id="feelsDesc">Scattered Clouds</p>
+                </div>
+                <img id="bottomBg" src="http://weather.webapps.conduitapps.com/day/rec_bottom_main.png" width="294" height="104" alt=""/>
+                <div id="daysForecast">
+                    <div id="day1">
+                        <p class="dayName">Friday</p>
+                        <p class="dayHigh">20&deg;</p>
+                        <p class="dayLow">15&deg;</p>
+                        <img class="dayImg" src="http://weather.webapps.conduitapps.com/sun_large.png" width="45" height="45"  alt=""/>
+                    </div>
+                    <div id="day2">
+                        <p class="dayName">Friday</p>
+                        <p class="dayHigh">20&deg;</p>
+                        <p class="dayLow">15&deg;</p>
+                        <img class="dayImg" src="http://weather.webapps.conduitapps.com/sun_large.png" width="45" height="45"  alt=""/>
+                    </div>
+                    <div id="day3">
+                        <p class="dayName">Friday</p>
+                        <p class="dayHigh">20&deg;</p>
+                        <p class="dayLow">15&deg;</p>
+                        <img class="dayImg" src="http://weather.webapps.conduitapps.com/sun_large.png" width="45" height="45"  alt=""/>
+                    </div>
+                    <img id="divider1" src="http://weather.webapps.conduitapps.com/night/divider.gif" width="2" height="70" alt=""/>
+                    <img id="divider2" src="http://weather.webapps.conduitapps.com/night/divider.gif" width="2" height="70" alt=""/>
+                </div>
+            </div>
+            <div id="nextDays">
+                <p id="change2" >change location</p>
+                <p id="more2" >more details <span class="moreShev">>></span></p>
+                <p id="back" >back</p>
+                <img id="topBg2" src="http://weather.webapps.conduitapps.com/day/top.png" width="294" height="139" alt=""/>
+                <div id="top2">
+                    <img id="logo2" src="http://weather.webapps.conduitapps.com/logo.png" width="54" height="51" alt="logo"/>
+                    <span id="toggle_f2">F°</span>
+                    <img id="toggle2" src="http://weather.webapps.conduitapps.com/toggle-right.png" alt=""/>
+                    <span id="toggle_c2">C°</span>
+                    <img id="nowImg2" src="http://weather.webapps.conduitapps.com/sun_large.png" width="65" height="65" alt=""/>
+                    <p id="location2">&nbsp;</p>
+                    <p id="date2">Mar 30,2011</p>
+                    <p id="nowTmpr2" class="noshadow"><span id="high">27&deg;c</span> / <span id="low">10&deg;c</span></p>
+                    <p id="desc">Scattered Clouds</p>
+                </div>
+                <img id="bottomBg2" src="http://weather.webapps.conduitapps.com/day/bottom.png" width="294" height="133" alt=""/>
+                <div id="bottom2">
+                    <img id="divider3" src="http://weather.webapps.conduitapps.com/night/divider.gif" width="2" height="79" alt=""/>
+                    <div class="col1">
+                        <p class="data1">Sunrise</p>
+                        <p class="data2">Sunset</p>
+                        <p class="data3">Humidity</p>
+                        <p class="data4">Visibility</p>
+                    </div>
+                    <div class="col2">
+                        <p class="data1">1.1</p>
+                        <p class="data2">52</p>
+                        <p class="data3">72%</p>
+                        <p class="data4">6 miles</p>
+                    </div>
+                    <div class="col3">
+                        <p class="data1">11 pm</p>
+                        <p class="data2">9 am</p>
+                        <p class="data3">3 pm</p>
+                        <p class="data4">7 pm</p>
+                    </div>
+                    <div class="col4">
+                        <img class="data1" src="" width="20" height="20" alt=""/>
+                        <img class="data2" src="" width="20" height="20" alt=""/>
+                        <img class="data3" src="" width="20" height="20" alt=""/>
+                        <img class="data4" src="" width="20" height="20" alt=""/>
+                    </div>
+                    <div class="col5">
+                        <p class="data1">21&deg;c</p>
+                        <p class="data2">18&deg;c</p>
+                        <p class="data3">21&deg;c</p>
+                        <p class="data4">14&deg;c</p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="changeLocation">
+                <img id="changeBg" src="http://weather.webapps.conduitapps.com/day/change-location.png" width="294" height="258" alt=""/>
+                <div id="top3">
+                    <span id="ui_cl_alert"></span>
+                    <p id="cancel" >Cancel</p>
+                    <div id="saveButton">
+                        <p>Save</p>
+                        <img id="left" src="http://weather.webapps.conduitapps.com/save_left.png" width="3" height="17" alt=""/>
+                        <img id="right" src="http://weather.webapps.conduitapps.com/save-right.png" width="3" height="17" alt=""/>
+                    </div>
+                    <img id="logo3" src="http://weather.webapps.conduitapps.com/logo.png" width="54" height="51" alt="logo"/>
+                    <p id="title">Change Location</p>                                                                                                                                                      
+                    <div id="changePanel">                                                      
+                        <p id="region">Select region:</p>
+                        <div id="regDiv">
+                            <select id="regionSelect">
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <p id="default">Default location: </p>
+                        <input id="defaultInput"type="text" value=""/>
+                        <img id="divider5" src="" width="138" height="2" alt=""/>
+                        <p id="tmpr">Temperature display:</p>
+                        <input id="radio1" name="tmpr" type="radio" value="f" />
+                        <input id="radio2" name="tmpr" type="radio" value="c" />
+                        <span id="radio_f" class="radio_btn_label">F</span>
+                        <span id="radio_c" class="radio_btn_label">C</span>
+                    </div>
+                    <input type="hidden" id="locId" />                                                                                                    
+                    <input type="hidden" id="wind_dis" value="mph" />
+                </div>
+            </div>                              
+            <!--div id="bottom" style="display:none">
+                <div id="facebook"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fapps.conduit.com%2FWeathercom-The-Weather-Channel--app%3Fappid%3D96a27762-7d9a-4703-89b9-10b2a20044c0&amp;layout=button_count&amp;show_faces=false&amp;width=140&amp;action=like&amp;colorscheme=light&amp;height=24" scrolling="no" style="border:none; overflow:hidden; width:141px; height:25px;" allowTransparency="true"></iframe></div>
+                <div id="powered"  onclick="goByUrl('http://apps.conduit.com/search?SearchSourceOrigin=47&utm_source=WeatherApp&utm_campaign=WeatherApp&utm_medium=ConduitPowerBy');">App powered by</div>
+            </div-->
+        </div>
+        
+
+        <script type="text/javascript" src="../browserAppApi.js"></script>    
+        <script type="text/javascript" src="../../../lib/jquery.min.js"></script>                                        
+        <script src="js/jquery.autocomplete.js" type="text/javascript" ></script>
+        <script src="js/jquery.textshadow.js" type="text/javascript" ></script>                        
+        <script src="js/date-functions.js" type="text/javascript"></script>                    
+        <script src="js/xPath.js" type="text/javascript"></script>                    
+        <script src="js/common.js" type="text/javascript" ></script>
+        <script src="js/logic.js" type="text/javascript" ></script>                    
+        <script src="js/gadget.js" type="text/javascript" ></script>
+        <script src="js/main.js" type="text/javascript" ></script>
+    </body>
+
+</html>

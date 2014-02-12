@@ -1,0 +1,5 @@
+By installing, you are agreeing to the current Google Chrome End User License Agreement as published here: http://www.google.com/chrome/eula.html
+
+Portableapps.com is not affiliated with Google. Google and Chrome are trademarks or registered trademarks of Google Inc.
+
+Portions of Google Chrome Portable utilize SQLite3.  The license is available here: http://www.sqlite.org/copyright.html

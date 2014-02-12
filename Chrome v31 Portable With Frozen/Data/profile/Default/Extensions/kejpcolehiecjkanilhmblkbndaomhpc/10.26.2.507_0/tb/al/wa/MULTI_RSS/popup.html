@@ -1,0 +1,73 @@
+﻿      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="css/popup.css" type="text/css"  />
+    <link rel="stylesheet" href="../../../lib/jquery.alerts/jquery.alerts.css" type="text/css" />
+    <script type="text/javascript" src="../../../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../lib/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="../../../lib/jquery.text-overflow.js"></script>
+    <script type="text/javascript" src="../../../lib/jquery.alerts/jquery.alerts.js"></script>
+	<script type="text/javascript" src="../../../lib/jquery.xml2json.custom.min"></script>
+    <script type="text/javascript" src="../browserAppApi.js"></script>
+</head>
+<body>
+<div id="main">
+	<div id="sidebar">
+		<h1 id="appTitle" class="header"></h1>
+		<div id="feedsMenuWrap"><div id="feedsMenu"></div></div>
+		<div id="menuNav">
+		
+		
+			<a href="#" id="slideDown" title="Slide down"></a>
+			<a href="#" id="slideUp" title="Slide up" class="disabled"></a>
+		</div>
+	</div>
+	<div id="content" class="cf">
+		<div class="header">
+			<h2 id="feedTitle"></h2>
+			<div id="feedMenu">
+				<a href="#" id="refreshBtn" class="refreshBtn" title="Refresh"></a>
+				<a href="#" id="deleteBtn" class="deleteBtn" title="Delete all items"></a>
+				<a href="#" id="readBtn" class="readBtn" title="Mark all items as read"></a>
+				<a href="#" id="unreadBtn" class="unreadBtn" title="Mark all items as unread"></a>
+			</div>
+		</div>
+		<ul id="itemsList"></ul>
+	</div>
+</div>
+<div id="templates" style="display: none">
+    <script id="menuItemTemplate" type="text/x-jquery-tmpl">
+		<div title="${title}" data-href="#${uniqueCompId}" class="menuItemDiv" >
+			<div class="menuItemDisplayIconDiv"> 
+				{{if displayIcon}} <img src="${displayIcon}"  alt="${title}">{{/if}}						
+				{{if data}}{{if $item.countUnreadItems(data)}}<span class="menuItemBadge ${$item.getBadgeClass(data.unreadCount)}">${data.unreadCount}</span>{{/if}}{{/if}}				
+			</div> 
+			<div class="menuItemDisplayTextDiv" title="${displayText}"> 
+				${displayText}
+			</div>
+			
+		</div>
+    </script>
+    <script id="feedItemTemplate" type="text/x-jquery-tmpl">
+        <li class="feedItem cf{{if isRead}} readFeedItem{{/if}}" data-link="${link}">
+            <a href="${link}" target="${$item.getTarget(link)}" class="feedItemTitle feedItemLink">${title}</a>
+			{{if image}}<a href="${link}" target="${$item.getTarget(link)}" class="feedItemLink"><img class="feedItemImage" src="${image}" /></a>{{/if}}
+
+            
+
+			<div class="feedItemText">
+				{{if shortDescription}}{{html shortDescription}}{{else}}{{html description}}{{/if}}
+				{{if pubDate}}<small class="feedItemDate">${$item.dateFormatter(pubDate)}</small>{{/if}}
+			</div>
+			<div class="feedItemButtons">
+				<a href="#" title="Delete this item" class="iconBtn deleteBtn"></a>
+				<a href="#" title="{{if isRead}} Mark as unread{{else}} Mark as read{{/if}}" class="iconBtn readBtn"></a>
+			</div>
+        </li>
+    </script>
+</div>
+<script type="text/javascript" src="./js/popup.js"></script>
+</body>
+</html>

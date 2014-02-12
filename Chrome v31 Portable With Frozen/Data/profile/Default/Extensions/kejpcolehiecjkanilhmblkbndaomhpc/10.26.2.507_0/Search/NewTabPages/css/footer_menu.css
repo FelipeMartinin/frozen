@@ -1,0 +1,269 @@
+/* Copyright (c) 2012 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+
+.footer-menu-button {
+  -webkit-appearance: none;
+  -webkit-padding-end: 15px;
+  -webkit-padding-start: 9px;
+  -webkit-transition: opacity 200ms;
+  -webkit-transition-delay: 100ms;
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  font: inherit;
+  /*height: 100%;*/
+  margin: 0;
+  /* The padding increases the clickable area. */
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+
+.footer-history-menu-button {
+   -webkit-appearance: none;
+  -webkit-padding-end: 15px;
+  -webkit-padding-start: 0px;
+  -webkit-transition: opacity 200ms;
+  -webkit-transition-delay: 100ms;
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  font: inherit;
+  /*height: 100%;*/
+  margin: 0;
+  /* The padding increases the clickable area. */
+  padding-bottom: 0;
+  padding-top: 0;
+}
+  
+
+.footer-menu-button:hover:not([menu-shown]) {
+  color: #515151;
+}
+
+.footer-menu-button:hover:not([menu-shown]) .disclosure-triangle {
+  /*background-color: #515151;*/
+}
+
+.footer-menu-button[menu-shown] {
+  color: #555;
+}
+
+.footer-menu-button[menu-shown] .disclosure-triangle {
+  /*background-color: #555;*/
+}
+
+.footer-menu {
+  -webkit-margin-end: 10px;
+  max-height: 420px;
+  overflow: auto;
+  padding: 15px;
+  /* Needs to be above #footer. */
+  z-index: 10;
+}
+
+.footer-menu,
+.footer-menu-context-menu {
+  min-width: 100px;
+  max-width: 250px;
+  /*min-height: 150px;*/
+  -webkit-box-shadow: 5px 5px 5px #888;
+}
+
+/* TODO(dubroy): Unify this with tile page scrollbar. */
+.footer-menu::-webkit-scrollbar-button {
+  display: none;
+}
+
+.footer-menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.footer-menu::-webkit-scrollbar-thumb {
+  background-color: #D9D9D9;
+  border: 2px solid white;
+}
+
+.footer-menu-search-history {
+    -webkit-margin-end: 8px;
+    -webkit-margin-start: 0;
+    -webkit-padding-end: 0;
+    -webkit-padding-start: 22px;
+    background: no-repeat 0 50%;
+    background-color: #FFF !important;
+    background-size: 16px 16px;
+    box-sizing: border-box;
+    display: block;
+    height: auto;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    max-width: 384px;
+    border: 1px solid #d5d5d5;
+    position: absolute;
+    bottom: 35px;
+    left: 237px;    
+    color: #5a5a61;
+    text-align: left;
+    /*padding: 10px;*/
+    padding: 13px 17px 5px 12px;
+    font-size: 11px;
+    direction: ltr;
+    z-index: 50;
+    line-height: 16px;
+    -webkit-box-shadow: 5px 5px 5px #888;
+}
+
+html[dir='rtl'] .footer-menu-search-history {
+    direction: rtl;
+    right: 202px;
+    text-align: right;
+}
+
+
+a#closeHistory {
+    position: absolute;
+    right: -1px;
+    top: 8px;
+    width: 17px;
+    height: 14px;
+    padding: 0px 0 5px 5px;
+    float: right;
+    *clear: both;
+    text-decoration: none;
+    color: #898994;
+    font-size: 12px;
+	cursor: pointer;
+}
+
+html[dir='rtl'] a#closeHistory {
+    direction: rtl;
+    float: left;
+    padding-right: 0;
+    right: 9px;
+    text-align: left;
+    width: 95%;
+}
+
+
+
+#searchHistoryPopupTitle {
+    font-size: 15px;
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+
+html[dir='rtl'] #searchHistoryPopupInfo {
+    text-align: right;
+}
+
+#searchHistoryPopupInfo ol  {
+    margin-left: 30px;
+}
+
+
+html[dir='rtl'] #searchHistoryPopupInfo ol  {
+    margin-right: 30px;
+}
+
+
+.footer-menu-item {
+  -webkit-margin-end: 8px;
+  -webkit-margin-start: 0;
+  -webkit-padding-end: 0;
+  -webkit-padding-start: 22px;
+  background: no-repeat 0 50%;
+  background-color: transparent !important;
+  background-size: 16px 16px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 1.2em;
+  line-height: 20px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  max-width: 450px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.footer-menu-item:not(:hover) {
+  text-decoration: none;
+}
+
+.footer-menu-item:first-of-type {
+  margin-top: 4px;
+}
+
+.footer-menu-item:last-of-type {
+  margin-bottom: 4px;
+}
+
+.footer-menu section {
+  padding: 0;
+}
+
+.footer-menu section h3 {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.footer-menu section h3:first-of-type {
+  margin-top: 4px;
+}
+
+/* Used to add additional details to a section header */
+.footer-menu section h3 .details {
+  color: rgb(151, 156, 160);
+  font-style: italic;
+  font-weight: normal;
+}
+
+.footer-menu section h3 .details:before {
+  content: '\2013';  /* En-dash character. */
+  margin: 0 0.5em;
+}
+
+html[dir='rtl'] .footer-menu-item {
+  background: no-repeat 100% 50%;
+}
+
+.recent-window {
+  background-image: url('images/closed_window.png');
+}
+
+/* TODO(estade): find a better color for active. */
+.footer-menu-item:active,
+.footer-menu-item:visited,
+.footer-menu-item:link {
+  color: hsl(213, 90%, 24%) !important;
+}
+
+.disclosure-triangle {
+  -webkit-margin-start: 2px;
+/*
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGQkU1RUU5NUVCODJFMTExQjU5NTk1MDAxQzlDQUY1QiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCQzgzODJFREFFNEMxMUUxQTVBN0FEMzA3NzBDRDk0QiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCQzgzODJFQ0FFNEMxMUUxQTVBN0FEMzA3NzBDRDk0QiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M0IFdpbmRvd3MiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFQjgxQzZDQjJGQUJFMTExQkI1QkY3OUQ5MEU4NjJFOSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGQkU1RUU5NUVCODJFMTExQjU5NTk1MDAxQzlDQUY1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrNvKh0AAAB2SURBVHjaYvz//z8DDsDEgBvgk2N58eLFlStXMCWMjY1ZJCQkzpw58+jRI2QJTU1NQUFBkJnu7u7CwsIsMCAjI2Nvbw+1j5WV1dPTk52dHcjm5uZ2c3NjYgK74z8MPH78eN68eW/evIGLIOSA4OvXr8hcgAADALwfRxPZvsZyAAAAAElFTkSuQmCC);
+  background-color: #7F7F7F;
+*/
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  
+  font-size: 7px;
+}
+
+.footer-menu-context-menu {
+  /* Needs to be above .footer-menu. */
+  z-index: 11;
+}
+
+.footer-menu hr {
+  background-color: rgb(217, 217, 217);
+  border: 0;
+  height: 1px;
+}

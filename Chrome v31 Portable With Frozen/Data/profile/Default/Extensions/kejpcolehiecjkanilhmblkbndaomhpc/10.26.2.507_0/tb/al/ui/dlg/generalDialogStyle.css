@@ -1,0 +1,485 @@
+/**ver:1.0.0.0*/
+.divRounded
+{
+    position: relative;
+    border: 1px solid #767676;
+    width: 320px !important;
+    padding-bottom: 50px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: #666 0px 2px 3px;
+    -moz-box-shadow: #666 0px 2px 3px;
+    -ms-box-shadow: #666 0px 2px 3px;
+    box-shadow: #666 0px 2px 3px; /*   background: #f7f7f7;*/
+    behavior: url(../PIE.htc);
+    top: -2px;
+    background-color: white;
+}
+
+.divRoundedIE9, .divRoundedIE9:hover
+{
+    position: relative;
+    border: 1px solid #767676;
+    width: 320px !important;
+    padding-bottom: 50px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: #666 0px 2px 3px;
+    -moz-box-shadow: #666 0px 2px 3px;
+    -ms-box-shadow: #666 0px 2px 3px;
+    box-shadow: #666 0px 2px 3px; /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#f7f7f8');*/
+    behavior: url(../PIE.htc);
+    top: -2px;
+    background-color: transparent; /*#f7f7f7*/
+}
+
+.divRoundedLarge
+{
+    position: relative;
+    border: 1px solid #767676;
+    width: 350px !important;
+    padding-bottom: 50px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: #666 0px 2px 3px;
+    -moz-box-shadow: #666 0px 2px 3px;
+    -ms-box-shadow: #666 0px 2px 3px;
+    box-shadow: #666 0px 2px 3px;
+    background: #f7f7f7;
+    behavior: url(../PIE.htc);
+    top: -2px;
+}
+
+.divRoundedIE9Large, .divRoundedIE9Large:hover
+{
+    position: relative;
+    border: 1px solid #767676;
+    width: 350px !important;
+    padding-bottom: 50px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: #666 0px 2px 3px;
+    -moz-box-shadow: #666 0px 2px 3px;
+    -ms-box-shadow: #666 0px 2px 3px;
+    box-shadow: #666 0px 2px 3px;
+    background: #f7f7f7;
+    behavior: url(../PIE.htc);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#f7f7f8');
+    top: -2px;
+}
+
+
+.divRoundedFTTB
+{
+    position: relative;
+    border: 1px solid #767676;
+    width: 610px !important;
+    padding-bottom: 50px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: #666 0px 2px 3px;
+    -moz-box-shadow: #666 0px 2px 3px;
+    -ms-box-shadow: #666 0px 2px 3px;
+    box-shadow: #666 0px 2px 3px;
+    background: #f7f7f7;
+    behavior: url(../PIE.htc);
+    top: -2px;
+}
+
+.divRoundedBottom
+{
+    position: absolute;
+    width: 320px;
+    height: 35px;
+    background: #f0f9fe; /* f0f9fe background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e8e8e8), to(#c6c6c6));     background: -moz-linear-gradient(#e8e8e8, #c6c6c6);     background: linear-gradient(#e8e8e8, #c6c6c6);     -pie-background: linear-gradient(#e8e8e8, #c6c6c6);*/
+    behavior: url(../PIE.htc);
+    top: 0px;
+    left: 0px;
+}
+
+.divRoundedBottomIE9, .divRoundedBottomIE9:hover
+{
+    position: absolute;
+    width: 320px;
+    height: 35px;
+    -webkit-border-radius: 0 0 8px 8px;
+    -moz-border-radius: 0 0 8px 8px;
+    -ms-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    -webkit-box-shadow: #666 0px 2px 3px;
+    -moz-box-shadow: #666 0px 2px 3px;
+    box-shadow: #666 0px 2px 3px;
+    -ms-box-shadow: #666 0px 2px 3px;
+    background: #F0F9FE;
+    top: 0px;
+    left: 0px;
+}
+
+.divRoundedBottomLarge
+{
+    position: absolute;
+    width: 350px;
+    height: 35px;
+    -webkit-border-radius: 0 0 8px 8px;
+    -moz-border-radius: 0 0 8px 8px;
+    -ms-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    -webkit-box-shadow: #666 0px 2px 3px;
+    -moz-box-shadow: #666 0px 2px 3px;
+    box-shadow: #666 0px 2px 3px;
+    -ms-box-shadow: #666 0px 2px 3px;
+    background: #C7C7C7;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e8e8e8), to(#c6c6c6));
+    background: -moz-linear-gradient(#e8e8e8, #c6c6c6);
+    background: linear-gradient(#e8e8e8, #c6c6c6);
+    -pie-background: linear-gradient(#e8e8e8, #c6c6c6);
+    behavior: url(../PIE.htc);
+    top: 0px;
+    left: 0px;
+}
+
+.divRoundedBottomIE9Large, .divRoundedBottomIE9Large:hover
+{
+    position: absolute;
+    width: 350px;
+    height: 35px;
+    -webkit-border-radius: 0 0 8px 8px;
+    -moz-border-radius: 0 0 8px 8px;
+    -ms-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    -webkit-box-shadow: #666 0px 2px 3px;
+    -moz-box-shadow: #666 0px 2px 3px;
+    box-shadow: #666 0px 2px 3px;
+    -ms-box-shadow: #666 0px 2px 3px;
+    background: #C7C7C7;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e8e8e8), to(#c6c6c6));
+    background: -moz-linear-gradient(#e8e8e8, #c6c6c6);
+    background: linear-gradient(#e8e8e8, #c6c6c6);
+    -pie-background: linear-gradient(#e8e8e8, #c6c6c6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#c6c6c6');
+    behavior: url(../PIE.htc);
+    top: 0px;
+    left: 0px;
+}
+
+.divRoundedBottomFTTB
+{
+    position: absolute;
+    width: 610px;
+    height: 35px;
+    -webkit-border-radius: 0 0 8px 8px;
+    -moz-border-radius: 0 0 8px 8px;
+    -ms-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    -webkit-box-shadow: #666 0px 2px 3px;
+    -moz-box-shadow: #666 0px 2px 3px;
+    -ms-box-shadow: #666 0px 2px 3px;
+    box-shadow: #666 0px 2px 3px;
+    background: #C7C7C7;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e8e8e8), to(#c6c6c6));
+    background: -moz-linear-gradient(#e8e8e8, #c6c6c6);
+    background: linear-gradient(#e8e8e8, #c6c6c6);
+    -pie-background: linear-gradient(#e8e8e8, #c6c6c6);
+    behavior: url(../PIE.htc);
+    top: 0px;
+    left: 0px;
+}
+
+.divFillMissingBG
+{
+    background-color: #e8e8e8;
+    width: 320px; /*border-top-width: 1px;    border-top-style: solid;    border-top-color:#CCCCCC;*/
+    height: 10px;
+    bottom: 25px;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+}
+.divFillMissingBGLarge
+{
+    background-color: #e8e8e8;
+    width: 350px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCCCCC;
+    height: 10px;
+    bottom: 25px;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+}
+
+.divFillMissingBGFTTB
+{
+    background-color: #e8e8e8;
+    width: 610px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCCCCC;
+    height: 10px;
+    bottom: 25px;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+}
+
+#boxTextContainer
+{
+    margin-left: 75px;
+    background-color: Transparent;
+}
+
+.boxTextContainer_ver2
+{
+    margin: 18px 20px 0 20px;
+    background-color: Transparent;
+}
+
+#divTitle
+{
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial;
+    white-space: pre-wrap;
+    margin: 25px 10px 14px 0;
+}
+
+
+.divTitle1
+{
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial;
+    white-space: pre-wrap;
+    margin: 0 0 14px 0;
+}
+
+.divDescription
+{
+    width: 230px;
+    color: #000000;
+    font-size: 11px;
+    font-family: Arial;
+    font-size: 11px;
+    color: #5c5b5b;
+}
+
+.divDescription1
+{
+    color: #000000;
+    font-size: 11px;
+    font-family: Arial;
+    font-size: 11px;
+    color: #5c5b5b;
+}
+
+.divDescriptionNoBottom
+{
+    width: 217px;
+    color: #000000;
+    font-size: 11px;
+    font-family: Arial;
+    font-size: 11px;
+    color: #5c5b5b;
+    margin: 0 0 -19px;
+}
+
+#Checkbox1
+{
+    height: 20px;
+}
+
+.img
+{
+    position: absolute;
+    visibility: show;
+    left: 10px;
+    top: 25px;
+}
+
+.hrefPrivacyInfo
+{
+    font-size: 11px;
+    text-decoration: underline;
+    z-index: 1;
+    top: 10px;
+    font-family: Arial;
+    color: #0f80c6;
+}
+
+.hrefCancel
+{
+    font-size: 11px;
+    text-decoration: underline;
+    z-index: 1;
+    top: 10px;
+    font-family: Arial;
+    color: #0f80c6;
+}
+
+.hrefAbort
+{
+    font-size: 11px;
+    text-decoration: underline;
+    position: absolute;
+    z-index: 1;
+    left: 12px;
+    top: 10px;
+    font-family: Arial;
+    color: Black;
+}
+
+.btnActivate
+{
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    width: 75px;
+    left: 224px;
+    font-family: Arial;
+    font-size: 11px;
+    height: 24px;
+    border: 1px solid #b6bbbf;
+    background-color: White;
+    background: url(Images/btn.jpg) repeat-x left top;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.btnImg
+{
+    position: absolute;
+    border-left: 2px solid White;
+    height: 23px;
+}
+.btnTxt
+{
+    height: 13px;
+    width: 30px;
+    position: relative;
+    margin-left: 24px;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4b585e;
+}
+
+.btnActivateLarge
+{
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    width: 75px;
+    left: 254px;
+    font-family: Arial;
+    font-size: 11px;
+    height: 24px;
+}
+
+#deck_tip
+{
+    position: relative;
+    z-index: 10;
+    top: -1px;
+}
+#divMain
+{
+    position: relative;
+    left: -4px;
+}
+
+body
+{
+    margin: 0 !important;
+    padding: 2px 0 0 5px !important;
+}
+
+#divEnable
+{
+    margin: 8px 0 -3px -3px;
+    height: 23px;
+}
+
+#divEnable1
+{
+    margin: 17px 0 10px;
+    height: 23px;
+}
+
+
+.divMore
+{
+    font-size: 10px;
+    z-index: 1;
+    font-family: Arial;
+    margin: 14px 0 0 0;
+    color: #5c5b5b;
+}
+
+.divMoreInfo
+{
+    font-size: 10px;
+    z-index: 1;
+    font-family: Arial;
+    color: #5c5b5b;
+}
+
+.hrefGeneral
+{
+    font-size: 10px;
+    text-decoration: underline;
+    z-index: 1;
+    font-family: Arial;
+    margin: 0 0 0 0;
+    color: #5C5B5B;
+}
+
+.divRightClick
+{
+    color: #333333;
+    font-size: 10px;
+    font-family: Arial;
+    margin: 0 0 -19px;
+    font-weight: normal;
+}
+
+.divRightClick1
+{
+    color: #5C5B5B;
+    font-size: 10px;
+    font-family: Arial;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.divEnableText
+{
+    position: relative;
+    font-family: Arial;
+    font-size: 11px;
+    color: #5c5b5b;
+    top: -20px;
+    left: 25px;
+    width: 201px;
+}
+.linkDiv
+{
+    float: left;
+    height: 12px;
+    font-size: 11px;
+    color: #0e7fc7;
+    font-family: Arial;
+    margin-left: 10px;
+    margin-top: 14px;
+}

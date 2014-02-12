@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir=ltr>
+<head>
+     <!--[if IE]>
+        <script type="text/javascript" src="../../../lib/json2.js"></script>
+        <script type="text/javascript" src="../../../../abstractionlayer.backstage.js"></script>
+		<script type="text/javascript" src="../../../../abstractionlayer.commons.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="../../../lib/jquery.min.js"></script>
+	<script src="../../../lib/jquery.xml2json.custom.min.js"></script>
+	<script src="../../../core/framework.js"></script>		
+	<script src="../../../../ConduitAbstractionLayerFront.js"></script>
+    <link rel="stylesheet" type="text/css" href="SearchProtector.css" />
+</head>
+<body>
+    <div id="outer_box">
+        <div id="title_block">Attempted Settings Change</div>
+        <div id="options_block">
+            <div id="middle_block">
+                <div id="sub_title_block">
+					<img id="sub_title_img" src="images/warning.png" alt="!" />
+                    <div id="sub_title">An attempt has been made to take over your home page</div>
+                </div>
+                <div id="seperator_line"></div>
+                <div id="radio_container_1">
+                    <input type="radio" id="radio_1" name="group1" checked="true"/>
+                    <div id="radio_text_1" class="radio_text">Keep my home page and default search for Firefox </div>
+                </div>
+                <div id="radio_container_2">
+                    <input type="radio" id="radio_2" name="group1"/>
+                    <div id="radio_text_2" class="radio_text">Disable default search protection and change my home page and default search to EB_DOMAIN_NAME</div>
+                </div>
+            </div>
+            <div id="bottom_block">
+                <div id="learn_more_link">Learn more</div>
+                <input id="ok_button" type="submit" value="OK"></input>
+            </div>
+        </div>
+        <div id="learn_more_block">
+            <div id="text_block">
+                <div id="par_1">This dialog box allows you to protect your default home page and search from attempts by software programs you may install to change them without asking your permission.</div>
+                <div id="par_2">You can disable this protection by going to Toolbar Options in your EB_TOOLBAR_NAME Community Toolbar's main menu and clearing the "Notify me of settings changes" check box.</div>
+            </div>
+            <button id="back_button">Back</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="settings.js"></script>        
+</body>
+
+</html>

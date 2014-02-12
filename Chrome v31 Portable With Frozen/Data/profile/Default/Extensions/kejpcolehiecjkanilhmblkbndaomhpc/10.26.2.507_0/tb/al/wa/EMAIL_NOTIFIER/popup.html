@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+    <link href="../../../lib/jquery.jscrollpane/jquery.jscrollpane.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.jscrollpane.css" rel="stylesheet" type="text/css" />
+    <link href="css/en.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="../browserAppApi.js"></script>
+    <script type="text/javascript" src="../../../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../lib/jquery.text-overflow.js" ></script>
+    <script type="text/javascript" src="../../../lib/jquery.jscrollpane/jquery.jscrollpane.min.js" ></script>
+    <script type="text/javascript" src="../../../lib/jquery.mousewheel.js" ></script>
+    <script type="text/javascript" src="../../../lib/sdk.js"></script>
+    <script type="text/javascript" src="./js/Utils.js" ></script>
+    <script type="text/javascript" src="./js/Popup.js" ></script>
+</head>
+<body id="mainBody">
+<!-- Header Section -->
+<div id="dc">
+<div class="header">
+    <div id="divHeaderContent" class="content"></div>
+</div>
+<!--End Header Section -->
+<div id="divContent" class="marginLeft10 marginRight10">
+<!-- Mail Options -->
+<div id="divManageAccount" class="hide">
+    <div class="maincontent">
+        <div class="floatLeft">
+            <div class="scroll-pane2" style="width: 495px; height: 240px;">
+                <ul id="editAccountList" class="marginRight10">
+                    <!-- dynamic list -->
+                </ul>
+            </div>
+        </div>
+        <div class="floatRight">
+            <div style="padding-bottom: 5px">
+                <input type="button" id="btnUp" class="btnUp" value="" alt="Move Up" />
+            </div>
+            <div>
+                <input type="button" id="btnDown" class="btnDown" value="" alt="Move Down" />
+            </div>
+        </div>
+        <div style="clear: both">
+        </div>
+    </div>
+    <div class="footerContent">
+        <div class="floatLeft">
+            <div id="btnEdit" class="btnContainer floatLeft">
+                <div id="btnEditLeft" class="floatLeft">
+                </div>
+                <div id="btnEditCenter" class="floatLeft">
+                    <span transkey="SB_EMAIL_NOTIFIER_MNG_EDIT_BTN">Edit Account</span></div>
+                <div id="btnEditRight" class="floatLeft">
+                </div>
+            </div>
+            &nbsp;&nbsp; <a id="btnRemove" transkey="SB_EMAIL_NOTIFIER_MNG_REMOVE_BTN">Remove Account</a>
+        </div>
+        <div id="ui-view-manage-accounts-controls-opposite" class="floatRight blueText">
+            <a id="btnAdd" transkey="SB_EMAIL_NOTIFIER_MNG_ADD_LINK">Add New Account</a> | <a
+                id="btnManageAccountCancel" transkey="SB_EMAIL_NOTIFIER_MNG_CANCEL_LINK">Cancel
+        </a>
+        </div>
+    </div>
+</div>
+<!--add Account-->
+<div id="divAddAccount" class="hide">
+    <div id="divAccountContentData" class="maincontent">
+        <div id="accordion" style="height: 220px;">
+            <!-- Add WebAccount Section-->
+            <div class="accountContainer dummySelectAccount">
+                <div>
+                    <input name="webAccountType" id="rdWebAccount" type="radio" value="webAccount" checked="checked" />
+                    <a id="lnkWebAccount" transkey="SB_EMAIL_NOTIFIER_1ST_RADIO_BUTTON">WebAccount</a>
+                </div>
+                <div id="divAddWebAccount">
+                    <div class="addAccountSpacer1">
+                        <table class="rowSpacer" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <span transkey="SB_EMAIL_NOTIFIER_EMAIL_FIELD">Email Address:</span>
+                                </td>
+                                <td class="paddingLeft15">
+                                    <input type="email" class="dummyAddAccountclass width220" id="txtEmailAddress" maxlength="40" placeholder="someone@domain.com" />
+                                </td>
+                                <td class="paddingLeft3">
+                                    <img id="imgWebAccountMailStatusOK" class="dummyAccountImage hide" src="http://emailnotifier.webapps.conduitapps.com/success.png"
+                                         alt="Success" />
+                                    <img id="imgWebAccountMailStatusFailed" class="dummyAccountImage hide" src="http://emailnotifier.webapps.conduitapps.com/Error.png"
+                                         alt="Error" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span transkey="SB_EMAIL_NOTIFIER_PASSWORD_FIELD">Password:</span>
+                                </td>
+                                <td class="paddingLeft15">
+                                    <input type="password" id="txtPassword" class="dummyAddAccountclass width220" />
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="divWebAccountStatus" class="accountStatusMessage marginRight10">
+                        <img id="imgWebAccountLoader" src="http://emailnotifier.webapps.conduitapps.com/icon-loader.gif"
+                             width="17" height="17" class="hide" />
+                        <span id="lblWebAccountMessage" class=""></span>
+                    </div>
+                </div>
+            </div>
+            <!-- End WebAccount Section-->
+            <div style="height: 2px;">
+            </div>
+            <!--Add POP3Account Section-->
+            <div class="accountContainer dummySelectAccount">
+                <div>
+                    <input name="webAccountType" id="rdPop3Account" type="radio" value="pop3Account" />
+                    <a id="lnkPop3Account" transkey="SB_EMAIL_NOTIFIER_2ND_RADIO_BUTTON">POP3 Account</a>
+                </div>
+                <div id="divAddPop3Account" class="hide">
+                    <div class="addAccountSpacer1">
+                        <table class="rowSpacer" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <span transkey="SB_EMAIL_NOTIFIER_EMAIL_FIELD">Email Address:</span>
+                                </td>
+                                <td class="paddingLeft15">
+                                    <input type="email" class="dummyAddAccountclass width220" id="txtPOP3EmailAddress"
+                                           maxlength="40" placeholder="someone@domain.com" />
+                                </td>
+                                <td class="paddingLeft3">
+                                    <img id="imgPOP3AccountMailStatusOK" class="dummyAccountImage hide" src="http://emailnotifier.webapps.conduitapps.com/success.png"
+                                         alt="Success" />
+                                    <img id="imgPOP3AccountMailStatusFailed" class="dummyAccountImage hide" src="http://emailnotifier.webapps.conduitapps.com/Error.png"
+                                         alt="Error" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span transkey="SB_EMAIL_NOTIFIER_NEW_ACCOUNT_PASSWORD">Password:</span>
+                                </td>
+                                <td class="paddingLeft15">
+                                    <input type="password" class="dummyAddAccountclass width220" id="txtPOP3Password"
+                                           maxlength="15" />
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="margin-top: 5px">
+                            <div class="floatLeft">
+                                        <span class="fieldTitle" transkey="SB_EMAIL_NOTIFIER_NEW_ACCOUNT_IN_POP3_SERVER">Incoming
+                                            POP3 Server:</span>
+                                <input type="text" class="dummyAddAccountclass width165 marginLeft15" id="txtPOP3IncServer"
+                                       maxlength="40" />
+                            </div>
+                            <div class="floatLeft">
+                                        <span class="fieldTitle marginLeft10" transkey="SB_EMAIL_NOTIFIER_NEW_ACCOUNT_IN_POP3_PORT">
+                                            Port:</span>
+                                <input type="text" id="txtPOP3Port" class="dummyAddAccountclass width50" maxlength="4"/>
+                            </div>
+                            <div style="clear: both">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="divPOP3AccountStatus" class="accountStatusMessage marginRight10">
+                        <img id="imgPOP3AccountLoader" src="http://emailnotifier.webapps.conduitapps.com/icon-loader.gif"
+                             width="17" height="17" class="hide" />
+                        <span id="lblPOP3AccountMessage" class=""></span>
+                    </div>
+                </div>
+            </div>
+            <!--End POP3Account Section-->
+        </div>
+        <div id="divPassMsg" class="PasswordSecurity">
+            <div class="floatLeft">
+                <img src="http://emailnotifier.webapps.conduitapps.com/lock.png" />
+            </div>
+            <div class="floatLeft marginLeft8" style="width: 400px;" transkey="SB_EMAIL_NOTIFIER_SECURITY_MSG">
+                Your password stored in your own toolbar's E-mail Notifier and is not for any purpose<br />
+                other then acrssing your account
+            </div>
+        </div>
+        <!--<input type="button" id="btnCheckConnection" class="btnSave" value="Check Connection" />-->
+    </div>
+    <div class="footerContent">
+        <div>
+            <div id="btnAddSubmit" class="btnContainer">
+                <div id="btnAddSubmitLeft" class="floatLeft">
+                </div>
+                <div id="btnAddSubmitCenter" class="floatLeft">
+                    <span transkey="SB_EMAIL_NOTIFIER_BTN_ADD">Add</span></div>
+                <div id="btnAddSubmitRight" class="floatLeft">
+                </div>
+            </div>
+            &nbsp;&nbsp; <a id="btnCancel" transkey="SB_EMAIL_NOTIFIER_MNG_CANCEL_LINK">Cancel</a>
+            <div class="floatRight">
+                <a id="btnAddManageAccount" transkey="SB_EMAIL_NOTIFIER_MNG_ACTS_LINK">Manage Accounts</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Add Account Section-->
+<!-- Edit Account Section-->
+<div id="divEditAccount" class="hide">
+    <div id="divEditTitle" class="maincontent">
+        <div class="accountContainer" style="height: 230px;">
+            <span id="EditAccountSubTitle" class="blueTitleText"></span>
+            <input type="hidden" id="txtEditMailID" class="DummyEditAccountClass" />
+            <input type="hidden" id="txtEditISCustom" class="DummyEditAccountClass" />
+            <div style="margin-top: 10px; height: 190px;position:relative;">
+                <table class="rowSpacer" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <span id="lblEditEmailTitle" transkey="SB_EMAIL_NOTIFIER_EMAIL_FIELD">E-mail Adress:</span>
+                        </td>
+                        <td class="paddingLeft15">
+                            <span id="lblEditEmailData" class="DummyEditAccountClass fieldTitle"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="lblEditPasswordTitle" transkey="SB_EMAIL_NOTIFIER_PASSWORD_FIELD">Password:</span>
+                        </td>
+                        <td class="paddingLeft15">
+                            <input type="password" id="txtEditPassword" class="DummyEditAccountClass width200"
+                                   maxlength="15" />
+                        </td>
+                    </tr>
+                </table>
+                <div id="trEditAdditionalData" class="hide paddingTop5">
+                    <div class="floatLeft">
+                                <span id="lblEditPOP3Server" transkey="SB_EMAIL_NOTIFIER_NEW_ACCOUNT_IN_POP3_SERVER">
+                                    Incoming POP3 Server:</span>
+                        <input type="text" id="txtEditPOP3Server" class="DummyEditAccountClass" maxlength="40"
+                               style="width: 169px;" />
+                    </div>
+                    <div class="floatLeft">
+                                <span id="lblEditPort" class="marginLeft10" transkey="SB_EMAIL_NOTIFIER_NEW_ACCOUNT_IN_POP3_PORT">
+                                    Port:</span>
+                        <input type="text" id="txtEditPort" class="DummyEditAccountClass width50" maxlength="4" />
+                    </div>
+                </div>
+                <div id="divEditAccountStatus" class="accountStatusMessage marginRight10" style="position:absolute;bottom:0px">
+                    <img id="imgEditAccountLoader" src="http://emailnotifier.webapps.conduitapps.com/icon-loader.gif"
+                         width="17" height="17" class="hide" />
+                    <span id="lblEditAccountMessage" class=""></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footerContent">
+        <div id="btnEditSubmit" class="btnContainer" style="padding: 0px 220px">
+            <div id="btnEditSubmitLeft" class="floatLeft">
+            </div>
+            <div id="btnEditSubmitCenter" class="floatLeft">
+                <span transkey="SB_EMAIL_NOTIFIER_BTN_SAVE">Save</span>
+            </div>
+            <div id="btnEditSubmitRight" class="floatLeft">
+            </div>
+        </div>
+        &nbsp;&nbsp;<a id="btnEditCancel" transkey="SB_EMAIL_NOTIFIER_BTN_CANCEL">Cancel</a>
+    </div>
+</div>
+<!-- End Edit Account -->
+<!-- Mail List -->
+<div id="divMails" class="hide">
+    <div class="maincontent">
+        <div>
+            <div id="tabMail" class="tab-box floatLeft">
+                <!-- Dynamic Text -->
+            </div>
+            <div class="floatRight" style="margin-top:27px;padding-left:3px;padding-right:3px;">
+                <a id="btnMailManageAccounts" transkey="SB_EMAIL_NOTIFIER_MNG_ACTS_LINK">Manage Accounts</a>
+            </div>
+            <div style="clear: both">
+            </div>
+            <!-- Menu -->
+            <div id="divMenuMoreItems">
+                <ul id="ulMoreAccounts">
+                    <!-- dynamic Text -->
+                </ul>
+            </div>
+            <div id="divMailHeaderMailAddress" class="tabSubTitle">
+                <div class="floatLeft">
+                    <a id="accName" class="bold"></a>
+                    <input id="hidAccId" type="hidden" />
+                </div>
+                <div class="floatRight">
+                    <span id="lblLastUpdate" class="small"></span>
+                    <img id="imgRefresh" class="refresh" src="http://emailnotifier.webapps.conduitapps.com/refresh.png"
+                         alt="Refresh" />
+                </div>
+                <div style="clear: both">
+                </div>
+            </div>
+            <div id="divLoading">
+                <img src="http://emailnotifier.webapps.conduitapps.com/icon-loader.gif" style="margin-top: 80px" />
+            </div>
+            <div class="tabcontent" id="uiTabContent">
+                <div class="scroll-pane" style="height:100%; outline: none">
+                    <div id="divMailContainer" style="height:100%">
+                        <!-- Dynamic text here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerContent">
+            <table style="position: relative; top: -5px">
+                <tr>
+                    <td>
+                        <span id="spanRetreive" transkey="SB_EMAIL_NOTIFIER_RETREIEVE_INTERVAL_LABEL" >Retreive E-mails every</span>&nbsp;
+                    </td>
+                    <td>
+                        <select id="cmbInterval">
+                            <option value="5">5</option>
+                            <option value="10" selected="selected">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                        </select>
+                    </td>
+                    <td>
+                        &nbsp;<span id="spanMinutes" transkey="SB_EMAIL_NOTIFIER_RETREIEVE_INTERVAL_MINUTES">minutes </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+<div id='uiGlassPane' data-a10n-glasspanel="glasspane" class="glassPanel">
+    <article id='uiDialog' class='dialog' data-a10n-dialog="dialog">
+        <header data-a10n-dialog-header="header">
+            <label data-a10n-dialog-header="title"></label>
+            <section class="icons">
+                <a data-a10n-dialog-header-action="close" class='icon close'></a>
+            </section>
+        </header>
+        <section data-a10n-dialog-content="content" class='content'>
+            <section>
+                <section class='text' data-a10n-dialog-content="text"></section>
+            </section>
+        </section>
+        <footer data-a10n-dialog-footer="footer">
+            <a data-a10n-dialog-footer-action="confirm" class='button major'>Yes</a>
+            <a data-a10n-dialog-footer-action="decline" class='button minor'>No</a>
+        </footer>
+    </article>
+</div>
+</body>
+</html>

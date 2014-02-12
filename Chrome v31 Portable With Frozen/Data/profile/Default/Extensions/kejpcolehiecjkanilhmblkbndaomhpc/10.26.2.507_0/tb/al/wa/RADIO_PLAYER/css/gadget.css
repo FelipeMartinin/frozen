@@ -1,0 +1,736 @@
+*{     
+    outline:none;
+}
+
+body{    
+    overflow:hidden;
+    background-color: #000;
+    font-family: Tahoma;		      
+}
+div, span, p {
+    cursor: default;
+    -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: -moz-none ; -o-user-select: none; user-select: none;        
+}
+#content{
+    position: absolute;
+    top:0px;
+    width:388px;	height:335px;	    
+    overflow:hidden;
+    background: url(http://radio.webapps.conduitapps.com/gadget/pattern.png) repeat;          
+}
+
+#topLine {	
+    position:absolute;
+    top:375px;
+    left: -156px;
+}
+
+
+#rshStorageForm{	display:none!important;}
+
+#wellcomeScreen{	
+    display:none;
+    background:url('http://radio.webapps.conduitapps.com/gadget/full-welcome-screen.png') no-repeat;                                        
+    width:306px;
+    height:219px;
+    position:absolute;
+    top:54px;
+    left:41px;
+    z-index:8;
+    text-align: center;
+}
+
+.wellHeadText{                    
+    font-size:17px;
+    font-weight: bold;
+    text-align:center;
+    color:#a3c678;
+    margin-top:30px;
+}
+
+.wellText{
+    font-size:11px;                    
+    text-align:left;
+    color:#d3d3d3;
+    margin-left:25px;
+    margin-right:22px;
+    margin-top:22px;                              
+    line-height:12px;
+}
+
+.enjoyText{
+    margin-top:15px;
+    font-size:15px;
+    text-align:center;
+    color:#d3d3d3;
+}
+
+.wellcomeExit{
+    cursor:pointer;          
+    position:absolute; top:10px;	right:13px;
+    width:11px;	height:10px;	
+    background:url('http://radio.webapps.conduitapps.com/gadget/welcome screen_x_close.png') no-repeat;
+}
+
+
+.searchContainer{
+    position:relative;	
+    margin-top:28px;
+    margin-left:15px;	
+    height:27px;
+}
+
+.searchContainer * {position:absolute; top:0px;}
+#searchContainerLeft{
+    left:0px;
+}
+
+#searchInput   
+{
+    -moz-user-select: text;    
+    position:absolute;
+    top:0px; left:3px;			
+    padding:0px 5px;
+    padding-top:1px;
+    font-size:13px;
+    color:#7c7c7c;          
+    float:left;
+    width:310px;
+    height:27px;
+    border:0;
+    background:url(http://radio.webapps.conduitapps.com/gadget/search_middle.gif) repeat-x;
+    
+}
+
+#searchInput.empty {color:#b5b5b5; }
+#searchContainerRight {left:323px;}
+
+#searchButton{
+    cursor:pointer;	
+    background:url(http://radio.webapps.conduitapps.com/gadget/search_normal.png) no-repeat;	
+    width:27px;
+    height:26px;
+
+    margin-right:15px;
+    margin-top:1px;
+    position:absolute;
+    right:0px;
+
+}
+
+#searchButton:hover{
+    background:url(http://radio.webapps.conduitapps.com/gadget/search_rollover.png) no-repeat;
+}
+
+.categoryRadio:hover{
+    background-color:#3d3d3d;
+}
+
+.infoContainer{
+    position: relative;
+    margin-top:11px;
+    margin-left:15px;
+    float:left;
+    width:360px;
+    height:181px;          
+    background: url('http://radio.webapps.conduitapps.com/gadget/panel-main-screen-bg.png') no-repeat #000;
+
+}
+
+#stateMessage {          
+    margin-top:15px;
+    padding:0px;          
+    color: #b4ea70;                        
+    font-size: 14px;          
+    white-space: nowrap;          
+}
+
+#playingNow{                    
+    width:360px;
+    text-align:center;    
+    display:none;	
+    color: #b4ea70;
+}
+
+.nowPlayingText{color: #b4ea70;}
+.stationConnecting{color: #b4ea70; display:none;text-align:center;}
+.stationConnecting span{color:#b4ea70;}
+.stationConnecting span.conThreeDots{display:inline-block; width:2px; }
+
+
+
+
+#stationName {        
+    margin-top:10px;
+    width:360px;
+    text-align: center;
+    color: #d8e0e3;                                    
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+    position:absolute;
+    top:30px;
+}
+
+
+#equlazier {
+    width:360px;
+    text-align: center;
+    position:absolute;
+    bottom:35px;
+}
+
+#equlazier img#eqPlaying{display: none}
+
+#shareFavLine {
+    position: absolute;
+    bottom: 10px;
+    width:360px;
+    text-align: center;          
+    color:white;
+    font-size:11px;          
+
+
+}
+#shareFavLine span {
+    color:white;
+    cursor:pointer;
+    display: inline-block;
+    height:16px;
+}
+
+#shareBtn {
+    margin-right:10px;
+    padding-left:20px;          
+    background:url('http://radio.webapps.conduitapps.com/gadget/share_normal.png') no-repeat;	          
+}
+#shareBtn:hover {          background:url('http://radio.webapps.conduitapps.com/gadget/share_hover.png') no-repeat;	}
+
+
+.fav{	            
+    padding-left:20px;          
+    margin-left:10px;          
+    background:url('http://radio.webapps.conduitapps.com/gadget/favorite_ next to share.png') no-repeat;	                    
+}
+
+.fav:hover{background:url('http://radio.webapps.conduitapps.com/gadget/favorite_-next-to-share_rollover.png') no-repeat;}
+.fav.on{background:url('http://radio.webapps.conduitapps.com/gadget/favorite_nextToShare-on.png') no-repeat;}
+
+
+#bottomPart {
+    position:absolute;
+    top:253px;
+    left:-1px;
+    background:url('http://radio.webapps.conduitapps.com/gadget/bottom-without-all.png') no-repeat;
+    width:388px;
+    height:125px;
+}
+
+#bottomPart.chrome {
+    background:url('http://radio.webapps.conduitapps.com/gadget/bottom-CHROME.png') no-repeat;
+} 
+
+
+
+#prevBtn{
+    position: absolute;
+    top:18px;
+    left:25px;
+    width:36px;
+    height:36px;
+    background:url('http://radio.webapps.conduitapps.com/gadget/rewind_normal2.png') no-repeat;
+}
+
+#prevBtn.pushed{background:url('http://radio.webapps.conduitapps.com/gadget/rewind_click2.png') no-repeat;}
+#prevBtn:hover{background:url('http://radio.webapps.conduitapps.com/gadget/rewind_rollover2.png') no-repeat;}
+
+#playBtn, #pauseBtn{
+    position: absolute;
+    top:13px;
+    left:65px;
+    width:46px;
+    height:46px;
+}
+#playBtn {background:url('http://radio.webapps.conduitapps.com/gadget/Play_normal.png') no-repeat;}
+#playBtn.pushed{background:url('http://radio.webapps.conduitapps.com/gadget/Play_click.png') no-repeat;}
+#playBtn:hover      {background:url('http://radio.webapps.conduitapps.com/gadget/Play_rollover.png') no-repeat;}
+
+#pauseBtn{display:none; background:url('http://radio.webapps.conduitapps.com/gadget/pause_normal.png')   no-repeat;}
+#pauseBtn.pushed{background:url('http://radio.webapps.conduitapps.com/gadget/pause_click.png')   no-repeat;}
+#pauseBtn:hover{background:url('http://radio.webapps.conduitapps.com/gadget/pause_rollover.png')   no-repeat;}
+#pauseBtn.playerButtonDisabled:hover{background:url('http://radio.webapps.conduitapps.com/gadget/pause_normal.png')   no-repeat;}
+
+#nextBtn{
+    position: absolute;
+    top:18px;
+    left:115px;
+    width:36px;
+    height:36px;	
+    background:url('http://radio.webapps.conduitapps.com/gadget/forward_normal2.png') no-repeat;
+}
+
+#nextBtn.pushed{background:url('http://radio.webapps.conduitapps.com/gadget/forward_click2.png') no-repeat;}
+#nextBtn:hover{background:url('http://radio.webapps.conduitapps.com/gadget/forward_rollover2.png') no-repeat;}
+
+.volumeBar{ position:absolute; left:168px; top:34px;
+            height:2px!important; width:102px;}
+.volumeBar * { position:absolute;}
+#greenLineContainer {left:-3px; width:0px; overflow:hidden; height:5px;}                              
+#volumeBarLeft {left:2px; width:2px;height:5px; background:url(http://radio.webapps.conduitapps.com/embedded/volume-scale_left.png) no-repeat;}
+#volumeBarMid {left:4px; width:98px;height:5px;background:url(http://radio.webapps.conduitapps.com/embedded/volume-scale_middle.png) repeat-x;}
+#volumeBarRight {left:100px; width:2px;height:5px; background:url(http://radio.webapps.conduitapps.com/embedded/volume-scale_right.png) no-repeat;}
+
+.volumeBar .ui-widget-header{z-index:1; background:none;}
+.volumeBar .ui-slider-handle{
+    cursor:pointer;
+    margin-left: -5px!important;
+    top:-2px;                                        
+    width:10px!important;
+    height:9px!important;
+    background:url('http://radio.webapps.conduitapps.com/embedded/Volume-button_normal.png') no-repeat;
+}
+.volumeBar .ui-slider-handle:hover{background:url('http://radio.webapps.conduitapps.com/embedded/Volume-button_rollover.png') no-repeat;}
+.volumeBar .ui-state-default{border:none;}
+#volIndicator{
+    position:absolute; top:29px; left:280px;                    
+    width:9px; height:16px;                    
+    background:url('http://radio.webapps.conduitapps.com/volume/volumeIndicator2.png') no-repeat;
+}
+#volIndicator.mute{background-position: 0 0px;}
+#volIndicator.min{background-position:0 -16px;}
+#volIndicator.mid{background-position:0 -33px;}
+#volIndicator.max{background-position:0 -48px;}
+
+
+#browseBtn{	
+    position: absolute; top: 25px; right:25px;
+    width:45px;	height:27px;        
+    background:url('http://radio.webapps.conduitapps.com/gadget/search-music_normal2.png') no-repeat;
+}
+
+
+#browseBtn:hover{background:url('http://radio.webapps.conduitapps.com/gadget/search-music_rollover2.png') no-repeat;}
+#browseBtn.pushed, #browseBtn.opened{background:url('http://radio.webapps.conduitapps.com/gadget/search-music_click2.png') no-repeat;}
+/*#browseBtn.pushed:hover{background-position:-392px -80px !important;}
+#browseBtn.opened:hover{background-position:-392px -80px !important;}
+#browseBtn.opened{background-position:-392px -80px !important;}*/
+
+
+#browsePopUp{
+    display:none;       overflow:hidden; z-index:4;
+    width:126px;          height:0px;	
+    position:absolute;      bottom:55px;         left:261px;                                        	
+}
+
+/* currently set to 167 px*/
+#browsePopUp div {position: absolute;}
+#browsePopUpTL {top:0px; left:0px; width:2px; height:2px; background:url('http://radio.webapps.conduitapps.com/gadget/Station menu/top_left.png')}
+#browsePopUpT{top:0px; left:2px; width:118px; height:2px; background:url('http://radio.webapps.conduitapps.com/gadget/Station menu/top_middle.png') repeat}
+#browsePopUpTR{top:0px; right:0px; width:6px; height:4px; background:url('http://radio.webapps.conduitapps.com/gadget/Station menu/top_right.png')}
+
+#browsePopUpML{left:0px; top:2px; width:3px; height:159px; background:url('http://radio.webapps.conduitapps.com/gadget/Station menu/left_middle.png') red repeat-y}
+#browsePopUpM {left:3px; top:2px; width:117px; height:159px; background: #262626;}
+#browsePopUpMR{right:0px; top:4px; width:6px; height:157px; background:url('http://radio.webapps.conduitapps.com/gadget/Station menu/right_middle.png') repeat-y}
+
+#browsePopUpBL{top:161px; left:0px; width:3px; height:6px; background:url('http://radio.webapps.conduitapps.com/gadget/Station menu/left_bottom.png')}
+#browsePopUpB{top:161px; left:3px; width:117px; height:6px; background:url('http://radio.webapps.conduitapps.com/gadget/Station menu/bottom_middle.png') repeat}
+#browsePopUpBR{top:161px; right:0px; width:6px; height:6px; background:url('http://radio.webapps.conduitapps.com/gadget/Station menu/right_bottom.png')}
+
+#browsePopUp ul{
+    padding:12px 0px 0px 12px;
+}
+
+#browsePopUp li{
+    line-height: 13px;
+    cursor:pointer;                    
+    width:99px;	
+    font-size:11px;
+    color:#e9e9e9;
+    padding-bottom:3px;
+	padding-top:3px;
+}
+
+
+
+.linkLabel.opened:hover {          background:none!important;}
+.stationLogo{          position:absolute;          left: 158px;          top: 53px;}
+.stationLogo img{          width:72px;          height:35px;}
+.stationInfo *{          text-align:center;          color:#fff;}
+.stationInfo{
+    position:absolute;          left:109px;         top:94px;          
+    width:172px;                                 
+    margin: 0 auto 4px;
+    color:#fff;
+}
+
+.stationName{          font-weight:bold;             font-size:12px; line-height:12px;       }
+.artistName{          font-weight:bold;          font-size:12px;}
+.songName{          line-height:12px;          font-size:12px;}
+.infoTxt{          font-weight:bold;          font-size:12px;}
+.addInfo{width:100%;}
+
+.facebook{width:180px;          height:25px;}
+
+
+.bottomBar{
+    position: absolute;
+    top: 304px;
+    width:375px;
+    margin:9px 0 0 5px;
+    left:0;
+}
+
+.radioTime{
+    margin-top:-2px;
+    width:74px;
+    height:22px;
+    float:left;
+    background:url('http://radio.webapps.conduitapps.com/gadget/RadioTimePlayer_TuneInLogo.png') no-repeat;
+}
+
+#sharePopUp{
+    display:none;       z-index:4;
+    position:absolute; top:222px; left:33px;
+    width:0px;          height:28px;
+    overflow:hidden;          
+}
+
+#sharePopUp div {height:28px; position: absolute;}
+#sharePopUp #shareLeft {width:5px; left:0px; background:url('http://radio.webapps.conduitapps.com/gadget/share-menu_left.png') no-repeat;}
+#sharePopUp #shareMid {width:82px; left:5px; background:url('http://radio.webapps.conduitapps.com/gadget/share-menu_center.png') repeat-x;}
+#sharePopUp #shareRight {width:7px; right:0px; background:url('http://radio.webapps.conduitapps.com/gadget/share-menu_right.png') no-repeat;}
+#sharePopUp a{
+    display:block;
+    margin-top:4px;
+    cursor:pointer;
+    margin-left:4px;
+    width:18px;
+    height:14px;
+    float:left;
+}
+
+#sharePopUp img{
+    float:left;
+    margin-top:5px;
+    margin-right:3px;
+}
+
+
+#sharePopUp a.shareFacebook{background:url('http://radio.webapps.conduitapps.com/gadget/facebook_normal.png') 2px 2px no-repeat;}
+#sharePopUp a.shareFacebook:hover{background-image:url('http://radio.webapps.conduitapps.com/gadget/facebook_hover.png');}
+#sharePopUp a.twitter{ width:20px;background:url('http://radio.webapps.conduitapps.com/gadget/twitter_normal.png') 2px 2px no-repeat;}
+#sharePopUp a.twitter:hover{background-image:url('http://radio.webapps.conduitapps.com/gadget/twitter_hover.png') ;}
+#sharePopUp a.email{background:url('http://radio.webapps.conduitapps.com/gadget/mail_normal.png') 2px 2px no-repeat;}
+#sharePopUp a.email:hover{background-image:url('http://radio.webapps.conduitapps.com/gadget/mail_hover.png') ;}
+
+
+.favor{
+    background:url('http://radio.webapps.conduitapps.com/gadget/share_Favorite.png') no-repeat;
+}
+
+.shareShare{
+    background:url('http://radio.webapps.conduitapps.com/gadget/share_Share.png') no-repeat;
+}
+
+#searchResults{
+    display:none;       z-index:3;
+    background: url('http://radio.webapps.conduitapps.com/gadget/panel-station-screen-bg.png');
+    position:absolute;    left:15px;   top:65px;
+    width:360px;          height:181px;	
+    overflow: hidden;
+}
+
+#searchFirstLine {
+    margin-top:10px;    
+    margin-bottom:9px;
+    margin-left:3px;
+    color:#fff;
+    margin-right:10px;           
+}
+
+#backBtn {
+    background: url('http://radio.webapps.conduitapps.com/gadget/back.png') 0 3px no-repeat;                  
+    float:right;    
+    padding-left:15px;    
+    color:white; cursor: pointer;                    
+    font-size: 11px;  line-height:11px;
+}
+
+#searchQuery{
+    float:left;    
+    font-size:10px;
+    font-weight:bold;
+}
+
+#itemsContainer {    
+    position: absolute;
+    top:30px;
+    left:0px;            
+}
+
+#itemsContainer,.main.list{            
+    width:352px;
+    height:138px;
+    overflow:hidden;          
+}
+
+#itemsContainer .noResults, #itemsContainer .main.list .nothing {
+    color:#ffffff; 
+    font-family:Arial;
+	font-size: 11px;
+    font-weight: bold;
+	padding-left:18px;
+}
+
+
+.someSearchItem{        
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:15px;
+    padding-right:3px;          
+
+    height:40px;          
+    position: relative;    
+    width:332px;
+
+}
+
+.someSearchItem:hover{
+    background-color:#595959;
+}
+
+.stationListDivider {    
+    margin-left:15px;
+}
+
+#itemsContainer .jspVerticalBar{
+    width:8px!important;                    
+}
+
+#itemsContainer .jspTrack{         
+    background:url('http://radio.webapps.conduitapps.com/gadget/scrollbar.png') 2px 0 no-repeat #3e3e3e;
+}
+
+#itemsContainer .jspDrag{         
+    width:8px;  
+    background:url('http://radio.webapps.conduitapps.com/gadget/scroll-handle.png') no-repeat;
+}
+
+.searchStationLogo{    
+    width:34px;
+    height:24px;
+    float:left;
+    padding-right:5px;
+}
+
+.stationSearch{          
+    float: left;
+    height: 40px;
+    margin: 1px 0 0 5px;
+    overflow: hidden;
+    width: 230px;
+}
+.stationSearchName{
+    font-size:11px;
+    font-weight: bold;
+    color:#fff;   
+    cursor: default;
+}
+
+.stationSearchLocation{font-size:10px;    color:#fff;}
+.playStation{
+    display:block; cursor:pointer;
+    width:14px;    height:11px;
+    position: absolute;    top:6px;right:55px;
+    background:url('http://radio.webapps.conduitapps.com/gadget/small-play_normal.png') no-repeat 5px;
+}
+.playStation:hover, .playStation.In{background:url('http://radio.webapps.conduitapps.com/gadget/small-play_rollover.png') no-repeat 5px;}
+.favStationFake{width:26px;    height:26px; vertical-align:bottom;}
+
+.favStation{
+    cursor:pointer; display:block;          
+    width:13px;    height:13px;
+    position: absolute; top:5px;right:20px;          
+    background:url('http://radio.webapps.conduitapps.com/gadget/favorite_normal.png') no-repeat;
+}
+
+.favStation:hover{background:url('http://radio.webapps.conduitapps.com/gadget/favorite_rollover.png') no-repeat;}
+.favStation.In{background:url('http://radio.webapps.conduitapps.com/gadget/favorite-on-stations-screen.png') no-repeat;}
+
+.arrowLink{          
+    padding-right:7px; margin-top: 6px;
+    float:left;
+    width:11px; height:11px;
+    background:url('http://radio.webapps.conduitapps.com/gadget/arrow-right_normal.png') 5px 0 no-repeat;
+}
+
+.opened.arrowLink {background:url('http://radio.webapps.conduitapps.com/gadget/arrow-down_normal.png') 5px 0 no-repeat;}
+.linkLabel{    
+    padding:2px 7px;
+    padding-right:0;          
+    height:auto!important;
+    color:white;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.linkLabel .label{
+    color:white;
+    font:bold 12px;
+    cursor: pointer;
+}
+
+.opened .label{
+    height: 26px;
+}
+
+.sub {
+    padding-left:10px;
+}
+
+.breadCr {         
+    cursor:default;
+    margin-left:3px;
+    padding-left:12px;
+    background: url("http://radio.webapps.conduitapps.com/gadget/arrow-right_normal.png") no-repeat scroll 2px 5px transparent;  
+    color: #FFF;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.breadCr.first {
+    margin-left:15px;
+    margin-top:15px;
+    padding-left:0;
+    background: none;
+}
+
+.threeDots {
+    color:white;
+}
+
+
+.ui-menu .ui-menu-item  a{
+    font: normal 11px;
+}
+
+.ui-autocomplete{
+    overflow:hidden;
+    max-width:307px !important;
+    max-height:125px !important;
+    overflow:hidden !important;
+    z-index:6 !important;
+}
+
+.topInfo{
+    height: 45px;
+    width:100%;
+}
+
+.locationInfo{
+    text-align: right;
+    left:227px;
+    position:absolute;
+    line-height:15px;
+    width:150px;          
+    color:#808080;
+    font-size:12px;
+    font-weight:bold;
+    bottom:107px;
+}
+
+#noClicker{
+    display:none;
+    height: 335px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 388px;
+    z-index: 7;
+}
+
+
+#testTooltip{
+    z-index:3;
+    display:none;
+    color:#4e4e4e;          
+    position:absolute;        
+    height:18px;                    
+    padding-left:3px;
+    padding-right:3px;
+    line-height:18px;
+    font-size:10px;
+    background: url("http://radio.webapps.conduitapps.com/gadget/tooltip.png") repeat-x;          
+}
+
+/*-----------------------------------------------------------------------------*/
+.link .someSearchItem{
+    left:10px;
+}
+
+.link li{
+    padding-left:10px;
+}
+
+#backBtn:hover{
+text-decoration: underline;
+}
+
+/*--------------------------------------*/
+/* RTL Support                          */
+/*--------------------------------------*/
+
+body.RTL #searchInput{direction: rtl; text-align:right}
+body.RTL .stationConnecting {direction: rtl;}
+body.RTL #browsePopUp li{text-align:right;}
+body.RTL #browsePopUp ul{padding:12px 12px 0px 0px;}       
+body.RTL #playingNow{direction: rtl;}
+body.RTL #itemsContainer,
+body.RTL #itemsContainer .main.list .nothing {text-align:right; direction:rtl;}
+body.RTL #searchQuery{text-align:right; direction:rtl; margin-right:3px; margin-left:10px;}
+
+
+body.RTL #searchFirstLine {
+    direction: rtl;      
+    margin-right:3px;
+    margin-left:10px;
+}
+
+body.RTL #backBtn {
+    direction: rtl;      
+    float:left;
+    background: url('http://radio.webapps.conduitapps.com/gadget/back_RTL.png') 100% 3px no-repeat;                  
+    padding-right:15px;
+    padding-left:0px;
+}
+
+body.RTL #searchQuery{
+    text-align: right; direction: rtl;      
+    float:right;
+}
+
+body.RTL .breadCr {         
+    direction:rtl;
+    margin-right:3px;
+    padding-right:12px;
+    margin-left:0px;padding-left:0px;    
+    background: url("http://radio.webapps.conduitapps.com/gadget/arrow-left_normal.png") no-repeat scroll 100% 5px transparent;  
+    
+}
+
+body.RTL .breadCr.first {
+    margin-left:3px;
+    margin-right:15px;    
+    padding-right:0;
+    background: none;
+}
+
+
+.spacer{
+    clear:both;
+    height:0px;
+    overflow:hidden
+}
+
+#volumeBarContainer {display: none;}
+#volIndicator {display:none;}

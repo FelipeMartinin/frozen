@@ -1,0 +1,23 @@
+{
+   "app_description": {
+      "message": "\uB514\uC9C0\uD138 \uCF58\uD150\uCE20\uC6A9 Google \uC6D4\uB81B"
+   },
+   "app_name": {
+      "message": "Google Wallet"
+   },
+   "craw_app_unavailable": {
+      "message": "\uD604\uC7AC \uC571\uC744 \uC0AC\uC6A9\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4."
+   },
+   "craw_connect_to_network": {
+      "message": "\uB124\uD2B8\uC6CC\uD06C\uC5D0 \uC5F0\uACB0\uD558\uC138\uC694."
+   },
+   "iap_unavailable": {
+      "message": "\uD604\uC7AC \uC778\uC571 \uACB0\uC81C\uB97C \uC0AC\uC6A9\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4."
+   },
+   "jwt_retrieve_failed": {
+      "message": "\uAC70\uB798\uB97C \uC644\uB8CC\uD558\uC9C0 \uBABB\uD588\uC2B5\uB2C8\uB2E4. \uB098\uC911\uC5D0 \uB2E4\uC2DC \uC2DC\uB3C4\uD574 \uC8FC\uC138\uC694."
+   },
+   "please_sign_in": {
+      "message": "Chrome\uC5D0 \uB85C\uADF8\uC778\uD558\uC138\uC694."
+   }
+}

@@ -1,0 +1,145 @@
+.left
+{
+    float: left;
+}
+.right
+{
+    float: right;
+}
+.main
+{
+    padding: 5px 5px 5px 5px;
+	background:#fbfbfb;
+	top:0px;
+	left:0px;
+	position:absolute;
+}
+.iconMargin
+{
+    margin: 5px 5px 10px 5px;
+    width: 13px;
+    height: 13px;
+	cursor:pointer;
+}
+.clear
+{
+    clear: both;
+}
+.titel
+{
+    font-family:Calibri, arial;
+    font-size: 16px;
+    color: Black;
+    line-height:21px;
+}
+
+.radio input[type='radio']
+{
+ float: left;
+    margin-right: 6px;
+    margin-top: 0;
+}
+
+.radio label{
+float:left;
+}
+.check > div
+{
+    display: inline-block !important;
+	    float: left;
+}
+
+.check label{
+float:left;
+padding:3px 0 0 6px;
+}
+.input
+{
+    clear: both;
+    color: #606060;
+    font-family:Calibri, arial;
+    font-size: 11px;
+    height: 17px;
+    margin-bottom: 13px;
+}
+
+.input input[type='checkbox']
+{
+    float:left;
+}
+.step
+{
+    display: inline-block;
+    margin: 0px 3px 0px 3px;
+	float:left;
+}
+.button
+{
+    background-image: url("../images/bgbutton.png");
+    border: 1px solid #B6BCC2;
+    border-radius: 2px 2px 2px 2px;
+	
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -khtml-border-radius: 2px;
+    behavior: url(PIE.htc);
+    color: #708A9B;
+    cursor: pointer;
+    display: inline-block;
+    font-family:Calibri, arial;
+    font-size: 12px;
+    font-weight: bold;
+    height: 12px;
+    padding: 2px 14px 6px;
+}
+.cancel
+{
+   font-family:Calibri, arial;
+   font-size:12px;
+   color: #3b96d1;
+   cursor:pointer;
+    margin-left:3px;
+	 display: inline-block;
+    
+}
+.buttonsRow{
+	clear:both;
+	padding:5px;
+	text-align:center;
+
+}
+.itemsList{
+max-height:120px;
+overflow-y:auto;
+}
+.border
+{
+    border: 1px solid #c1c9cf;
+}
+.bottomBorderRond
+{
+    border-bottom: 1px solid #c1c9cf;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -khtml-border-radius: 8px;
+    behavior: url(PIE.htc);
+}
+.htmlDiv
+{
+    overflow:hidden;
+    width: 280px;
+    height:110px;
+    border-left: 1px solid #c1c9cf;
+    border-top: 1px solid #c1c9cf;
+    border-right: 1px solid #c1c9cf;
+    -moz-border-radius: 8px 8px 0px 0px;
+    -webkit-border-radius: 8px 8px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
+    -khtml-border-radius: 8px 8px 0px 0px;
+    behavior: url(PIE.htc);
+    padding: 5px 5px 5px 5px;
+    margin:0px 5px 0px 5px;
+	background:#ffffff;
+}

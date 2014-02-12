@@ -1,0 +1,268 @@
+body {
+    font-family: Gotham, Arial, Sans-Serif;
+    font-size: 10pt;
+}
+small {
+    font-size: 11px;
+}
+a {
+    color: #0084B4;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+	   background: #e1e1e1;
+}
+a {
+    outline: none;
+}
+a img {
+    border: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+#frame {
+    float: left; /*border: solid 1px #c2c9cf;*/
+    background: #e1e1e1;
+    
+}
+.tweetListHeader {
+    padding: 3px 4px;
+    background: #DEEFF6;
+    margin-bottom: 4px;
+}
+#tweetList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 396px;
+    overflow: auto;
+    padding-left: 10px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
+}
+#tweetList li {
+    border-bottom: solid 1px #ddd;
+    padding: 10px 0;
+    width: 370px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.avatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+.avatarImg {
+    height: 24px;
+    width: auto;
+    max-width: 24px;
+}
+.tweetTime {
+    color: #999;
+    display: block;
+    margin-top: 5px;
+}
+.tweetContent {
+    float: left;
+    width: 338px;
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.tweetContent:hover {
+    -webkit-user-select: auto;
+    -khtml-user-select: auto;
+    -moz-user-select: auto;
+    -o-user-select: auto;
+    user-select: auto;
+}
+.clear {
+    display: inline-block;
+    width: 370px;
+    overflow: hidden;
+}
+.clear:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ".";
+}
+
+
+.center {
+    text-align: center;
+}
+.sidebar {
+    box-shadow: 2px 0 7px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 53px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.sidebar hr {
+    border: none;
+    height: 4px;
+    margin: 0px;
+    padding: 0px;
+}
+.sidebar .uac-holder {
+}
+
+.sidebar .uac-holder a {
+    display: block;
+}
+
+.sidebar .inbox {
+    cursor: pointer;
+    height: 32px;
+    background: transparent center center no-repeat;
+    background-image: url('./img/inbox.png');
+}
+.sidebar .scrollpanel {
+    overflow: hidden;
+    height: 336px;
+}
+.sidebar .scrollgrip {
+    height: 14px;
+    background: transparent center center no-repeat;
+}
+
+.sidebar .scrollgrip.up {
+    background-image: url('./img/scroll_up.png');
+}
+.sidebar .scrollgrip.up.none {
+    display: none;
+}
+
+.sidebar .scrollgrip.down {
+    background-image: url('./img/scroll_down.png');
+}
+.sidebar .scrollgrip.down.none {
+    display: none;
+}
+
+
+#content {
+    margin-left: 53px;
+    width: 400px;
+    background: White;
+}
+/* Users */
+
+#usersMenu {
+    box-shadow: 2px 0 7px rgba(0, 0, 0, 0.3);
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#usersMenu img {
+    width: 32px;
+    height: auto;
+    max-height: 32px;
+}
+
+#userInfo {
+    height: 80px;
+    padding: 5px;
+    border-bottom: solid 1px #ddd;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#userInfo:hover {
+    -webkit-user-select: auto;
+    -khtml-user-select: auto;
+    -moz-user-select: auto;
+    -o-user-select: auto;
+    user-select: auto;
+}
+#userInfoAvatar {
+    float: left;
+    width: 48px;
+    height: auto;
+    max-height: 80px;
+}
+#userInfoText {
+    margin-left: 60px;
+}
+#userInfoName {
+}
+#userDescription {
+    font-style: italic;
+    font-size: 9pt;
+    line-height: 1.5em;
+}
+
+#usersMenu li {
+}
+#usersMenu a {
+    display: block;
+    padding: 5px 10px;
+}
+#usersMenu a:hover {
+    background: #eee;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset;
+}
+#usersMenu a.selected {
+    background: White;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) inset;
+}
+
+
+#footer{
+    text-align:center;
+    height:24px;
+    padding:8px 0 0 0 ;
+    display:block;
+    }
+    
+    .iconBtn, #feedMenu a{
+	display: inline-block;
+	width: 17px;
+	height: 15px;
+	background: url(./img/icons.png) no-repeat;
+cursor:pointer;
+	margin:0  8px;
+	text-indent: -999px;
+	
+	
+}
+.unreadBtn{ background-position: 0 0 }
+.unreadBtn:hover, .unreadBtn.disabled{ background-position: 0 -15px }
+.readBtn{ background-position: -17px 0 }
+.readBtn:hover, .readBtn.disabled{ background-position: -17px -15px }
+.deleteBtn{ background-position: -34px -15px }
+.deleteBtn:hover, .deleteBtn.disabled{ background-position: -34px -0 }
+.refreshBtn{ background-position: -51px -15px }
+.refreshBtn:hover,.refreshBtn.disabled{ background-position: -51px -0 }
+

@@ -1,0 +1,197 @@
+﻿.left
+{
+    float: left;
+}
+.right
+{
+    float: right;
+}
+.clear
+{
+    clear: both;
+}
+.border
+{
+    border: 1px solid #c1c9cf;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -khtml-border-radius: 8px;
+    behavior: url(PIE.htc);
+}
+.main
+{
+    padding: 5px 5px 5px 5px;
+}
+
+.image
+{
+    margin: 0px 8px 6px 0px;
+    cursor: pointer;
+}
+.titel
+{
+    font-family: Arial;
+    font-size: 14px;
+    color: Black;
+    margin: 3px 0px 10px 0px;
+}
+.iconMargin
+{
+    margin: 5px 5px 10px 5px;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+}
+.htmlDiv
+{
+    max-width: 350px;
+    border-left: 1px solid #c1c9cf;
+    border-top: 1px solid #c1c9cf;
+    border-right: 1px solid #c1c9cf;
+    -moz-border-radius: 8px 8px 0px 0px;
+    -webkit-border-radius: 8px 8px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
+    -khtml-border-radius: 8px 8px 0px 0px;
+    behavior: url(PIE.htc);
+    padding: 5px 5px 5px 5px;
+    margin: 0px 5px 5px 5px;
+}
+.bottomDiv
+{
+    background-color: #ebf4fb;
+    border-bottom: 1px solid #c1c9cf;
+    border-left: 1px solid #c1c9cf;
+    border-right: 1px solid #c1c9cf;
+    height: 21px;
+    -moz-border-radius: 0px 0px 8px 8px;
+    -webkit-border-radius: 0px 0px 8px 8px;
+    border-radius: 0px 0px 8px 8px;
+    -khtml-border-radius: 0px 0px 8px 8px;
+    behavior: url(PIE.htc);
+}
+.NP
+{
+    margin-top: 3px;
+    font-family: Arial;
+    font-size: 11px;
+    color: #94a7b3;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    background-color: #f3f8fb;
+    cursor: pointer;
+}
+.next
+{
+    margin-right: 25px;
+    width: 49px;
+    padding-left: 19px;
+}
+.previous
+{
+    margin-left: 25px;
+    width: 60px;
+    padding-left: 7px;
+}
+.fontP
+{
+    margin-top: 5px;
+    font-family: Levenim MT;
+    font-size: 11px;
+}
+.nduit
+{
+    color: #98999a;
+    margin-right: 5px;
+}
+.o
+{
+    color: #fe8e43;
+}
+#powered
+{
+    margin-right: 0px;
+}
+.bottomBorderRond
+{
+    border-bottom: 1px solid #c1c9cf;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -khtml-border-radius: 8px;
+    behavior: url(PIE.htc);
+}
+.button
+{
+    background-image: url(../images/bgbutton.png);
+    color: #708a9b;
+    font-size: 12px;
+    font-family: Myriad Pro;
+    font-weight: bold;
+    width: 37px;
+    margin-left: 36%;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.About
+{
+    max-width: 200px;
+}
+.radio
+{
+}
+.check > div
+{
+    display: inline-block !important;
+}
+.input
+{
+    margin-bottom: 15px;
+    font-size: 11px;
+    font-family: Arial;
+    color: #949494;
+}
+.step
+{
+    display: inline-block;
+    margin: 0px 3px 0px 3px;
+}
+.cancel
+{
+   font-family:Myriad Pro;
+   font-size:12px;
+   color: #3b96d1;
+   cursor:pointer;
+    margin-left:3px;
+    
+}
+.overFlow
+{
+ overflow-y:scroll;
+ max-height:278px;
+ max-width:425px;
+    
+}
+.ddl
+{
+   margin:0px 5px 0px 0px; 
+}
+.bottomBorder
+{
+ border-bottom:1px solid #c1c9cf;
+ padding:10px 0px 10px 0px ;
+ float:left;
+ width:100%;
+}
+.appName
+{
+ margin-left:10px;  
+ font-size:12px;
+ width:135px;   
+    color:Black;
+}
+.txtAppName
+{
+   margin-top:5px; 
+    
+}
