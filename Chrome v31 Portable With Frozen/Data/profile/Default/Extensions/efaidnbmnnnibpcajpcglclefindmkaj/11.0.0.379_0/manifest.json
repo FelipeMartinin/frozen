@@ -1,0 +1,29 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "skin/AX_convertb_XI_D_19x19.png",
+      "default_title": "__MSG_web2pdfConvertButtonDisabledToolTip__"
+   },
+   "content_scripts": [ {
+      "js": [ "web2pdfgetdom.js" ],
+      "matches": [ "http://*/*", "https://*/*", "file:///*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_web2pdfExtnDescription__",
+   "icons": {
+      "128": "skin/C_AdobeLogo.png",
+      "16": "skin/AX_convertb_XI_N_16x16.png",
+      "48": "skin/C_AdobeLogo_48x48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCZBtDwJUnqCebbFbTP819W+x0Tk9Com3yrxaCi/D0t/1FPWBuOvyyiQtFr/FmloZu/2ml8LFYNGNE6gQSSIgGXZceAFCRxzj+EXSI37kNIPISrdKznCTdkA6oSKUpFEVOcoD959DQFqeNbliB9MV+ZrZST+DOVxApdMSJzsCczIwIDAQAB",
+   "name": "__MSG_web2pdfExtnName__",
+   "permissions": [ "contextMenus", "webNavigation", "tabs", "http://*/*", "https://*/*", "file:///*" ],
+   "plugins": [ {
+      "path": "plugin/npWCChromeExtnStub.dll",
+      "public": false
+   } ],
+   "version": "11.0.0.379"
+}

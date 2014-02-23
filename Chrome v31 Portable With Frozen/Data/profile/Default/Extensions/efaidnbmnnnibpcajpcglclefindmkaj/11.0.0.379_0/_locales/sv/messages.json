@@ -1,0 +1,89 @@
+{
+   "web2pdfAppendButtonText": {
+      "message": "L\u00E4gg till webbsida till befintlig PDF..."
+   },
+   "web2pdfAppendLinkContextMenu": {
+      "message": "Bifoga l\u00E4nkm\u00E5l till befintlig PDF"
+   },
+   "web2pdfAppendPageContextMenu": {
+      "message": "L\u00E4gg till webbsida till befintlig PDF..."
+   },
+   "web2pdfBadAcrobatError": {
+      "message": "Acrobats Web Capture-funktion kan inte startas. Acrobat kanske \u00E4r upptaget eller v\u00E4ntar p\u00E5 indata."
+   },
+   "web2pdfConvertButtonDisabledToolTip": {
+      "message": "V\u00E4ntar p\u00E5 att sidan ska h\u00E4mtas"
+   },
+   "web2pdfConvertButtonText": {
+      "message": "Konvertera webbsida till Adobe PDF..."
+   },
+   "web2pdfConvertButtonToolTip": {
+      "message": "Konvertera den aktuella webbsidan till en Adobe PDF-fil"
+   },
+   "web2pdfConvertLinkContextMenu": {
+      "message": "Konvertera l\u00E4nkm\u00E5l till Adobe PDF"
+   },
+   "web2pdfConvertPageContextMenu": {
+      "message": "Konvertera webbsida till Adobe PDF..."
+   },
+   "web2pdfExtnDescription": {
+      "message": "Konverterar en webbsida till PDF"
+   },
+   "web2pdfExtnName": {
+      "message": "Adobe Acrobat - Skapa PDF"
+   },
+   "web2pdfFileLockedError": {
+      "message": "Filen kan inte \u00E4ndras, den kanske anv\u00E4nds av ett annat program."
+   },
+   "web2pdfNoWritePermissionOnSelectedFile": {
+      "message": "Du har inte skrivbeh\u00F6righet f\u00F6r den valda filen."
+   },
+   "web2pdfOpenDialogTitle": {
+      "message": "L\u00E4gg till webbsida till befintlig PDF"
+   },
+   "web2pdfPreferencesText": {
+      "message": "Inst\u00E4llningar..."
+   },
+   "web2pdfReplaceWarning": {
+      "message": "finns redan.\n Vill du ers\u00E4tta den?"
+   },
+   "web2pdfSaveDialogTitle": {
+      "message": "Konvertera webbsida till Adobe PDF"
+   },
+   "web2pdfStatusConverting": {
+      "message": "(Konverterar)"
+   },
+   "web2pdfStatusDialogCloseButtonText": {
+      "message": "St\u00E4ng"
+   },
+   "web2pdfStatusDialogTitle": {
+      "message": "F\u00F6rlopp f\u00F6r konvertering till PDF "
+   },
+   "web2pdfStatusDownloading": {
+      "message": "(H\u00E4mtas)"
+   },
+   "web2pdfStatusError": {
+      "message": "(Ok\u00E4nt fel intr\u00E4ffade!)"
+   },
+   "web2pdfStatusSuccess": {
+      "message": "(Klar)"
+   },
+   "web2pdfStatusUnknownError": {
+      "message": "Konverteringen stoppades p\u00E5 grund av ett ok\u00E4nt fel."
+   },
+   "web2pdfStatusWaiting": {
+      "message": "(V\u00E4ntar p\u00E5 konvertering)"
+   },
+   "web2pdfUnknownError": {
+      "message": "Acrobat st\u00F6tte p\u00E5 ett fel vid konvertering till PDF"
+   },
+   "web2pdfUnsupportedContextRequested": {
+      "message": "Konverteringskontexten st\u00F6ds inte."
+   },
+   "web2pdfUntitledFileName": {
+      "message": "namnl\u00F6s"
+   },
+   "web2pdfViewPDFResultText": {
+      "message": "Visa Adobe PDF-resultat"
+   }
+}

@@ -1,0 +1,89 @@
+{
+   "web2pdfAppendButtonText": {
+      "message": "Legg til webside i eksisterende PDF..."
+   },
+   "web2pdfAppendLinkContextMenu": {
+      "message": "Tilf\u00F8y koblingsm\u00E5l til en eksisterende PDF-fil"
+   },
+   "web2pdfAppendPageContextMenu": {
+      "message": "Legg til webside i eksisterende PDF..."
+   },
+   "web2pdfBadAcrobatError": {
+      "message": "Ingen tilgang til Acrobats Web Capture-funksjon. Acrobat er kanskje opptatt eller venter p\u00E5 inndata."
+   },
+   "web2pdfConvertButtonDisabledToolTip": {
+      "message": "Venter p\u00E5 nedlasting av siden"
+   },
+   "web2pdfConvertButtonText": {
+      "message": "Konverter webside til Adobe PDF..."
+   },
+   "web2pdfConvertButtonToolTip": {
+      "message": "Konverter gjeldende webside til en Adobe PDF-fil"
+   },
+   "web2pdfConvertLinkContextMenu": {
+      "message": "Konverter koblingsm\u00E5l til Adobe PDF"
+   },
+   "web2pdfConvertPageContextMenu": {
+      "message": "Konverter webside til Adobe PDF..."
+   },
+   "web2pdfExtnDescription": {
+      "message": "Konverterer en webside til PDF"
+   },
+   "web2pdfExtnName": {
+      "message": "Adobe Acrobat \u2013 Opprett PDF"
+   },
+   "web2pdfFileLockedError": {
+      "message": "Kan ikke endre filen. Det kan hende den brukes av et annet program."
+   },
+   "web2pdfNoWritePermissionOnSelectedFile": {
+      "message": "Du har ikke skrivetillatelse til den valgte filen."
+   },
+   "web2pdfOpenDialogTitle": {
+      "message": "Legg til webside i eksisterende PDF"
+   },
+   "web2pdfPreferencesText": {
+      "message": "Innstillinger..."
+   },
+   "web2pdfReplaceWarning": {
+      "message": "finnes allerede.\n Vil du erstatte den?"
+   },
+   "web2pdfSaveDialogTitle": {
+      "message": "Konverter webside til Adobe PDF..."
+   },
+   "web2pdfStatusConverting": {
+      "message": "(Konverterer)"
+   },
+   "web2pdfStatusDialogCloseButtonText": {
+      "message": "Lukk"
+   },
+   "web2pdfStatusDialogTitle": {
+      "message": "Fremdrift for konvertering til PDF"
+   },
+   "web2pdfStatusDownloading": {
+      "message": "(Laster ned)"
+   },
+   "web2pdfStatusError": {
+      "message": "(Det oppstod en ukjent feil!)"
+   },
+   "web2pdfStatusSuccess": {
+      "message": "(Fullf\u00F8rt)"
+   },
+   "web2pdfStatusUnknownError": {
+      "message": "Konverteringen stoppet p\u00E5 grunn av en ukjent feil."
+   },
+   "web2pdfStatusWaiting": {
+      "message": "(Venter p\u00E5 konvertering)"
+   },
+   "web2pdfUnknownError": {
+      "message": "Det oppstod en feil i Acrobat under konvertering til PDF"
+   },
+   "web2pdfUnsupportedContextRequested": {
+      "message": "Konverteringskonteksten st\u00F8ttes ikke."
+   },
+   "web2pdfUntitledFileName": {
+      "message": "uten navn"
+   },
+   "web2pdfViewPDFResultText": {
+      "message": "Vis Adobe PDF-resultat"
+   }
+}

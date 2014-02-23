@@ -1,0 +1,89 @@
+{
+   "web2pdfAppendButtonText": {
+      "message": "Add Web Page to Existing PDF..."
+   },
+   "web2pdfAppendLinkContextMenu": {
+      "message": "Append Link Target to Existing PDF"
+   },
+   "web2pdfAppendPageContextMenu": {
+      "message": "Add Web Page to Existing PDF..."
+   },
+   "web2pdfBadAcrobatError": {
+      "message": "Could not access Acrobat's Web Capture facility. Acrobat may be busy or waiting for Input."
+   },
+   "web2pdfConvertButtonDisabledToolTip": {
+      "message": "Waiting for page to download"
+   },
+   "web2pdfConvertButtonText": {
+      "message": "Convert Web Page to Adobe PDF..."
+   },
+   "web2pdfConvertButtonToolTip": {
+      "message": "Convert current web page to an Adobe PDF file"
+   },
+   "web2pdfConvertLinkContextMenu": {
+      "message": "Convert Link Target to Adobe PDF"
+   },
+   "web2pdfConvertPageContextMenu": {
+      "message": "Convert Web Page to Adobe PDF..."
+   },
+   "web2pdfExtnDescription": {
+      "message": "Converts a web page to PDF"
+   },
+   "web2pdfExtnName": {
+      "message": "Adobe Acrobat - Create PDF"
+   },
+   "web2pdfFileLockedError": {
+      "message": "Cannot modify file, it may in use by other program."
+   },
+   "web2pdfNoWritePermissionOnSelectedFile": {
+      "message": "You do not have write permissions on the selected file."
+   },
+   "web2pdfOpenDialogTitle": {
+      "message": "Add Web Page to Existing PDF"
+   },
+   "web2pdfPreferencesText": {
+      "message": "Preferences..."
+   },
+   "web2pdfReplaceWarning": {
+      "message": "already exists.\n Do you want to replace it?"
+   },
+   "web2pdfSaveDialogTitle": {
+      "message": "Convert Web Page to Adobe PDF"
+   },
+   "web2pdfStatusConverting": {
+      "message": "(Converting)"
+   },
+   "web2pdfStatusDialogCloseButtonText": {
+      "message": "Close"
+   },
+   "web2pdfStatusDialogTitle": {
+      "message": "Conversion to PDF Progress"
+   },
+   "web2pdfStatusDownloading": {
+      "message": "(Downloading)"
+   },
+   "web2pdfStatusError": {
+      "message": "(Unknown Error Occurred!)"
+   },
+   "web2pdfStatusSuccess": {
+      "message": "(Done Success)"
+   },
+   "web2pdfStatusUnknownError": {
+      "message": "Conversion stopped due to unknown error."
+   },
+   "web2pdfStatusWaiting": {
+      "message": "(Waiting for Conversion)"
+   },
+   "web2pdfUnknownError": {
+      "message": "Acrobat had an error converting to PDF"
+   },
+   "web2pdfUnsupportedContextRequested": {
+      "message": "The conversion context is not supported."
+   },
+   "web2pdfUntitledFileName": {
+      "message": "untitled"
+   },
+   "web2pdfViewPDFResultText": {
+      "message": "View Adobe PDF Result"
+   }
+}

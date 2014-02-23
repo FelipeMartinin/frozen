@@ -1,0 +1,89 @@
+{
+   "web2pdfAppendButtonText": {
+      "message": "Adicionar p\u00E1gina da Web ao PDF existente..."
+   },
+   "web2pdfAppendLinkContextMenu": {
+      "message": "Anexar destino do link ao PDF existente"
+   },
+   "web2pdfAppendPageContextMenu": {
+      "message": "Adicionar p\u00E1gina da Web ao PDF existente..."
+   },
+   "web2pdfBadAcrobatError": {
+      "message": "N\u00E3o foi poss\u00EDvel acessar o recurso Web Capture do Acrobat. O Acrobat pode estar ocupado ou aguardando entrada."
+   },
+   "web2pdfConvertButtonDisabledToolTip": {
+      "message": "Aguardando download da p\u00E1gina"
+   },
+   "web2pdfConvertButtonText": {
+      "message": "Converter p\u00E1gina da Web para Adobe PDF..."
+   },
+   "web2pdfConvertButtonToolTip": {
+      "message": "Converte a p\u00E1gina da Web atual para um arquivo Adobe PDF"
+   },
+   "web2pdfConvertLinkContextMenu": {
+      "message": "Converter destino do link para Adobe PDF"
+   },
+   "web2pdfConvertPageContextMenu": {
+      "message": "Converter p\u00E1gina da Web para Adobe PDF..."
+   },
+   "web2pdfExtnDescription": {
+      "message": "Converte uma p\u00E1gina da Web para PDF"
+   },
+   "web2pdfExtnName": {
+      "message": "Adobe Acrobat \u2013 Criar PDF"
+   },
+   "web2pdfFileLockedError": {
+      "message": "N\u00E3o \u00E9 poss\u00EDvel modificar o arquivo. Ele pode estar sendo utilizado por outro programa."
+   },
+   "web2pdfNoWritePermissionOnSelectedFile": {
+      "message": "Voc\u00EA n\u00E3o tem permiss\u00E3o para modificar o arquivo selecionado."
+   },
+   "web2pdfOpenDialogTitle": {
+      "message": "Adicionar p\u00E1gina da Web ao PDF existente"
+   },
+   "web2pdfPreferencesText": {
+      "message": "Prefer\u00EAncias..."
+   },
+   "web2pdfReplaceWarning": {
+      "message": "j\u00E1 existe.\n Deseja substituir?"
+   },
+   "web2pdfSaveDialogTitle": {
+      "message": "Converter p\u00E1gina da Web para Adobe PDF"
+   },
+   "web2pdfStatusConverting": {
+      "message": "(Convertendo)"
+   },
+   "web2pdfStatusDialogCloseButtonText": {
+      "message": "Fechar"
+   },
+   "web2pdfStatusDialogTitle": {
+      "message": "Progresso da convers\u00E3o para PDF"
+   },
+   "web2pdfStatusDownloading": {
+      "message": "(Baixando)"
+   },
+   "web2pdfStatusError": {
+      "message": "(Erro desconhecido!)"
+   },
+   "web2pdfStatusSuccess": {
+      "message": "(Conclu\u00EDdo com \u00EAxito)"
+   },
+   "web2pdfStatusUnknownError": {
+      "message": "Convers\u00E3o interrompida devido a um erro desconhecido."
+   },
+   "web2pdfStatusWaiting": {
+      "message": "(Aguardando convers\u00E3o)"
+   },
+   "web2pdfUnknownError": {
+      "message": "O Acrobat encontrou um erro ao converter para PDF"
+   },
+   "web2pdfUnsupportedContextRequested": {
+      "message": "Contexto de convers\u00E3o sem suporte."
+   },
+   "web2pdfUntitledFileName": {
+      "message": "sem t\u00EDtulo"
+   },
+   "web2pdfViewPDFResultText": {
+      "message": "Exibir resultado do Adobe PDF"
+   }
+}

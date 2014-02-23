@@ -1,0 +1,89 @@
+{
+   "web2pdfAppendButtonText": {
+      "message": "Weboldal hozz\u00E1ad\u00E1sa PDF-hez..."
+   },
+   "web2pdfAppendLinkContextMenu": {
+      "message": "Hivatkoz\u00E1s c\u00E9lj\u00E1nak hozz\u00E1f\u0171z\u00E9se megl\u00E9v\u0151 PDF dokumentumhoz"
+   },
+   "web2pdfAppendPageContextMenu": {
+      "message": "Weboldal hozz\u00E1ad\u00E1sa megl\u00E9v\u0151 PDF dokumentumhoz..."
+   },
+   "web2pdfBadAcrobatError": {
+      "message": "Az Acrobat webr\u00F6gz\u00EDt\u00E9s funkci\u00F3ja nem el\u00E9rhet\u0151. Az Acrobat lehet, hogy elfoglalt vagy bemenetre v\u00E1rakozik."
+   },
+   "web2pdfConvertButtonDisabledToolTip": {
+      "message": "V\u00E1rakoz\u00E1s az oldal let\u00F6lt\u00E9s\u00E9re"
+   },
+   "web2pdfConvertButtonText": {
+      "message": "Weboldal \u00E1talak\u00EDt\u00E1sa Adobe PDF-f\u00E9..."
+   },
+   "web2pdfConvertButtonToolTip": {
+      "message": "Aktu\u00E1lis weboldal \u00E1talak\u00EDt\u00E1sa Adobe PDF f\u00E1jll\u00E1"
+   },
+   "web2pdfConvertLinkContextMenu": {
+      "message": "Hivatkoz\u00E1s c\u00E9lj\u00E1nak \u00E1talak\u00EDt\u00E1sa Adobe PDF dokumentumm\u00E1"
+   },
+   "web2pdfConvertPageContextMenu": {
+      "message": "Weboldal \u00E1talak\u00EDt\u00E1sa Adobe PDF f\u00E1jll\u00E1..."
+   },
+   "web2pdfExtnDescription": {
+      "message": "PDF dokumentumm\u00E1 alak\u00EDtja \u00E1t a weboldalt"
+   },
+   "web2pdfExtnName": {
+      "message": "Adobe Acrobat - PDF l\u00E9trehoz\u00E1sa"
+   },
+   "web2pdfFileLockedError": {
+      "message": "A f\u00E1jl nem m\u00F3dos\u00EDthat\u00F3, lehet, hogy m\u00E1sik alkalmaz\u00E1s haszn\u00E1lja azt."
+   },
+   "web2pdfNoWritePermissionOnSelectedFile": {
+      "message": "A kiv\u00E1lasztott f\u00E1jlra nincs \u00EDr\u00E1si jogosults\u00E1ga."
+   },
+   "web2pdfOpenDialogTitle": {
+      "message": "Weboldal hozz\u00E1ad\u00E1sa megl\u00E9v\u0151 PDF dokumentumhoz"
+   },
+   "web2pdfPreferencesText": {
+      "message": "Be\u00E1ll\u00EDt\u00E1sok..."
+   },
+   "web2pdfReplaceWarning": {
+      "message": "m\u00E1r l\u00E9tezik.\n Ki szeretn\u00E9 cser\u00E9lni azt?"
+   },
+   "web2pdfSaveDialogTitle": {
+      "message": "Weboldal \u00E1talak\u00EDt\u00E1sa Adobe PDF f\u00E1jll\u00E1"
+   },
+   "web2pdfStatusConverting": {
+      "message": "(\u00C1talak\u00EDt\u00E1s)"
+   },
+   "web2pdfStatusDialogCloseButtonText": {
+      "message": "Bez\u00E1r\u00E1s"
+   },
+   "web2pdfStatusDialogTitle": {
+      "message": "PDF dokumentumm\u00E1 alak\u00EDt\u00E1si folyamat"
+   },
+   "web2pdfStatusDownloading": {
+      "message": "(Let\u00F6lt\u00E9s)"
+   },
+   "web2pdfStatusError": {
+      "message": "(Ismeretlen hiba t\u00F6rt\u00E9nt!)"
+   },
+   "web2pdfStatusSuccess": {
+      "message": "(Sikeresen elv\u00E9gezve)"
+   },
+   "web2pdfStatusUnknownError": {
+      "message": "Az \u00E1talak\u00EDt\u00E1s ismeretlen hiba miatt le\u00E1llt."
+   },
+   "web2pdfStatusWaiting": {
+      "message": "(V\u00E1rakoz\u00E1s \u00E1talak\u00EDt\u00E1sra)"
+   },
+   "web2pdfUnknownError": {
+      "message": "A PDF \u00E1talak\u00EDt\u00E1s sor\u00E1n az Acrobat hib\u00E1t \u00E9szlelt"
+   },
+   "web2pdfUnsupportedContextRequested": {
+      "message": "Az \u00E1talak\u00EDt\u00E1si k\u00F6rnyezet nem t\u00E1mogatott."
+   },
+   "web2pdfUntitledFileName": {
+      "message": "n\u00E9vtelen"
+   },
+   "web2pdfViewPDFResultText": {
+      "message": "Adobe PDF eredm\u00E9ny megtekint\u00E9se"
+   }
+}

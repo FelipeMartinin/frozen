@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/popup.css" type="text/css"></link>
+    <script type="text/javascript" src="popup.js"></script>
+    <script type="text/javascript" src="prefs.js"></script>
+  </head>
+<body>
+  <div class="menu" >
+    <div class="menu-entry" id="acro_web2pdf_ConvertToPDF" onclick="ConvertToPDFPopupMenu();">
+	  <img src="skin/AX_WebCap_Converted_Sm_N.png" align="center" />
+      <span class="menu-text" id="acro_web2pdf_ConvertToPDFText"></span> 
+    </div>
+    
+    <div class="menu-entry" id="acro_web2pdf_AddToExisting" onclick="AppendToExistingPDFPopupMenu();">
+	  <img src="skin/AX_Append_Sm_N.png" align="center" />
+      <span class="menu-text" id="acro_web2pdf_AddToExistingText"></span>
+    </div>
+ 
+    <div class="menu-separator-horizontal">
+    </div>
+    
+    <div class="menu-entry" id="acro_web2pdf_ViewResultsInAcrobat" onclick="ToggleViewResultCheckboxPrefs();">
+	   <input type="checkbox" id="acro_web2pdf_ViewResultsCheckbox" align="center"/> 
+	   <span class="menu-text" id="acro_web2pdf_ViewResultsInAcrobatText"></span>
+    </div>
+	
+	<div class="menu-entry" id="acro_web2pdf_Preferences" onclick="ShowConversionSettingsDialog();">
+      <div class="menu-text" id="acro_web2pdf_PreferencesText"></div>
+    </div>
+  </div>
+</body>
+</html>

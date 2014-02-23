@@ -16,6 +16,8 @@
 
 ## About
 
+![Frozen Screen](https://raw2.github.com/FelipeMartinin/frozen/master/frozen-screen.png)
+
 * Theme name: Frozen
 * Slogan: freeze your mind
 * Theme Author: Felipe Martinin

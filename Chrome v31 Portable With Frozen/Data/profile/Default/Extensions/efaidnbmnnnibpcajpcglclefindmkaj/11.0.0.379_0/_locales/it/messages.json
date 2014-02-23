@@ -1,0 +1,89 @@
+{
+   "web2pdfAppendButtonText": {
+      "message": "Aggiungi pagina Web a PDF esistente..."
+   },
+   "web2pdfAppendLinkContextMenu": {
+      "message": "Aggiungi destinazione del collegamento a PDF esistente"
+   },
+   "web2pdfAppendPageContextMenu": {
+      "message": "Aggiungi pagina Web a PDF esistente..."
+   },
+   "web2pdfBadAcrobatError": {
+      "message": "Impossibile accedere alla funzione Web Capture di Acrobat. Acrobat potrebbe essere occupato o in attesa di input."
+   },
+   "web2pdfConvertButtonDisabledToolTip": {
+      "message": "In attesa che la pagina venga scaricata"
+   },
+   "web2pdfConvertButtonText": {
+      "message": "Converti pagina Web in Adobe PDF..."
+   },
+   "web2pdfConvertButtonToolTip": {
+      "message": "Converte la pagina Web corrente in un file Adobe PDF"
+   },
+   "web2pdfConvertLinkContextMenu": {
+      "message": "Converti destinazione del collegamento in Adobe PDF"
+   },
+   "web2pdfConvertPageContextMenu": {
+      "message": "Converti pagina Web in Adobe PDF..."
+   },
+   "web2pdfExtnDescription": {
+      "message": "Converte una pagina Web in PDF"
+   },
+   "web2pdfExtnName": {
+      "message": "Adobe Acrobat - Crea PDF"
+   },
+   "web2pdfFileLockedError": {
+      "message": "Impossibile modificare il file, potrebbe essere in uso da un altro programma."
+   },
+   "web2pdfNoWritePermissionOnSelectedFile": {
+      "message": "Non si dispone delle autorizzazioni di scrittura per il file selezionato."
+   },
+   "web2pdfOpenDialogTitle": {
+      "message": "Aggiungi pagina Web a PDF esistente"
+   },
+   "web2pdfPreferencesText": {
+      "message": "Preferenze..."
+   },
+   "web2pdfReplaceWarning": {
+      "message": "esiste gi\u00E0.\n Sostituirlo?"
+   },
+   "web2pdfSaveDialogTitle": {
+      "message": "Converti pagina Web in Adobe PDF"
+   },
+   "web2pdfStatusConverting": {
+      "message": "(Conversione in corso)"
+   },
+   "web2pdfStatusDialogCloseButtonText": {
+      "message": "Chiudi"
+   },
+   "web2pdfStatusDialogTitle": {
+      "message": "Avanzamento della conversione in PDF"
+   },
+   "web2pdfStatusDownloading": {
+      "message": "(Scaricamento in corso)"
+   },
+   "web2pdfStatusError": {
+      "message": "(Errore sconosciuto)"
+   },
+   "web2pdfStatusSuccess": {
+      "message": "(Operazione completata)"
+   },
+   "web2pdfStatusUnknownError": {
+      "message": "Conversione arrestata a causa di un errore sconosciuto."
+   },
+   "web2pdfStatusWaiting": {
+      "message": "(In attesa della conversione)"
+   },
+   "web2pdfUnknownError": {
+      "message": "Acrobat ha riscontrato un errore durante la conversione in PDF"
+   },
+   "web2pdfUnsupportedContextRequested": {
+      "message": "Contesto di conversione non supportato."
+   },
+   "web2pdfUntitledFileName": {
+      "message": "senza titolo"
+   },
+   "web2pdfViewPDFResultText": {
+      "message": "Visuzlizza risultato Adobe PDF"
+   }
+}

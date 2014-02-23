@@ -1,0 +1,89 @@
+{
+   "web2pdfAppendButtonText": {
+      "message": "Lis\u00E4\u00E4 Web-sivu aiempaan PDF-tiedostoon..."
+   },
+   "web2pdfAppendLinkContextMenu": {
+      "message": "Lis\u00E4\u00E4 linkin kohde aiempaan PDF-tiedostoon"
+   },
+   "web2pdfAppendPageContextMenu": {
+      "message": "Lis\u00E4\u00E4 Web-sivu aiempaan PDF-tiedostoon..."
+   },
+   "web2pdfBadAcrobatError": {
+      "message": "Acrobatin Web-sieppaus-toimintoa ei voitu k\u00E4ytt\u00E4\u00E4. Acrobat voi olla varattu tai odottaa sy\u00F6tett\u00E4."
+   },
+   "web2pdfConvertButtonDisabledToolTip": {
+      "message": "Odotetaan sivun latautumista"
+   },
+   "web2pdfConvertButtonText": {
+      "message": "Muunna Web-sivu Adobe PDF -tiedostoksi..."
+   },
+   "web2pdfConvertButtonToolTip": {
+      "message": "Muunna nykyinen Web-sivu Adobe PDF -tiedostoksi"
+   },
+   "web2pdfConvertLinkContextMenu": {
+      "message": "Muunna linkin kohde Adobe PDF -tiedostoksi"
+   },
+   "web2pdfConvertPageContextMenu": {
+      "message": "Muunna Web-sivu Adobe PDF -tiedostoksi..."
+   },
+   "web2pdfExtnDescription": {
+      "message": "Muuntaa Web-sivun PDF-tiedostoksi"
+   },
+   "web2pdfExtnName": {
+      "message": "Adobe Acrobat - Luo PDF"
+   },
+   "web2pdfFileLockedError": {
+      "message": "Tiedostoa ei voi muokata. Se voi olla toisen ohjelman k\u00E4yt\u00F6ss\u00E4."
+   },
+   "web2pdfNoWritePermissionOnSelectedFile": {
+      "message": "Sinulla ei ole kirjoitusoikeuksia valittuun tiedostoon."
+   },
+   "web2pdfOpenDialogTitle": {
+      "message": "Lis\u00E4\u00E4 Web-sivu aiempaan PDF-tiedostoon"
+   },
+   "web2pdfPreferencesText": {
+      "message": "Oletusarvot..."
+   },
+   "web2pdfReplaceWarning": {
+      "message": "on jo olemassa.\n Haluatko korvata sen?"
+   },
+   "web2pdfSaveDialogTitle": {
+      "message": "Muunna Web-sivu Adobe PDF -tiedostoksi"
+   },
+   "web2pdfStatusConverting": {
+      "message": "(muunnetaan)"
+   },
+   "web2pdfStatusDialogCloseButtonText": {
+      "message": "Sulje"
+   },
+   "web2pdfStatusDialogTitle": {
+      "message": "PDF-muunnon edistyminen"
+   },
+   "web2pdfStatusDownloading": {
+      "message": "(ladataan)"
+   },
+   "web2pdfStatusError": {
+      "message": "(tuntematon virhe)"
+   },
+   "web2pdfStatusSuccess": {
+      "message": "(valmis)"
+   },
+   "web2pdfStatusUnknownError": {
+      "message": "Muunto keskeytyi tuntemattoman virheen vuoksi."
+   },
+   "web2pdfStatusWaiting": {
+      "message": "(odottaa muuntoa)"
+   },
+   "web2pdfUnknownError": {
+      "message": "Acrobat kohtasi virheen PDF-muunnossa"
+   },
+   "web2pdfUnsupportedContextRequested": {
+      "message": "Muuntokontekstia ei tueta."
+   },
+   "web2pdfUntitledFileName": {
+      "message": "nimet\u00F6n"
+   },
+   "web2pdfViewPDFResultText": {
+      "message": "N\u00E4yt\u00E4 Adobe PDF -tulos"
+   }
+}

@@ -57,11 +57,11 @@
    },
    "devtools": {
       "dock_side": "undocked",
-      "split_location": 442
+      "split_location": 461
    },
    "dns_prefetching": {
-      "host_referral_list": [ 2, [ "http://api.flattr.com/", [ "http://flattr.com/", 1.9002641813559247 ] ], [ "http://botao.shopcliq.com.br/", [ "http://beacon-2.newrelic.com/", 2.025335319191497, "http://botao.shopcliq.com.br/", 2.025335319191497, "http://d1070b8a575b8m.cloudfront.net/", 2.025335319191497, "http://d1o91w0786vwtj.cloudfront.net/", 2.6138943008368893, "http://js-agent.newrelic.com/", 2.025335319191497, "http://navdmp.com/", 2.319614810014193, "http://www.google-analytics.com/", 2.025335319191497 ] ], [ "http://br.answers.yahoo.com/", [ "http://ad.yieldmanager.com/", 2.025335319191497, "http://br.answers.yahoo.com/", 2.9081737916595856, "http://csc.beap.bc.yahoo.com/", 2.025335319191497, "http://dmros.ysm.yahoo.com/", 2.025335319191497, "http://geo.query.yahoo.com/", 2.025335319191497, "http://l.yimg.com/", 12.030838007163162, "http://l1.yimg.com/", 2.6138943008368893, "http://l2.yimg.com/", 2.319614810014193, "http://u2sb.interclick.com/", 2.025335319191497, "https://s.yimg.com/", 2.9081737916595856 ] ], [ "http://compare.buscape.com.br/", [ "http://d9kosu0yrble8.cloudfront.net/", 2.025335319191497, "http://ews.e7r.com.br/", 2.319614810014193, "http://o.lomadee.com/", 2.319614810014193, "http://static.ak.facebook.com/", 2.319614810014193, "http://staticsso.r.worldssl.net/", 2.6138943008368893, "http://thumbs.buscape.com.br/", 4.08529175495037, "http://www.facebook.com/", 2.319614810014193, "http://www.oppuz.com/", 4.673850736595761, "https://sso.buscapecompany.com/", 2.6138943008368893, "https://www.facebook.com/", 2.6138943008368893 ] ], [ "http://devthemez.com/", [ "http://ajax.googleapis.com/", 1.8252252654320638, "http://api.flattr.com/", 1.8252252654320638, "http://devthemez.com/", 8.640738272885704, "http://devthemez.disqus.com/", 2.025335319191497, "http://go.disqus.com/", 2.025335319191497, "http://platform.twitter.com/", 3.7792410844947653, "http://www.google-analytics.com/", 2.507953684140718, "https://accounts.google.com/", 1.8252252654320638, "https://apis.google.com/", 4.167690012380725 ] ], [ "http://disqus.com/", [ "http://a.disquscdn.com/", 5.850968699886546, "http://b.scorecardresearch.com/", 2.319614810014193, "http://disqus.com/", 2.9081737916595856, "http://juggler.services.disqus.com/", 2.6138943008368893, "http://referrer.disqus.com/", 2.6138943008368893, "http://www.google-analytics.com/", 2.319614810014193 ] ], [ "http://felipemartinin.com.br/", [ "http://felipemartinin.com.br/", 28.33493584731428, "http://fonts.googleapis.com/", 1.6289850549517157, "http://netdna.bootstrapcdn.com/", 2.148000148406239, "https://fonts.googleapis.com/", 2.148000148406239 ] ], [ "http://l.yimg.com/", [ "http://ads.yldmgrimg.net/", 2.9081737916595856, "http://bs.serving-sys.com/", 2.025335319191497, "http://l.yimg.com/", 2.025335319191497 ] ], [ "http://platform.twitter.com/", [ "http://cdn.api.twitter.com/", 0.6478994411747355, "http://p.twitter.com/", 1.202912885135945, "https://twitter.com/", 1.202912885135945 ] ], [ "http://www.buscape.com.br/", [ "http://127302795.log.optimizely.com/", 2.319614810014193, "http://image.buscape.com/", 6.733807172354633, "http://imagem.buscape.com.br/", 4.379571245773065, "http://navdmp.com/", 3.496732773304977, "http://tag.oppuz.com/", 2.025335319191497, "http://tags.meltdsp.com/", 2.319614810014193, "http://track.e7r.com.br/", 2.025335319191497, "http://www.google-analytics.com/", 3.202453282482282, "http://www.oppuz.com/", 2.025335319191497, "https://sso.buscapecompany.com/", 2.025335319191497 ] ], [ "http://www.facebook.com/", [ "http://profile.ak.fbcdn.net/", 2.4439184669376997, "http://static.ak.fbcdn.net/", 1.8932626837102708 ] ], [ "http://www.youtube.com/", [ "http://googleads.g.doubleclick.net/", 2.6138943008368893, "http://i1.ytimg.com/", 7.02808666317733, "http://r7---sn-xhcg5uxa-bg0e.googlevideo.com/", 3.202453282482282, "http://s.youtube.com/", 2.319614810014193, "http://s.ytimg.com/", 7.02808666317733, "http://s2.youtube.com/", 2.319614810014193, "http://www.gstatic.com/", 2.025335319191497, "http://www.youtube.com/", 4.379571245773065, "https://yt3.ggpht.com/", 2.9081737916595856, "https://yt4.ggpht.com/", 2.6138943008368893 ] ], [ "https://accounts.google.com/", [ "https://oauth.googleusercontent.com/", 1.1989679038943204, "https://ssl.gstatic.com/", 1.1989679038943204 ] ], [ "https://apis.google.com/", [ "https://apis.google.com/", 1.7805815128785487, "https://ssl.gstatic.com/", 0.9574101611905815 ] ], [ "https://plus.googleapis.com/", [ "https://gp3.googleusercontent.com/", 2.9081737916595856, "https://gp4.googleusercontent.com/", 2.319614810014193, "https://gp5.googleusercontent.com/", 2.6138943008368893, "https://gp6.googleusercontent.com/", 3.202453282482282, "https://i1.ytimg.com/", 2.025335319191497, "https://lh3.googleusercontent.com/", 2.025335319191497, "https://plus.googleapis.com/", 2.6138943008368893, "https://ssl.gstatic.com/", 2.6138943008368893 ] ], [ "https://sso.buscapecompany.com/", [ "https://sso.buscapecompany.com/", 1.336721310666388, "https://staticsso.r.worldssl.net/", 1.7251702385523466 ] ], [ "https://www.facebook.com/", [ "https://fbcdn-profile-a.akamaihd.net/", 2.025335319191497, "https://fbstatic-a.akamaihd.net/", 3.496732773304977 ] ], [ "https://www.google.com.br/", [ "https://apis.google.com/", 0.4100699466149122, "https://clients1.google.com.br/", 0.7093819227490692, "https://ssl.gstatic.com/", 0.4100699466149122, "https://www.google.com.br/", 2.8744096106085086, "https://www.gstatic.com/", 0.7818009009966721 ] ] ],
-      "startup_list": [ 1, "http://felipemartinin.com.br/", "http://fonts.googleapis.com/", "http://netdna.bootstrapcdn.com/", "https://apis.google.com/", "https://clients1.google.com.br/", "https://fonts.googleapis.com/", "https://ssl.gstatic.com/", "https://www.google.com.br/", "https://www.google.com/", "https://www.gstatic.com/" ]
+      "host_referral_list": [ 2, [ "http://api.flattr.com/", [ "http://flattr.com/", 1.8461636601127216 ] ], [ "http://botao.shopcliq.com.br/", [ "http://beacon-2.newrelic.com/", 1.967674022654115, "http://botao.shopcliq.com.br/", 1.967674022654115, "http://d1070b8a575b8m.cloudfront.net/", 1.967674022654115, "http://d1o91w0786vwtj.cloudfront.net/", 2.5394767300920633, "http://js-agent.newrelic.com/", 1.967674022654115, "http://navdmp.com/", 2.2535753763730892, "http://www.google-analytics.com/", 1.967674022654115 ] ], [ "http://br.answers.yahoo.com/", [ "http://ad.yieldmanager.com/", 1.967674022654115, "http://br.answers.yahoo.com/", 2.8253780838110374, "http://csc.beap.bc.yahoo.com/", 1.967674022654115, "http://dmros.ysm.yahoo.com/", 1.967674022654115, "http://geo.query.yahoo.com/", 1.967674022654115, "http://l.yimg.com/", 11.688320049099227, "http://l1.yimg.com/", 2.5394767300920633, "http://l2.yimg.com/", 2.2535753763730892, "http://u2sb.interclick.com/", 1.967674022654115, "https://s.yimg.com/", 2.8253780838110374 ] ], [ "http://compare.buscape.com.br/", [ "http://d9kosu0yrble8.cloudfront.net/", 1.967674022654115, "http://ews.e7r.com.br/", 2.2535753763730892, "http://o.lomadee.com/", 2.2535753763730892, "http://static.ak.facebook.com/", 2.2535753763730892, "http://staticsso.r.worldssl.net/", 2.5394767300920633, "http://thumbs.buscape.com.br/", 3.9689834986869323, "http://www.facebook.com/", 2.2535753763730892, "http://www.oppuz.com/", 4.54078620612488, "https://sso.buscapecompany.com/", 2.5394767300920633, "https://www.facebook.com/", 2.5394767300920633 ] ], [ "http://devthemez.com/", [ "http://ajax.googleapis.com/", 1.773261102125213, "http://api.flattr.com/", 1.773261102125213, "http://devthemez.com/", 8.394736454256648, "http://devthemez.disqus.com/", 1.967674022654115, "http://go.disqus.com/", 1.967674022654115, "http://platform.twitter.com/", 3.6716460908191992, "http://www.google-analytics.com/", 2.4365522427532316, "https://accounts.google.com/", 1.773261102125213, "https://apis.google.com/", 4.049035877728246 ] ], [ "http://disqus.com/", [ "http://a.disquscdn.com/", 5.684391621000776, "http://b.scorecardresearch.com/", 2.2535753763730892, "http://disqus.com/", 2.8253780838110374, "http://juggler.services.disqus.com/", 2.5394767300920633, "http://referrer.disqus.com/", 2.5394767300920633, "http://www.google-analytics.com/", 2.2535753763730892 ] ], [ "http://felipemartinin.com.br/", [ "http://felipemartinin.com.br/", 30.390485947669216, "http://fonts.googleapis.com/", 1.7051615812885785, "http://netdna.bootstrapcdn.com/", 2.0379591455595345, "https://fonts.googleapis.com/", 2.0379591455595345 ] ], [ "http://g.xnavigation.com.br/", [ "http://c.statcounter.com/", 2.2733802, "http://cdn.xnavigation.net/", 5.246261999999999, "http://pagead2.googlesyndication.com/", 2.2733802, "http://www.google-analytics.com/", 2.6037003999999997, "http://www.statcounter.com/", 2.2733802, "http://www.xnavigation.com.br/", 4.585621599999999 ] ], [ "http://googleads.g.doubleclick.net/", [ "http://csi.gstatic.com/", 2.2733802, "http://googleads.g.doubleclick.net/", 2.6037003999999997, "http://pagead2.googlesyndication.com/", 2.9340205999999998, "http://www.google.com/", 2.6037003999999997, "https://googleads.g.doubleclick.net/", 2.6037003999999997 ] ], [ "http://l.yimg.com/", [ "http://ads.yldmgrimg.net/", 2.8253780838110374, "http://bs.serving-sys.com/", 1.967674022654115, "http://l.yimg.com/", 1.967674022654115 ] ], [ "http://platform.twitter.com/", [ "http://cdn.api.twitter.com/", 0.6294537440844908, "http://p.twitter.com/", 1.1686659552961247, "https://twitter.com/", 1.1686659552961247 ] ], [ "http://www.buscape.com.br/", [ "http://127302795.log.optimizely.com/", 2.2535753763730892, "http://image.buscape.com/", 6.542095682157697, "http://imagem.buscape.com.br/", 4.254884852405906, "http://navdmp.com/", 3.3971807912489846, "http://tag.oppuz.com/", 1.967674022654115, "http://tags.meltdsp.com/", 2.2535753763730892, "http://track.e7r.com.br/", 1.967674022654115, "http://www.google-analytics.com/", 3.111279437530011, "http://www.oppuz.com/", 1.967674022654115, "https://sso.buscapecompany.com/", 1.967674022654115 ] ], [ "http://www.facebook.com/", [ "http://profile.ak.fbcdn.net/", 2.3743401081839832, "http://static.ak.fbcdn.net/", 1.8393614951050394 ] ], [ "http://www.youtube.com/", [ "http://googleads.g.doubleclick.net/", 2.5394767300920633, "http://i1.ytimg.com/", 6.827997035876671, "http://r7---sn-xhcg5uxa-bg0e.googlevideo.com/", 3.111279437530011, "http://s.youtube.com/", 2.2535753763730892, "http://s.ytimg.com/", 6.827997035876671, "http://s2.youtube.com/", 2.2535753763730892, "http://www.gstatic.com/", 1.967674022654115, "http://www.youtube.com/", 4.254884852405906, "https://yt3.ggpht.com/", 2.8253780838110374, "https://yt4.ggpht.com/", 2.5394767300920633 ] ], [ "https://accounts.google.com/", [ "https://oauth.googleusercontent.com/", 1.164833287670449, "https://ssl.gstatic.com/", 1.164833287670449 ] ], [ "https://apis.google.com/", [ "https://apis.google.com/", 1.7298883572068964, "https://ssl.gstatic.com/", 0.9301526939014857 ] ], [ "https://plus.googleapis.com/", [ "https://gp3.googleusercontent.com/", 2.8253780838110374, "https://gp4.googleusercontent.com/", 2.2535753763730892, "https://gp5.googleusercontent.com/", 2.5394767300920633, "https://gp6.googleusercontent.com/", 3.111279437530011, "https://i1.ytimg.com/", 1.967674022654115, "https://lh3.googleusercontent.com/", 1.967674022654115, "https://plus.googleapis.com/", 2.5394767300920633, "https://ssl.gstatic.com/", 2.5394767300920633 ] ], [ "https://sso.buscapecompany.com/", [ "https://sso.buscapecompany.com/", 1.298664854951716, "https://staticsso.r.worldssl.net/", 1.6760546418607614 ] ], [ "https://www.facebook.com/", [ "https://fbcdn-profile-a.akamaihd.net/", 1.967674022654115, "https://fbstatic-a.akamaihd.net/", 3.3971807912489846 ] ], [ "https://www.google.com.br/", [ "https://apis.google.com/", 0.40591464791732673, "https://clients1.google.com.br/", 0.1307711897821813, "https://ssl.gstatic.com/", 0.40591464791732673, "https://www.google.com.br/", 2.8421251659182567, "https://www.gstatic.com/", 0.8047616846246726 ] ] ],
+      "startup_list": [ 1, "http://felipemartinin.com.br/", "http://fonts.googleapis.com/", "http://g.xnavigation.com.br/", "http://netdna.bootstrapcdn.com/", "https://apis.google.com/", "https://fonts.googleapis.com/", "https://ssl.gstatic.com/", "https://www.google.com.br/", "https://www.google.com/", "https://www.gstatic.com/" ]
    },
    "download": {
       "directory_upgrade": true,
@@ -73,12 +73,12 @@
       },
       "autoupdate": {
          "last_check": "13035695453108562",
-         "next_check": "13036711844823833"
+         "next_check": "13037588207305783"
       },
       "chrome_url_overrides": {
          "bookmarks": [ "chrome-extension://eemcgdkfndhakfknompkggombfjjjeno/main.html" ]
       },
-      "known_disabled": [ "kejpcolehiecjkanilhmblkbndaomhpc" ],
+      "known_disabled": [ "efaidnbmnnnibpcajpcglclefindmkaj", "kejpcolehiecjkanilhmblkbndaomhpc" ],
       "last_chrome_version": "31.0.1650.63",
       "settings": {
          "ahfgeienlihckogmohjhadlkjgocpleb": {
@@ -137,6 +137,53 @@
                "version": "0.1"
             },
             "path": "C:\\Users\\Felipe Martinin\\Downloads\\GoogleChromePortable\\App\\Chrome-bin\\31.0.1650.63\\resources\\bookmark_manager",
+            "was_installed_by_default": false
+         },
+         "efaidnbmnnnibpcajpcglclefindmkaj": {
+            "ack_prompt_count": 1,
+            "active_permissions": {
+               "api": [ "contextMenus", "plugin", "tabs", "webNavigation" ],
+               "explicit_host": [ "file:///*", "http://*/*", "https://*/*" ],
+               "scriptable_host": [ "file:///*", "http://*/*", "https://*/*" ]
+            },
+            "creation_flags": 1,
+            "from_bookmark": false,
+            "from_webstore": false,
+            "initial_keybindings_set": true,
+            "install_time": "13037587280070986",
+            "location": 3,
+            "manifest": {
+               "background": {
+                  "page": "background.html"
+               },
+               "browser_action": {
+                  "default_icon": "skin/AX_convertb_XI_D_19x19.png",
+                  "default_title": "Aguardando download da p\u00E1gina"
+               },
+               "content_scripts": [ {
+                  "js": [ "web2pdfgetdom.js" ],
+                  "matches": [ "http://*/*", "https://*/*", "file:///*" ],
+                  "run_at": "document_start"
+               } ],
+               "current_locale": "pt_BR",
+               "default_locale": "en",
+               "description": "Converte uma p\u00E1gina da Web para PDF",
+               "icons": {
+                  "128": "skin/C_AdobeLogo.png",
+                  "16": "skin/AX_convertb_XI_N_16x16.png",
+                  "48": "skin/C_AdobeLogo_48x48.png"
+               },
+               "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCZBtDwJUnqCebbFbTP819W+x0Tk9Com3yrxaCi/D0t/1FPWBuOvyyiQtFr/FmloZu/2ml8LFYNGNE6gQSSIgGXZceAFCRxzj+EXSI37kNIPISrdKznCTdkA6oSKUpFEVOcoD959DQFqeNbliB9MV+ZrZST+DOVxApdMSJzsCczIwIDAQAB",
+               "name": "Adobe Acrobat \u2013 Criar PDF",
+               "permissions": [ "contextMenus", "webNavigation", "tabs", "http://*/*", "https://*/*", "file:///*" ],
+               "plugins": [ {
+                  "path": "plugin/npWCChromeExtnStub.dll",
+                  "public": false
+               } ],
+               "version": "11.0.0.379"
+            },
+            "path": "efaidnbmnnnibpcajpcglclefindmkaj\\11.0.0.379_0",
+            "state": 0,
             "was_installed_by_default": false
          },
          "ennkphjdgehloodpbhlhldgbnhmacadg": {
@@ -511,6 +558,18 @@
                },
                "supports_spdy": false
             },
+            "googleads.g.doubleclick.net:443": {
+               "alternate_protocol": {
+                  "port": 443,
+                  "protocol_str": "quic"
+               },
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
+               "supports_spdy": true
+            },
             "googleads.g.doubleclick.net:80": {
                "alternate_protocol": {
                   "port": 80,
@@ -703,8 +762,8 @@
                },
                "settings": {
                   "4": 100,
-                  "5": 111,
-                  "6": 2
+                  "5": 124,
+                  "6": 0
                },
                "supports_spdy": true
             },
@@ -755,7 +814,7 @@
                },
                "settings": {
                   "4": 100,
-                  "5": 41,
+                  "5": 49,
                   "6": 0
                },
                "supports_spdy": true
