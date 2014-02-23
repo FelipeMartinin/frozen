@@ -1,0 +1,625 @@
+
+root { 
+    display: block;
+}
+
+body {              
+    font-family: Tahoma;    
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background:repeat-x top left;    
+}
+
+p {
+    cursor: default;
+    -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -o-user-select: none; user-select: none;        
+}
+
+#canvas {    
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:296px;
+    height: 291px;
+    overflow: hidden;
+}
+p {
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 2px #333366;
+    color: #ffffff;
+}
+
+p.noshadow {
+    text-shadow: none;
+}
+img {
+    display: block;
+}
+#current {
+    width: 294px;
+    height: 291px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#nextDays {
+    width: 294px;
+    height: 291px;
+    position: absolute;
+    top: 0;
+    left: 294px;
+}
+body.RTL #nextDays {left:-294px;}
+#changeLocation {
+    width: 294px;
+    height: 291px;    
+    position: absolute;
+    top: 291px;
+    left: 0;
+}
+
+/*-----  current div style -----*/
+
+#change, #change2 {
+    width:auto;
+    text-align:right;
+    cursor: pointer;
+    font-size: 11px;
+    color: #ffffff;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+}
+#change:hover, #change2:hover {text-decoration:underline;}
+body.RTL #change,body.RTL #change2 {
+    text-align:left;
+}
+
+#change2 {
+    top:3px;
+}
+#more, #more2 {    
+    display:block;
+    cursor: pointer;
+    font-size: 11px;
+    color: #efd28c;
+    position: absolute;    
+    right: 10px;
+    width:auto;
+    text-align:right;
+    padding-right:10px;
+    z-index:10;
+}
+#more:hover, #more2:hover {text-decoration:underline;}
+
+.moreShev           {position: absolute; top:3px; right:0px; font-size: 7px; letter-spacing: -.2em}
+body.RTL #more, body.RTL #more2 {    text-align:left;        padding-left:10px;}
+body.RTL .moreShev           {position: absolute; top:3px; left:0px; font-size: 7px; letter-spacing: -.2em}
+
+#more { top:  273px; }
+#more2 {top:  272px;}
+
+#top {
+    position: absolute;
+    top: 21px;
+    left: 5px;
+    height: 153px;
+    width: 284px;
+}
+#topBg {
+    position: absolute;
+    top: 16px;
+    left: 1px;
+}
+
+#logo, #logo2{
+    z-index:3;
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+
+body.RTL #logo, body.RTL #logo2 {left:9px;}
+
+#location, #location2 {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    font-size: 19px;     
+}
+
+body.RTL #location, body.RTL #location2 {text-align:right;}
+
+
+#location2 {    
+    margin: 0;   
+    color: #ffffff;
+}
+
+#nowImg,#nowImg2 {
+    position: absolute;
+    top: 40px;
+    left: 10px; 
+}
+
+
+
+body.RTL #nowImg,body.RTL #nowImg2 {left:auto; right:10px;}
+#nowTmpr {    
+    font-size: 43px;
+    color: #003f5c;
+    position: absolute;
+    top: 40px;
+    left: 105px;
+}
+body.RTL #nowTmpr {left:95px;}
+
+#highLowTmpr {
+    position: absolute;
+    width:100px;
+    top: 127px;
+    left: 10px;   
+    font-size: 15px;
+}
+body.RTL #highLowTmpr {right:10px; text-align: right; left:auto;}
+
+#feels {
+    font-size: 12px;
+    position: absolute;
+    top: 94px;
+    left: 105px;
+    width:175px;
+}
+
+body.RTL #feels {text-align:right; right:105px; left:auto; direction:rtl; }
+
+#feelsDesc {
+    font-size: 12px;
+    color: #baddf7;
+    position: absolute;
+    top: 112px;
+    left: 105px;
+    width:170px;        
+}
+
+body.RTL #feelsDesc {text-align:right; right:105px; left:auto; direction:rtl; }
+
+#bottomBg {
+    position: absolute;
+    top: 173px;
+    left: 1px;
+}
+#daysForecast {
+    position: absolute;
+    top: 179px;
+    left: 5px;
+    height: 90px;
+    width: 284px;
+}
+#divider1 {
+    position: absolute;
+    top: 16px;
+    left: 94px;
+}
+#divider2 {
+    position: absolute;
+    top: 16px;
+    left: 188px;
+}
+#day1, #day2, #day3 {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    height: 90px;
+}
+#day1:hover,
+#day2:hover,
+#day3:hover{    
+    background-position: -5px -5px;
+    background-repeat: no-repeat;
+}
+
+#day1.day:hover,
+#day2.day:hover,
+#day3.day:hover{
+    background-image: url('http://weather.webapps.conduitapps.com/day/rollover.png');
+}
+
+
+#day1.night:hover,
+#day2.night:hover,
+#day3.night:hover{
+    background-image: url('http://weather.webapps.conduitapps.com/night/rollover.png');
+}
+
+#day1 {width: 94px; left: 0;}
+#day2 {width: 94px; left: 95px;}
+#day3 {width: 95px; left: 190px;}
+body.RTL #day1 {left:190px;}
+body.RTL #day3 {left:0px;}
+
+.dayName {       
+    font-size: 14px;
+    margin-top: 11px;
+}
+.dayHigh {
+    width:50px;
+    text-align:left;    
+    font-size: 13px;
+    position: absolute;
+    top: 38px;
+    left: 14px;
+}
+.dayLow {
+    width:50px;
+    text-align:left;
+    font-size: 13px;
+    position: absolute;
+    color: #baddf7;    
+    top: 62px;
+    left: 14px;
+}
+.dayImg {          
+    position: absolute;
+    top: 34px;
+    right: 3px;
+}
+
+/*----- nextDays div style -----*/
+#back {        
+    z-index:10;
+    cursor: pointer;
+    font-size: 11px;
+    color: #efd28c;    
+    position: absolute;
+    width:45px;
+    height:20px;
+    top:  272px;
+    left: 12px;
+    padding-left:13px;
+    background: url('http://weather.webapps.conduitapps.com/back-arrow.png') no-repeat left 1px;
+}
+#back:hover {text-decoration:underline;}
+
+body.RTL #back {
+    text-align: right; 
+    padding-right:13px; padding-left:0px;
+    left:0px; right:12px;
+    background: url('http://weather.webapps.conduitapps.com/back-arrow_RTL.png') no-repeat right 1px;    
+}
+#topBg2 {
+    position: absolute;
+    top: 14px;
+    left: 1px;
+}
+#top2 {
+    width: 282px;
+    height: 124px;
+    position: absolute;
+    top: 21px;
+    left: 6px;
+}
+
+
+#toggle, #toggle2 {
+    cursor: pointer;
+    position: absolute;
+    top: 69px;
+    right: 20px;
+}
+
+#toggle2 {top: 68px;}
+
+body.RTL #toggle, body.RTL #toggle2 {left:20px; z-index:10; }
+
+#toggle_c,#toggle_f ,#toggle_c2,#toggle_f2{color: #ffffff;font-size: 12px;position: absolute;}
+#toggle_c2,#toggle_f2 { top: 66px;}
+#toggle_c,#toggle_f {top: 67px;}
+#toggle_c, #toggle_c2 {right: 5px;}
+#toggle_f,#toggle_f2 {right: 56px;}
+
+body.RTL #toggle_c,body.RTL  #toggle_c2 {left: 56px; }
+body.RTL #toggle_f,body.RTL #toggle_f2 {left: 8px; }
+
+
+#date2 {    
+    font-size: 19px;
+    color: #003f5c;
+    position: absolute;
+    top: 43px;
+    left: 84px;
+}
+
+body.RTL #date2{direction: rtl; text-align: right; left:70px}
+
+#nowTmpr2 {
+    font-size: 21px;
+    color: #ffffff;
+    position: absolute;
+    top: 66px;
+    left: 84px;
+}
+body.RTL #nowTmpr2{direction: rtl; text-align: right; left:70px;}
+
+#date2, #nowTmpr /* ,#nowTmpr2 */{   text-shadow:#ccd9e3 1px 1px 2px;}
+#desc {
+    font-size: 12px;
+    color: #baddf7;
+    position: absolute;
+    top: 95px;
+    left: 84px;    
+}
+
+body.RTL #desc{text-align:right; direction: rtl; left:70px;}
+#bottomBg2 {
+    position: absolute;
+    top: 144px;
+    left: 1px;
+}
+#bottom2 {
+    width: 282px;
+    height: 118px;
+    position: absolute;
+    top: 151px;
+    left: 6px;
+}
+#divider3 {
+    position: absolute;
+    top: 19px;
+    left: 140px;
+}
+.data1,.data3, .data2,.data4 {font-size: 11px;}
+.data1,.data3 {       color: #ffffff;}
+.data2,.data4 {    color: #bce1ff;}
+.data1, .data2, .data3, .data4 {height:15px;}
+.col1,.col2,.col3,.col4, .col5 {    font-size: 11px;}
+
+.col4 .data1, .col4 .data2, .col4 .data3, .col4 .data4 {height:20px;}
+.col4 img {  margin-bottom: 2px;}
+#bottom2 p {    padding-bottom: 7px;}
+.col1 {
+    width: 75px;
+    position: absolute;
+    top: 16px;
+    left: 14px;
+    overflow:hidden;
+}
+
+body.RTL .col1{left: 200px; direction: rtl; text-align: right;}
+.col2 {
+    width: 78px;
+    position: absolute;
+    top: 16px;
+    left: 88px;
+}
+
+body.RTL .col2{left: 150px; width:50px; direction: rtl; text-align: right;}
+.col3 {
+    width: 48px;
+    position: absolute;
+    top: 16px;
+    left: 160px;
+}
+body.RTL .col3{left: 85px; text-align: right;}
+
+.col4 {
+    width: 40px;
+    position: absolute;
+    top: 14px;
+    left: 208px;
+}
+
+body.RTL .col4{left: 62px;}
+.col5 {
+    width:30px;
+    position: absolute;
+    top: 16px;
+    left: 248px;
+}
+body.RTL .col5{left: 14px; text-align: right;}
+
+/*----- changeLocation div style -----*/
+#changeBg {
+    position: absolute;
+    top: 16px;
+    left: 1px;
+}
+#top3 {
+    width: 282px;
+    height: 246px;
+    position: absolute;
+    top: 23px;
+    left: 6px;
+}
+#logo3 {
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+
+body.RTL #logo3 {right:auto; left:9px;}
+
+#title {
+    font-size: 19px;
+    position: absolute;
+    top: 11px;
+    left: 15px;
+}
+
+body.RTL #title {left:auto; right:15px; direction: rtl;text-align: right;}
+
+#changePanel {
+    position: absolute;
+    top:50px;
+    left:0px;
+}
+#changePanel *{position: absolute;}
+
+body.RTL #changePanel { direction: rtl;text-align: right; left:50px;}
+ 
+#default,#region,#tmpr, #radio_f, #radio_c {
+    font-size: 11px;
+    color: #baddf7;
+}
+#regionSelect, #defaultInput {    
+    font-family: arial;
+    font-size: 11px;
+    color: #3a3a3a
+}
+
+body.RTL #regionSelect {text-align: right; direction:rtl; margin-left:62px;}
+body.RTL #defaultInput {margin-left:62px; direction: rtl; text-align: left;}
+#region {
+    width: 200px;    
+    position: absolute;
+    top: 0px;
+    left: 15px;    
+}
+#regionSelect{
+    height: 20px;
+    width: 144px;
+    position: absolute;
+    top: 17px; 
+    left: 15px;
+}
+#default {
+    width:200px;    top: 44px;    left: 15px;
+}
+
+#defaultInput {
+    padding: 0;
+    height: 17px;    width: 137px;
+    border-width: 0px;
+    top: 64px;    left: 15px;
+    padding-left: 5px;
+/*    -webkit-user-select: auto; -khtml-user-select: auto; -moz-user-select: auto; -o-user-select: auto; user-select: auto;*/
+}
+#divider5 {
+    top: 88px;    left: 15px;
+}
+
+body.RTL #divider5 {left:80px;}
+
+#tmpr {
+    width:200px;
+    top: 96px;    left: 15px;
+}
+
+body.RTL #tmpr {left:18px; direction: rtl; text-align:right;}
+#radio1, #radio2 {top:109px}
+#radio1 {left: 10px}
+#radio2 {left: 48px}
+span.radio_btn_label {top: 111px}
+#radio_f {left: 32px}
+#radio_c {left: 71px}
+body.RTL #radio1 {left:140px;}
+body.RTL #radio2 {left:178px;}
+body.RTL #radio_f {left:162px;}
+body.RTL #radio_c {left:201px;}
+
+#saveButton {
+    cursor: pointer;
+    position: absolute;
+    bottom: 8px;
+    right: 54px;
+}
+
+body.RTL #saveButton {right:auto; left:54px;}
+
+#saveButton p{
+    cursor: pointer;
+    height: 17px;
+    font-family: arial;
+    color: #ffffff;
+    font-size: 11px;
+    background: url('http://weather.webapps.conduitapps.com/save-center.png') repeat-x top left;
+    position: absolute;
+    top: 0;
+    left: 3px;          
+    text-align: center;
+    padding-top: 1px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+#right {
+    position: absolute;
+    top: 0;
+    left:  28px;
+}
+#left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#cancel {
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 11px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 10px;
+    right: 13px;
+}
+#cancel:hover {text-decoration:underline;}
+body.RTL #cancel {right:auto; left:13px; direction: rtl;}
+
+#nodata {
+    position: absolute;
+    top:130px;
+    left:130px;
+
+    font-weight:bold;
+    font-size:12px;
+}
+
+
+#facebook{
+    width: 141px;
+    height: 25px;
+    float: left;
+    margin-left: 3px;
+    margin-top: 2px;
+}
+#bottom{
+    display: none;
+    width: 290px;
+    height: 25px;
+    padding: 0px;
+    position: absolute;
+    left:0px;
+    top: 291px;          
+    background: #042c45 url(http://weather.webapps.conduitapps.com/logo_footer.png) 95% 50% no-repeat;
+    margin: 0px 0px 0px 5px;
+}
+
+#powered {
+    float: right;
+    width: 150px;
+    height: 25px;
+    margin-top: -25px;
+    cursor: pointer;
+    padding-top:5px;
+    font-size: 10px;
+    color:#fff;
+}
+
+.load-indicator{
+    position: absolute;
+    top: 64px;
+    left: 170px;
+}
+
+body.RTL .load-indicator {left: 55px;}
+#location, #location2,#title  {width: 263px;}
+#nowTmpr2, #date2,#desc                 {width: 130px;}
+#nowTmpr  {width: 120px;}
+
+.autocomplete-w1 { background:url(http://weather.webapps.conduitapps.com/shadow.png) no-repeat bottom right; position:absolute; top:0px; left:0px; margin:6px 0 0 6px; }
+.autocomplete { font-size:11px; border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:80px; overflow:auto; margin:-6px 6px 6px -6px; }
+.autocomplete .selected { background:#e3f0f6; }
+.autocomplete div { padding:2px 5px; white-space:nowrap; overflow:hidden;  max-height:80px; }
+.autocomplete strong { font-weight:normal; color:#3399FF; }

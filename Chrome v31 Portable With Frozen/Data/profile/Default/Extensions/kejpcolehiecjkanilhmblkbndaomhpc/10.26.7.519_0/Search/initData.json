@@ -1,0 +1,17 @@
+{
+   "Ctid":"CT2849856",
+   "title": "BittorrentBar_PT Community Toolbar",
+   "toolbarName": "BittorrentBar_PT",
+   "downloadUrl": "http:\/\/BittorrentBarPT.OurToolbar.com\/",
+   "contactUsUrl": "http:\/\/BittorrentBarPT.OurToolbar.com\/",
+   "button_text": "OK",
+   "version": "1.5.0.0",
+   "bundle": "false",
+   "serviceMapUrl":"http://servicemap.conduit-services.com/newtab?ownerId=",
+   "SSPV":"?SSPV=CHSB2&",
+   "devMode":false,
+   "toolBarIntegrated":true,
+   "bundleData" : {
+               "silentInstall": false
+               }
+}

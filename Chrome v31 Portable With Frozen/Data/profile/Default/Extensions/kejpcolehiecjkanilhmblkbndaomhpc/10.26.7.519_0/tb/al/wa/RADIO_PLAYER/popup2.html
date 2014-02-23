@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml">
+          <head>
+                    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+                    <link rel="stylesheet" type="text/css" href="css/gadget.css"/>
+                    <link rel="stylesheet" type="text/css" href="../../../lib/jquery.jscrollpane/jquery.jscrollpane.css"/>
+                    <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css"/>
+                    <link rel="stylesheet" type="text/css" href="css/custom-theme/jquery-ui-1.8.10.custom.css" />
+          </head>
+          <body class="bdy">
+                    <div id="main">                              
+                              <div id="content">
+                                        <img id="topLine" src="http://radio.webapps.conduitapps.com/gadget/top-of-app_line.png"/>                                      
+                                        <div class="searchContainer">                                                  
+                                                  <img id="searchContainerLeft" src="http://radio.webapps.conduitapps.com/gadget/search_left.gif"/>
+                                                  <input id="searchInput" class="empty" value="What would you like to listen to?"/>
+                                                  <img id="searchContainerRight" src="http://radio.webapps.conduitapps.com/gadget/search_right.gif"/>
+                                                  <div id="searchButton"></div>
+                                        </div>
+                                        <div class="infoContainer">
+                                                  <div id="stateMessage">                                                            
+                                                            <div id="playingNow">                                                            
+                                                                      <span class="nowPlayingText"></span>                                                            
+                                                            </div>     
+                                                            <div class="stationConnecting">
+                                                                <span id="connectingInner">
+                                                                    <span id="connectingText">Connecting text</span><span class="conThreeDots">...</span>
+                                                                </span>
+                                                            </div>
+                                                  </div>     
+                                                  
+                                                  <div id="stationName"></div>
+                                                  <div id="equlazier">
+                                                            <img id="eqPlaying" src="http://radio.webapps.conduitapps.com/gadget/app-equalizer_playing.gif" />
+                                                            <img id="eqStopped" src="http://radio.webapps.conduitapps.com/gadget/app-equalizer_stopped.gif" />
+                                                  </div>
+                                                  <div id="shareFavLine">
+                                                            <span id="shareBtn" >Share</span>|<span class="fav">Add to Favorites</span>
+                                                  </div>
+                                                 
+                                        </div>                                        
+                                          <div id="bottomPart">
+                                               <div id="prevBtn" class="conbutton" tltip="SB_RADIO_TOOLTIPS_PREV_STATION"></div>
+                                               <div id="playBtn" class="conbutton" tltip="SB_RADIO_TOOLTIPS_PLAY"></div>
+                                               <div id="pauseBtn" class="conbutton" tltip="SB_RADIO_TOOLTIPS_PAUSE" ></div>                                                                                                    
+                                               <div id="nextBtn" class="conbutton" tltip="SB_RADIO_TOOLTIPS_NEXT_STATION"></div>
+                                               <div id="volumeBarContainer">
+                                                         <div class="volumeBar">
+                                                                   <div id="greenLineContainer">
+                                                                             <div id="volumeBarLeft"></div>
+                                                                             <div id="volumeBarMid"></div>
+                                                                             <div id="volumeBarRight"></div>
+                                                                   </div>
+                                                         </div>
+                                               </div>
+                                                  <div id="volIndicator"></div>
+                                                  <div id="browseBtn" class="conbutton" tltip="SB_RADIO_TOOLTIPS_BROWSE"></div>
+                                                  
+                                        </div>
+                              </div>
+                              
+                              <div id="searchResults">
+                                      <div id="searchFirstLine">
+                                            <span id="backBtn">Back</span>
+                                            <span id="searchQuery">Local stations text</span>
+                                            <span class="spacer"></span>
+                                      </div>
+                                        <div id="itemsContainer">
+                                        </div>
+                              </div>
+                              
+                              <div id="sharePopUp">
+                                        <div id="shareLeft"></div>
+                                        <div id="shareMid">
+                                                  <a class="shareFacebook"></a>
+                                                  <img src="http://radio.webapps.conduitapps.com/gadget/share-menu-divider.png"/>
+                                                  <a class="twitter"></a>                                                  
+                                                  <img src="http://radio.webapps.conduitapps.com/gadget/share-menu-divider.png"/>
+                                                  <a class="email"></a>
+                                        </div>
+                                        <div id="shareRight"></div>                                        
+                              </div>
+                              
+                              <div id="browsePopUp">                                        
+                                        <div id="browsePopUpTL"></div><div id="browsePopUpT"></div><div id="browsePopUpTR"></div>                                                  
+                                        <div id="browsePopUpML"></div>
+                                        <div id="browsePopUpM">
+                                                  <ul>
+                                                            <li id="predefineds" class="categoryRadio">Predefined Stations text</li>
+                                                            <li id="localStat" class="categoryRadio">Local Stations text</li>                                                  
+                                                            <li id="favStat" class="categoryRadio">Favorite text</li>
+                                                            <li id="genresStat" class="categoryRadio">Genres text</li>
+                                                            <li id="lastStat" class="categoryRadio">Last Search text</li>
+                                                            <li id="recentStat" class="categoryRadio">Recent text</li>                                                            
+                                                  </ul>          
+                                        </div>
+                                        <div id="browsePopUpMR"></div>
+                                        <div id="browsePopUpBL"></div><div id="browsePopUpB"></div><div id="browsePopUpBR"></div>                                        
+                                        
+                              </div>                                                            
+                              <div id="testTooltip"></div>                              
+
+                              <div id="noClicker"></div>
+                              <div id="wellcomeScreen">
+                                        <div class="wellHeadText">WELCOME TO TUNEIN RADIO</div>                                        
+                                        <div class="wellText"></div>
+                                        <div class="enjoyText">Enjoy!</div>                                        
+                                        <div class="wellcomeExit"></div>
+                              </div>
+                    </div>
+          </body>
+          <script type="text/javascript" src="../browserAppApi.js"></script>
+          <script type="text/javascript" src="js/resources/BrowserDetect.js"></script>
+          <script type="text/javascript" src="../../../lib/json2.js"></script>
+          <script type="text/javascript" src="../../../lib/jquery.min.js"></script>
+          <script type="text/javascript" src="../../../lib/jquery.xml2json.custom.min.js"></script>
+          <script type="text/javascript" src="../../../lib/jquery.mousewheel.js"></script>
+          <script type="text/javascript" src="js/resources/jquery-ui-1.8.10.custom.min.js"></script>
+          <script type="text/javascript" src="../../../lib/jquery.jscrollpane/jquery.jscrollpane.min.js"></script>
+          <script type="text/javascript" src="js/resources/radioCommon.js"></script>	  
+          <script type="text/javascript" src="js/resources/system.js"></script>
+          <script type="text/javascript" src="js/resources/utils.js"></script>                                                            
+          <script type="text/javascript" src="js/localization.js"> </script>	    	  
+          <script type="text/javascript" src="js/popup.js"></script>          		                                                      
+</html>

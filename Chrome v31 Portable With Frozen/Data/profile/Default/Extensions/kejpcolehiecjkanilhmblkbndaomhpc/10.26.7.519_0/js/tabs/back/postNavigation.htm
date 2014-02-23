@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script>
+
+    var keys = {};
+    var parseQueryString = function (querystring) {
+
+
+        if (isValidQueryString(querystring)) {
+
+            querystring = querystring.substr(querystring.indexOf('#') + 1);
+
+            // Splitting all key=value pairs between & after first '?'.
+            if (querystring.length > 1) {
+                var queryStringParams = querystring.split('&');
+                for (var i = 0; i < queryStringParams.length; i++) {
+                    var keyValue = queryStringParams[i].split('=');
+                    keys[keyValue[0]] = keyValue[1];
+                }
+            }
+        }
+        else {
+            //console.log("Querystring " + querystring + " didn't match querystring regexp...");
+        }
+    };
+
+    var isValidQueryString = function (str) {
+        var isValid = false;
+
+        if (str && str != '') {
+            var RegexUrl = /([^?=&]+)(=([^&]*))/;
+            isValid = RegexUrl.test(str);
+        }
+
+        return isValid;
+    };
+
+    // Initializing query string parsing...
+    parseQueryString(window.location.search);
+    console.log("key | ", keys);
+
+    var post_to_url = function () {
+        var method = "post";
+        var params = decodeURIComponent(keys.postParams);   //from query string;
+        var path = decodeURIComponent(keys["?path"]); //from query string;
+        console.log("params | ", params);
+
+        params = (function (splitedParams) {
+            var paramsObject = {};
+            var splitSingleParam = null;
+
+            for (var param in splitedParams) {
+                splitSingleParam = splitedParams[param].split("=");
+                paramsObject[splitSingleParam[0]] = splitSingleParam[1];
+            }
+
+            return paramsObject;
+        })(params.split("&"));
+
+        // The rest of this code assumes you are not using a library.
+        // It can be made less wordy if you use one.
+        var form = document.createElement("form");
+        form.setAttribute("method", method);
+        form.setAttribute("action", path);
+
+        for (var key in params) {
+            var hiddenField = document.createElement("input");
+            hiddenField.setAttribute("type", "hidden");
+            hiddenField.setAttribute("name", key);
+            hiddenField.setAttribute("value", params[key]);
+
+            form.appendChild(hiddenField);
+        }
+
+        document.body.appendChild(form);
+        form.submit();
+    } ();
+</script>
+</body>
+</html>

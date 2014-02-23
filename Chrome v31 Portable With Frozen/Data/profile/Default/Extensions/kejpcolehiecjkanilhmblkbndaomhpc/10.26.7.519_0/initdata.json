@@ -1,0 +1,15 @@
+{
+	"Ctid":"CT2849856",
+	"title": "BittorrentBar_PT Community Toolbar",
+    "toolbarName": "BittorrentBar_PT",
+    "downloadUrl": "http:\/\/BittorrentBarPT.OurToolbar.com\/",	
+    "button_text": "OK",
+	"version": "10.26.7.519",
+	"bundle": "false",
+	"engineVersion": "10.26.7.519",
+	"SSPV":"",
+	"matchFileUrl": "http://match.toolbar.conduit-services.com/?version=10.26.7.19",
+	"bundleData" : {
+					"silentInstall": false
+					}
+}

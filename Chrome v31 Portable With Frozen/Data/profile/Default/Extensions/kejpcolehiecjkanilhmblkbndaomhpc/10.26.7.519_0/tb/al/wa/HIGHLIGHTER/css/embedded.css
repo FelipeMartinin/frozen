@@ -1,0 +1,57 @@
+html,body {
+	margin: 0;
+	padding: 0;
+}
+
+div.higlighter_container {
+	line-height: 25px;
+	
+	position: relative;
+	left: 0;
+	
+	float: left;
+}
+div#icon_wrapper {
+	float: left;
+}
+div#icon_wrapper img#icon {
+	float: left;
+}
+
+.iconWrapper_hover {
+	background-color: #E2E9F4;
+	border: 1px solid #C2C2C2;
+	border-radius: 5px;
+	
+}
+
+.iconWrapper_active{
+	background-color: #D0D6E0;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+
+    border-top: 5px solid gray; /* Arrow color */
+	
+	
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.rtl .arrow {
+	margin-right: 30px;
+}
+
+.disable
+{
+    border-top: 5px solid #b2b2b2; /* Arrow color */
+}
+.rtl div#icon_wrapper img#icon ,
+.rtl div#icon_wrapper,
+.rtl div.higlighter_container
+{
+	float:right;
+}

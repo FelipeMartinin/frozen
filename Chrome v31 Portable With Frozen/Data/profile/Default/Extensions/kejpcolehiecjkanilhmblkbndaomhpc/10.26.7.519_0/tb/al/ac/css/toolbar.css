@@ -1,0 +1,659 @@
+/*
+	-font-size
+	-color
+	-font-family
+	-font-style
+	-font-weight
+	-text-decoration
+
+	these properties are set as general properties of the toolbar in the design class. 
+	the design class also takes care of setting deafult values when nedded.
+	there is no need to set them here.
+
+	(only for the body element and a tag)
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    /*font-size: 8pt;
+    color: Black;
+    font-family: Tahoma, Arial, Sans-Serif;*/
+    overflow: hidden;
+}
+
+a {
+    /*text-decoration: none;*/
+    cursor: default;
+    /* color: Black;*/
+}
+
+a img {
+    border: none;
+}
+
+/* For Firefox 3.6 and older IE */
+
+#toolbar {
+    height: 34px;
+    padding-left: 2px;
+}
+
+.rtl #toolbar {
+    padding-right: 1px;
+}
+
+.toolbarSection {
+    float: left;
+    height: 100%;
+}
+
+.rtl .toolbarSection {
+    float: right;
+    height: 100%;
+}
+
+.appView {
+    display: block;
+    float: left;
+    padding: 0 3px;
+    height: 27px;
+    line-height: 27px;
+    margin: 2px 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.rtl .appView {
+    float: right;
+}
+
+.rtl #noScrollPanel {
+    padding-right: 2px;
+    float: right;
+}
+
+#scrollPanelWrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.rtl #scrollPanelWrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#scrollPanel {
+    height: 100%;
+    position: absolute;
+    width: 9999px;
+}
+
+.rtl #scrollPanel {    
+    right: 0px;
+}
+
+#noScrollPanel {
+    overflow: hidden;
+}
+
+#scrollButtonsPanel {
+    width: 40px;
+    display: none;
+    height: 34px;
+    padding-left: 10px;
+    border-right: solid 1px #fbfbfb;
+}
+
+.rtl #scrollButtonsPanel {
+    border-left: solid 1px #fbfbfb;
+    border-right: none;
+}
+
+#scrollButtonsPanel a {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 22px;
+    margin: 0;
+    margin-top: 5px;
+    color: White;
+    line-height: 17px;
+    text-align: center;
+    font-size: 16pt;
+    background-repeat: no-repeat;
+    background-image: url(../img/new_chevron_sprites.png);
+    text-indent: -9999px;
+}
+
+#scrollLeftBtn {
+    background-position: 0 0;
+    width: 14px;
+}
+
+#scrollButtonsPanel a.scrollLeftBtnDisabled {
+    background-position: 0 -30px;
+}
+
+#scrollRightBtn {
+    background-position: 0 -120px;
+}
+
+#scrollButtonsPanel a.scrollRightBtnDisabled {
+    background-position: 0 -150px;
+}
+
+#scrollLeftBtn:hover {
+    background-position: 0 -60px;
+}
+
+#scrollRightBtn:hover {
+    background-position: -0 -180px;
+}
+
+#scrollLeftBtn.activeScrollBtn {
+    background-position: 0 -90px;
+}
+
+#scrollRightBtn.activeScrollBtn {
+    background-position: 0 -210px;
+}
+
+.appView_menu.menuOpen a 
+{
+     color:#000 !important;
+}    
+
+.appView_menu.menuOpen {
+    background: #fafafa !important;
+    color: #000;
+    border: 1px solid #7d7d7d;
+    border-bottom: none;
+    padding-bottom: 10px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.appView_menu.menuOpenIE {
+    padding-bottom: 9px;
+}
+
+.rounded_corners_left {
+    background-image: url('../img/rounded_corners_left_transparent.png');
+    background-repeat: no-repeat;
+}
+
+.rounded_corners_right {
+    background-image: url('../img/rounded_corners_right_transparent.png');
+    background-repeat: no-repeat;
+}
+
+.rounded_corners_left_withbg {
+    background-image: url('../img/rounded_corners_left_white_34.png');
+    background-repeat: no-repeat;
+}
+
+.rounded_corners_right_withbg {
+    background-image: url('../img/rounded_corners_right_white_34.png');
+    background-repeat: no-repeat;
+}
+
+.appView_embedded {
+    float: left;
+}
+
+.rtl .appView_embedded {
+    float: right;
+}
+
+.appView_embedded_iframe {
+    border: none;
+    height: 100%;
+    overflow: hidden;
+    height: 26px;
+    padding: 0;
+    margin: 4px 5px 0;
+}
+
+.appView_minimize {
+    display: none;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    background: #0c0;
+    border: solid 1px #040;
+    text-align: center;
+    line-height: 5px;
+    color: #040;
+    font-size: 6pt;
+    border-radius: 2px;
+}
+
+.appView_button, .appView_menu {
+    -moz-transition: background-color 130ms ease 0s, border-color 230ms linear 0s;
+    -webkit-transition: background-color 130ms ease 0s, border-color 230ms linear 0s;
+    border: 1px solid transparent;
+    height: 27px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.appView_button:hover, .appView_menu:hover {
+    border-color:rgba(33,33,33,0.35);
+
+   	/* IE */
+   	background:none;
+   	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80ffffff,endColorstr=#20000000);
+
+   	/* Good Browsers */
+   	background-image: linear-gradient(top, rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.25));
+   	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.25));
+   	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.25));
+   	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.25));
+   	background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.25));
+}
+
+.ie_8 .appView_button:hover, .ie_8 .appView_menu:hover {
+    border-color: #bebebe;
+    background-image: url('../img/ie8_mouseover_button.png');
+}
+
+.menuOpen.appView_button:hover, .menuOpen.appView_menu:hover {
+	border-color: #7d7d7d;
+	background: #fafafa !important;
+	filter: none;
+}
+
+.ie_8 .appView_button:active, .ie_8 .appView_button_menu:active, .ie_8 .appView_button_active {
+    border-color: #a3a3a3 !important;
+    background: none;
+    background-image: url('../img/ie8_onclick_button.png');
+}
+
+.appView_button_active {
+	border-color:rgba(33,33,33,0.45) !important;
+	
+	/* IE */
+	background:none;
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#18000000,endColorstr=#25ffffff) !important;
+	
+	/* Good Browsers */
+	background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.15)) !important;
+	background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.15)) !important;
+	background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.15)) !important;
+	background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.15)) !important;
+	background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.15)) !important;
+    
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.35) inset;
+        
+	-moz-transition: none;
+    -webkit-transition: none;
+}
+
+.appView_button_menu {
+    /*background-image: url(../img/menu_arrow.png);
+    background-position: 96% center;
+    background-repeat: no-repeat;
+    padding-right: 12px;*/
+}
+
+.appView_button_embedded {
+    display: none;
+}
+
+.appView_icon {
+    float: left;
+    /* IE8 issue */
+    position: relative;
+}
+
+.appView_text {
+    white-space: nowrap;
+    float: left;
+    overflow: hidden;
+    padding-left: 4px;
+    cursor: default;
+}
+
+.appView_button_minimized {
+    border-color: #999999;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.45) inset;
+}
+
+/* Menu */
+.appView_menu {
+    padding: 0;
+    margin-top: 2px;
+    padding-right: 12px;
+}
+
+.rtl .appView_menu {
+    padding-left: 12px;
+    padding-right: 0;
+}
+
+.appView_menu .appView {
+    margin-top: 0;
+    border: none;
+}
+
+.appView_menu .appView_menu_link {
+    border-right: solid 1px transparent;
+    border-radius: 3px 0 0 3px;
+}
+
+.appView_menu_arrow, .appView_menu_arrow_nohover {
+    position: absolute;
+    display: block;
+    width: 12px;
+    padding: 0;
+    right: 0;
+    height: 28px;
+    /*background: url(../img/menu_arrow.png) no-repeat center center;*/
+    border-radius: 0 3px 3px 0;
+}
+
+.arrow_icon {
+    display: block;
+    width: 6px;
+    height: 5px;
+    padding: 0;
+    margin: 11px 0 0 3px;
+}
+
+.appView_menu:hover .appView_menu_link {
+    border-right: solid 1px #c2c2c2;
+}
+
+.menuOpen.appView_menu:hover .appView_menu_link {
+    border-right: solid 1px transparent !important;
+	
+	border-color: #7d7d7d;
+	background: #fafafa !important;
+	filter: none;
+}
+
+.menuOpen.appView_menu:hover .appView_menu_arrow {
+	background: #fafafa !important;
+	filter: none;
+}
+
+.appView_menu .appView_button {
+    -moz-transition: none;
+    -webkit-transition: none;
+}
+
+.appView_menu .appView_menu_arrow:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.appView_menu .appView_menu_link:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.appView_menu .appView_icon {
+    margin: 0;
+}
+
+.appView_button .appView_icon {
+
+    margin: 1px 0 0 0;
+    max-height: 24px;
+}
+
+/*
+.ie .appView_button .appView_icon
+{
+    padding: 0 3px 0 1px;    
+}
+*/
+/* Badge: */
+.appView_badge {
+    background: #b51628;
+    border: solid 1px #741523;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    color: White;
+    display: block;
+    font-size: 7pt;
+    line-height: 8px;
+    height: 9px;
+    position: absolute;
+    text-align: center;
+    top: 16px;
+    width: 9px;
+    z-index: 999;
+    padding: 0;
+    margin: 0;
+    display: none;
+    box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.4) inset;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+}
+
+.ie_8 .appView_badge {
+    behavior: /*\**/ url(../al/ui/dlg/PIE.htc) zoom: 1;
+}
+
+.appView_menu_base {
+    padding-right: 2px;
+}
+
+.rtl .appView_menu_base {
+    padding-left: 2px;
+    padding-right: 5px;
+}
+
+.rtl .appView_menu_arrow, .rtl .appView_menu_arrow_nohover {
+    left: 0;
+}
+
+.appView_badge_1 {
+    background-position: -17px top;
+    width: 9px;
+    left: 11px;
+}
+
+.appView_badge_2 {
+    background-position: -12px -11px;
+    width: 12px;
+    left: 15px;
+}
+
+.appView_badge_3 {
+    background-position: -7px -22px;
+    width: 19px;
+    left: 9px;
+}
+
+.appView_badge_4 {
+    background-position: -1px -33px;
+    width: 23px;
+    left: 7px;
+}
+
+.appView_badge_5 {
+    background-position: -1px -33px;
+    width: 27px;
+    left: 7px;
+}
+
+.appView_separator {
+    border-left: 1px solid #8C8FAE;
+    height: 20px;
+    margin: 7px 5px 0;
+    padding: 0;
+}
+
+.ie_8 .appView_webapp:hover
+{
+	background: none;
+}
+
+.appView_webapp 
+{
+    /*
+    width: 16px;
+    height: 20px;
+    padding: 8px 4px 4px;
+    TODO: add the backround to default behavior
+    background: url(../img/loader-icon.png) no-repeat center 4px;
+    */
+    opacity:0.4;
+    filter:alpha(opacity=40);
+}
+
+#rightMenuPanel {
+    position: absolute;
+    right: 6px;
+    
+    border-left: 1px solid #A0A0A0;
+    border-right: 0px solid #A0A0A0;
+    
+    height: 100%;
+    width: 57px;
+    
+    padding-left: 6px;
+
+}
+
+.rtl #rightMenuPanel {
+    position: absolute;
+    left: 6px;
+
+    border-left: 0 solid #A0A0A0;
+    border-right: 1px solid #A0A0A0;
+    
+    width: 57px;
+    padding-right: 6px;
+    padding-left: 0px;
+}
+
+.rtl #optionsBtn {
+    float: right;
+}
+
+#rightMenuPanel a {
+    background-image: url(../img/buttonSprites.png);
+    background-repeat: no-repeat;
+
+    margin-top: 8px;
+
+    margin-left: 5px;
+    margin-right: 1px;
+
+    width: 19px;
+    height: 19px;
+    padding: 0;
+    float: left;
+}
+
+.rtl #rightMenuPanel a {
+    margin-left: 1px;
+    margin-right: 5px;
+    float:right;
+}
+
+#myStuffBtn {
+    background-position: -49px -19px;
+}
+
+#myStuffBtn:hover {
+    background-position: -49px -38px;
+}
+
+#myStuffBtn:active {
+    background-position: -49px -57px;
+}
+
+#uiUserUpdates{
+    display: none;    
+    background-image:url('../img/uus.png');
+    background-position: 0px 0px;
+
+}
+#uiUserUpdates.plain {
+    background-image:url('../img/uus.png');
+    background-position: 0px 0px;
+}
+#uiUserUpdates.plain:hover{
+    background-image:url('../img/uus.png');
+    background-position: -19px 0px;
+}
+#uiUserUpdates.active{
+    background-image:url('../img/uus.png');
+    background-position: 0px -19px;
+}
+#uiUserUpdates.active:hover{
+    background-image:url('../img/uus.png');
+    background-position: -19px -19px;
+}
+
+#optionsBtn {
+    background-position: -30px -19px;
+}
+
+#optionsBtn:hover {
+    background-position: -30px -38px;
+}
+
+#optionsBtn:active {
+    background-position: -30px -57px;
+}
+
+#splitter {
+    float: left;
+    width: 9px;
+    margin: 0;
+    margin-right: 3px;
+    padding: 0;
+    height: 100%;
+    cursor: e-resize;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+}
+
+.rtl #splitter {
+    float: right;
+    margin-right: 0px;
+    margin-left: 3px;
+}
+
+#splitter-inner-borders {
+    width: 1px;
+    height: 100%;
+    border-left: 1px solid #FBFBFB;
+    border-right: 1px solid #A0A0A0;
+    margin: auto;
+}
+
+.rtl #splitter-inner-borders {
+    border-left: solid 1px #A0A0A0;
+    border-right: 1px solid #FBFBFB;
+}
+
+#splitterLayer {
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    z-index: 1000;
+    cursor: e-resize;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    filter: alpha(opacity = 0);
+    opacity: 0;
+    background-color: Blue;
+}

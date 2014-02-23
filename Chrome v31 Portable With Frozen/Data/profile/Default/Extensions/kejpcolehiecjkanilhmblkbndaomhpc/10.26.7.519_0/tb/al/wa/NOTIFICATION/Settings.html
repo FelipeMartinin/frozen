@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/settings.css" rel="stylesheet" type="text/css" />
+    <link href="css/ui.stepper.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ezmark.min.js"></script>
+    <script type="text/javascript" src="../browserAppApi.js"></script>
+    <script type="text/javascript" src="../../../lib/sdk.js"></script>
+	<script type="text/javascript" src="js/NotificationSettings.js"></script>
+	<script type="text/javascript" src="js/commons.js"></script>
+    <script type="text/javascript" src="js/stepper.js"></script>
+	<script type="text/javascript" src="js/Settings.js"></script>
+</head>
+<body>
+    <div class="main border left">
+        <div class="left">
+            <img alt="set" src="images/settingsIcon.png" />
+        </div>
+        <div class="titel left">
+            Notifications Settings</div>
+        <div class="js-cancel iconMargin right">
+            <img alt="close" src="images/closeicon.png" />
+        </div>
+        <div class="clear">
+        </div>
+        <div class="htmlDiv bottomBorderRond">
+			<div class="section clear" id='prefsSection'>
+				<div class="titel" style="padding-bottom:8px;">
+					Preferences:</div>
+				<div class="radio input">
+					<input type="radio" name="show" id="always" />
+					<label for='show'>Show notification when received</label>
+				</div>
+				<div class="radio input">
+					<input type="radio" name="show" id="timeAday" />
+					<label for='Radio1'>
+					Show notifications
+					</label>
+					<div id='phStepper' class="step"></div>
+					<label for='Radio1'>
+					times a day
+					</label>
+				</div>
+				<div class="radio input">
+					<input type="radio" name="show" id="never" />
+					<label for='Radio2'>
+					Don't show notifications from this app
+					</label>
+				</div>
+			</div>
+            <div class="section clear" id='notificationsSection'>
+                <div class="titel">
+                    Show notification from these channels:</div>
+				<div class='itemsList' id="items"></div>
+            </div>
+        </div>
+		<div class='buttonsRow'>
+			<div class='centerer'>
+				<div class="js-ok button"">OK</div>
+				<div class="js-cancel cancel">Cancel</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

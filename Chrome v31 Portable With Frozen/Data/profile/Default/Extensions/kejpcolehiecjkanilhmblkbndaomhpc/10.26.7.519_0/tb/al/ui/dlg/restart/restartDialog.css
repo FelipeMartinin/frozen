@@ -1,0 +1,177 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+                
+html {
+    overflow: hidden;
+}
+
+#border 
+{
+    background-color: rgba(3, 25, 39, 0.60);
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255, 0.7);
+    height: 188px;
+    padding: 15px 15px 15px 15px;
+    width: 460px;
+}
+
+#retentionDialog {
+    width: 459px;
+    height: 185px;
+    font-size: 12px;
+    color: #5e6365;
+    background-color: white;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    overflow: hidden;
+    border: 1px solid #26404c;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.rtl #retentionDialog {
+    direction: rtl;
+}
+
+#title-container {
+    padding-left: 14px;
+    padding-right: 14px;
+    height: 51px;
+    color: White;
+    border-bottom: 1px solid #004c74;
+    border-top: 1px solid #4d9dc7;
+                
+    font-size : 18px;
+    text-align : left;  
+    
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+
+    zoom: 1;
+
+    background-image: linear-gradient(top, rgba(0, 115, 174, 1), rgba(0, 109, 166, 0.95));
+    background-image: -webkit-linear-gradient(top, rgba(0, 115, 174, 1), rgba(0, 109, 166, 0.95));
+
+}
+
+.rtl #title-container {
+
+}
+        
+#header-close
+{
+    float : right;
+    width : 20px;
+    height : 20px;
+    padding-top: 33px;
+    background:  url("images/x.png") no-repeat center center;
+    cursor: pointer;
+}
+#header-title
+{
+    padding-top: 14px;
+    float : left;
+}
+.rtl #header-close, #header-close.rtl
+{
+    float : left;
+    margin: 0;
+}
+
+.rtl #header-title, #header-title .rtl
+{
+    float: right;
+}
+
+#content-container {
+    height: 65px;
+    position: relative;
+    background-color: #CFC8C8;
+    padding-bottom: 2px;
+}
+
+.button
+{
+    cursor: pointer;
+    background: transparent url("images/OK-Button-Default.png") 0 0 no-repeat;   
+    height: 39px;   
+    width: 96px;
+    text-align : center;
+    vertical-align: middle;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+    color: #fff;   
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 7px;  
+}
+.button:hover {
+    background: transparent url("images/OK-Button-MouseOver.png") 0 0 no-repeat;
+}
+
+.button:active {
+    background: transparent url("images/OK-Button-OnClick.png") 0 0 no-repeat;
+}
+
+#okButton 
+{   
+    background-position:  0px 0px;
+    float: right;
+    margin: 13px 18px 10px 18px;                       
+}
+.rtl #okButton
+{
+    float: left;
+    margin-left: 20px;
+    padding-left: 0px;
+}
+ 
+ #cancelButton
+{       
+    margin: 13px 18px 10px 19px;        
+    float: left;
+}       
+.rtl #cancelButton
+{
+    float: right;
+    margin-left: 20px;
+}
+                
+.line {
+    height: 2px;
+    background: transparent url("images/content-sep.png") 0 0 no-repeat;
+    background-position:  0px 0px;
+}
+
+#content-title1-text
+{
+    font-size : 15px;
+    font-weight: bold;   
+    position: absolute;
+}
+
+
+#content
+{
+    height: 0;
+    font-size: 13px;
+    color: #555;        
+    padding:14px 14px 0px 14px;
+    background: transparent url("images/content-pattern.png") 0 0 repeat;
+    background-position:  0px 0px;
+}
+
+#content-title
+{
+    height: 43px;
+    font-size : 15px;
+    font-weight: bold;
+    color: #454545;
+    padding-top: 25px;
+    padding-left:18px;
+    padding-right: 18px;
+    background: transparent url("images/content-pattern.png") 0 0 repeat;
+    background-position:  0px 0px;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255,0.9);
+    position: relative;
+}

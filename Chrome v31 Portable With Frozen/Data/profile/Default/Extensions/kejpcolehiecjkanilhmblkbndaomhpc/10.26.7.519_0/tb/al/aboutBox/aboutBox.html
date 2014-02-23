@@ -1,0 +1,339 @@
+﻿<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--[if lte IE 8]>
+        <script src="js/resources/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if IE]>
+    <script type="text/javascript" src="../../../abstractionlayer.backstage.js"></script>
+    <script type="text/javascript" src="../../../abstractionlayer.commons.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="../options/css/reset.css"/>
+    <script type="text/javascript" src="../../lib/jquery.min.js"></script>
+    <script src="../../core/framework.js"></script>
+    <script src="../../../ConduitAbstractionLayerFront.js"></script>
+    <script type="text/javascript" src="js/aboutBox.js"></script>
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+                
+        html {
+            overflow: auto;
+        }
+
+        #border 
+        {
+            background-color: rgb(3, 25, 39);
+            background-color: rgba(3, 25, 39, 0.45);
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            height: 246px;
+            padding: 14px 15px 14px 15px;
+            width: 378px;
+        }
+
+        #aboutBox {
+            width: 378px;
+            height: 244px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            color: #5e6365;
+            background-color: white;
+            overflow: hidden;
+            border: 1px solid #5d5e60;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+
+        .rtl #aboutBox {
+            direction: rtl;
+        }
+
+        #title-container {
+            padding-left: 10px;
+            width: 382px;
+            height: 50px;
+            color: White;
+            border-bottom: 1px solid #004c74;
+            border-top: 1px solid #4d9dc7;
+            display: table-cell;
+            vertical-align: middle;
+            
+            
+            /* IE */
+   	        background:none;
+   	        -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff0073ae,endColorstr=#f2006da6);
+   	        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff0073ae,endColorstr=#f2006da6);
+   	        zoom: 1;
+
+   	        /* Good Browsers */
+   	        background-image: linear-gradient(top, rgba(0, 115, 174, 1), rgba(0, 109, 166, 0.95));
+   	        background-image: -o-linear-gradient(top, rgba(0, 115, 174, 1), rgba(0, 109, 166, 0.95));
+   	        background-image: -moz-linear-gradient(top, rgba(0, 115, 174, 1), rgba(0, 109, 166, 0.95));
+   	        background-image: -webkit-linear-gradient(top, rgba(0, 115, 174, 1), rgba(0, 109, 166, 0.95));
+   	        background-image: -ms-linear-gradient(top, rgba(0, 115, 174, 1), rgba(0, 109, 166, 0.95));
+        }
+
+        #title-text {
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .rtl #title-text {
+            direction: rtl;
+            padding: 0 10px 0 0;
+        }
+
+        #content-container {
+            margin-bottom: 22px;
+            margin-top: 12px;
+            height: 100px;
+            position: relative;
+        }
+
+        #logo-wrapper {
+            float: left;
+            height: 90px;
+            max-width: 115px;
+            margin-right: 6px;
+            padding-left: 10px;
+            padding-top: 15px;
+
+        }
+
+        .rtl #logo-wrapper {
+            float: right;
+        }
+
+        #logo {
+            max-width: 110px;
+        }
+
+        #clear {
+            clear: left;
+        }
+
+        .rtl #clear {
+            clear: right;
+        }
+
+        #inner-content-wrapper {
+            float: left;
+            margin-left: 5px;
+        }
+
+        .rtl #inner-content-wrapper {
+            float: right;
+            margin-right: 5px;
+            margin-left: 0px;
+        }
+
+        #text {
+            float: left;
+            height: 60px;
+            color: #5e6365;
+        }
+
+        .rtl #text {
+            float: right;
+            direction: rtl;
+        }
+
+        #trustE-container {
+            float: left;
+            height: 38px;
+            margin-top: 5px;
+            width: 240px;
+        }
+
+        .rtl #trustE-container {
+            float: right;
+
+        }
+
+        #trustE-img {
+            float: left;
+        }
+
+        .rtl #trustE-img {
+            float: right;
+        }
+
+        #trustE-text {
+            float: left;
+            margin-left: 10px;                                    
+            overflow: hidden;            
+            color: #5E6365;
+        }
+
+        .rtl #trustE-text {
+            direction: rtl;
+            margin-right: 10px;
+            float: right;
+        }
+
+        #o {
+            color: #f36c21
+        }
+
+        #footer {
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+
+        #privacy {
+            color: #0e7fc7;
+            text-decoration: none;
+            font-size: 10px;
+        }
+
+        #closeButton {
+            display: block;
+            width: 96px;
+            height: 35px;
+            background: transparent url("images/OK-Button-Default.png") 0 0 no-repeat;
+            position: absolute;
+            top: 10px;
+            left: 145px;
+        }
+
+        #closeButton:hover {
+            width: 96px;
+            height: 35px;
+            cursor: pointer;
+            background: transparent url("images/OK-Button-MouseOver.png") 0 0 no-repeat;
+        }
+
+        #closeButton:active {
+            width: 96px;
+            height: 35px;
+            cursor: pointer;
+            background: transparent url("images/OK-Button-OnClick.png") 0 0 no-repeat;
+        }
+          #closeButton.active {
+            width: 96px;
+            height: 35px;
+            cursor: pointer;
+            background: transparent url("images/OK-Button-OnClick.png") 0 0 no-repeat;
+        }
+        
+        #closeButtonText {
+            line-height: 35px;
+            font-size: 18px;
+            width: 96px;
+            text-align: center;
+            color: White;
+        }
+
+        .line {
+            border-bottom: solid 1px #dde0e2;
+        }
+
+        #trustE:hover {
+            cursor: pointer
+        }
+
+        hr {
+            margin: 0;
+            padding: 0;
+            height: 1px;
+            visibility: hidden;
+        }
+		
+		#poweredByWrapper{ 
+			height: 16px;
+		}
+		#poweredByText{ 
+			 max-width: 125px;
+            overflow: hidden;
+            
+            white-space:nowrap;    
+		}
+		
+		
+
+        #ConduitLogo {
+            margin: -1px 3px 0 3px;
+        }
+		
+		.floating {
+			float: left;
+		}
+		
+		.rtl .floating {
+			float: right;
+		}
+    </style>
+
+    
+	<!--[if lte IE 8]>
+		<style>
+			#border 
+			{
+				background-color: #8d979e;
+			}
+		</style>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="border">
+        <div id="aboutBox">
+            <div id="title-container">
+                <p id="title-text">title</p>
+            </div>
+            <div id="content-container">
+                <div id="logo-wrapper">
+                    <img id="logo" />
+                </div>
+                <div id="inner-content-wrapper">
+                    <div id="text">
+                        <div id="version">
+                            version</div>
+                        <div id="ctid">
+                            ctid</div>
+                        <div id="userId">
+                            userId</div>
+                    </div>
+                    <div id="clear"></div>
+                    <div id="trustE-container">
+                        <div id="trustE-img">
+                            <img id="trustE" src="images/truste.gif" />
+                        </div>
+                        <div id="trustE-text">
+                            <div id="poweredByWrapper">
+                                <div id="poweredByText" class="floating" >Toolbar Powered by</div>
+								<img class="floating" id="ConduitLogo" src="images/conduit-logo.png" alt="conduit" />
+							</div>
+                            <a href="#" id="privacy">Privacy Policy </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='line'>
+            </div>
+            <div id="footer">
+                <div><a class="close" id="closeButton">
+                    <p id="closeButtonText"></p>
+                </a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

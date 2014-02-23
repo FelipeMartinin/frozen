@@ -1,0 +1,104 @@
+/*		NS Reset CSS				*/
+/*		Author: Nikita Seleckis		*/
+/*		Last update: 2008-05-26		*/
+
+html,body,address,blockquote,div,p,pre,h1,h2,h3,h4,h5,h6,hr,	/* block level 	*/
+dd,dl,dt,ul,ol,li,												/* lists 		*/
+a,abbr,acronym,b,big,br,cite,code,del,dfn,em,i,					/* inline text 	*/
+ins,kbd,q,samp,small,span,strong,sub,sup,tt,var,				/* inline text 	*/
+img,object,														/* misc 		*/
+caption,table,tbody,td,tfoot,th,thead,tr,						/* table 		*/
+input,textarea,select,button,form,fieldset,legend,label, 		/* form 		*/
+font,u,s,center,dir,menu,strike,xmp								/* depricated 	*/
+{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	text-align: left;
+	text-indent: 0;
+	/*font: normal 13px/20px Arial;*/
+	color: black;
+	text-decoration: none;
+	list-style-type: none;
+}
+/* remove depricated, use object instead */
+/*applet,iframe,embed {
+	display: none;
+}*/
+hr,img,object {
+	border: 0;
+}
+input,select,button {
+	vertical-align: middle;						/* make all controls align middle to textline in all browsers */
+}
+textarea {
+	vertical-align: top;						/* ...and all textareas, but... */
+}
+input,button{
+	overflow: visible;							/* remove padding in buttons in IE */
+}
+select[size]{
+	vertical-align: top;						/* make align top to textline for all selectboxes which has attribute "size",.. */
+}
+
+select[size="1"] {
+	vertical-align: middle;						/* ...if attribute "size" of a selectbox is set to "1", make it align middle to textline */
+}
+fieldset legend {
+	margin-left: -7px;							/* remove m�rgin in IE6-7. Better place this in your IE6-7.css and include via Conditional Comments. */
+}
+caption,td,th,tr {
+	vertical-align: top;
+}
+table {
+	border-collapse: collapse;
+}
+optgroup {
+	color: black;								/* optgroup in Opera has black background and white text... */
+	background: white;							/* ...so let's fix it */
+	font-style: normal;							/* works only in FF */
+}
+optgroup option {
+	padding-left: 22px;							/* make padding in FF almost the same as in other browsers */
+}
+hr {
+	color: black;
+	background-color: black;
+	height: 1px;
+	margin: 7px 0;								/* crossbrowser hr */
+	*margin: 0;									/* hack for IE6-7. Better place this in your IE6-7.css and include via Conditional Comments */
+}
+ol li, ul li{
+	vertical-align: bottom;						/* fixing margins for IE, if there are elements with "display: block" in list items */
+}
+ol li{
+	list-style-type: decimal;
+}
+ul li{
+	list-style-type: disc;
+}
+q { quotes: '\00AB' '\00BB' '\201E' '\201C'; }	/* russian quotes */
+q:before	{ content: '\00AB'; }
+q:after		{ content: '\00BB'; }
+q q:before	{ content: '\201E'; }
+q q:after	{ content: '\201C'; }
+
+sub, sup{
+	position: relative;							/* this method is better, there will not be extra padding in textline */
+	font-size: 11px;
+}
+sub{
+	top: 5px;	
+}
+sup{
+	top: -5px;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+}
+
+ul li {
+	list-style-type:none!important;
+}

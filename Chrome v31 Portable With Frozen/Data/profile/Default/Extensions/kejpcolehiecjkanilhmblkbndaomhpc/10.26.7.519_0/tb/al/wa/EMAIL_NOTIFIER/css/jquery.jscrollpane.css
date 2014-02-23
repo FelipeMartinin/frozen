@@ -1,0 +1,60 @@
+﻿/*This file will overide some style of scrolling panel*/
+.jspVerticalBar,
+.jspTrack
+{
+    background: url('http://emailnotifier.webapps.conduitapps.com/track_default.png') repeat-y;
+}
+.jspTrack:hover
+{
+    background:url('http://emailnotifier.webapps.conduitapps.com/track_hover.png') repeat-y;
+}
+.jspDrag
+{
+    background: url('http://emailnotifier.webapps.conduitapps.com/drag_default.png') repeat-y;
+}
+
+.jspTrack .jspActive,
+.jspTrack .jspHover,
+.jspDrag:hover
+{
+    background: url('http://emailnotifier.webapps.conduitapps.com/drag_hover.png') repeat-y;
+}
+
+.jspArrow
+{
+    background: url('http://emailnotifier.webapps.conduitapps.com/default.png') no-repeat;
+}
+
+.jspVerticalBar>.jspActive,
+.jspArrow:hover
+{
+    background-image: url('http://emailnotifier.webapps.conduitapps.com/hover.png');
+}
+
+.jspVerticalBar>.jspDisabled,
+.jspVerticalBar>.jspDisabled:hover,
+.jspHorizontalBar>.jspDisabled,
+.jspHorizontalBar>.jspDisabled:hover
+{
+    background-image: url('http://emailnotifier.webapps.conduitapps.com/disabled.png');
+}
+
+.jspVerticalBar .jspArrow
+{
+    height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+    width: 16px;
+}
+
+.jspArrowUp
+{
+    background-position: 0 0;
+}
+
+.jspArrowDown
+{
+    background-position: -16px 0 !important; 
+}
