@@ -8,9 +8,9 @@
 
 * English
   * [About Frozen](#about)
-  * [Chrome Inspector](#Chrome Inspector)
   * [Sublime Text](#sublime-text)
-  * [Licence](#license)
+  * [Chrome Inspector](#chrome-devtools)
+  * [Credits](#credits)
 
 * [Clique aqui para ver as informações em português](http://felipemartinin.com.br/portfolio/frozen/)
 
@@ -39,13 +39,49 @@ Start using Frozen now, and have a new experience in making codes.
 Complete installation guide in the folder.
 
 ## Chrome DevTools
-![Chrome Preview](https://raw2.github.com/FelipeMartinin/frozen/master/frozen-for-chrome/Screen/chrome-screen.png)
+![Chrome Preview](https://raw2.github.com/FelipeMartinin/frozen/master/chrome-screen.png)
 
 
-#### Information
+## Installation Guide
 
-Unfortunately, after updating Google Chrome v32, compatibility with custom themes was lost. I'm working to fix that. 
+### Automated Installation:
 
-If you want to meet the frozen, i have made available for download Google Chrome v31 Portable with frozen. 
+### Chrome Webstore
+
+Free to download and install via the [Chrome Webstore](https://chrome.google.com/webstore/detail/frozen-devtools-theme/gbaddinigglahkekcppiongkmgmpahml)
+
+Ffter installing you need to enable custom themes:
+- navigate to `chrome://flags/`
+- enable `Developer Tools experiments`
+- reload chrome
+- open devtools
+- click settings > experiments
+- click `allow custom ui themes`
+- reload devtools for theme to fully apply
+
+## manual installation:
+
+### version 33+
+
+1. clone this repo somewhere
+
+2. in chrome, open chrome://extensions
+
+3. select "Developer mode"
+
+4. click on "Load unpacked extension"
+
+5. select the folder "frozen-for-chrome" in the directory
+
+6. optionally restart (required for some systems)
+
+## Credits:
+
+Theme by: Felipe Martinin
+Authot URL: felipemartinin.com
+Twitter: @FelipeMartinin
+Facebook: facebook.com/FelipeMartinin
+
+
 
 Hope you enjoy!

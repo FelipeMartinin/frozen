@@ -4,7 +4,7 @@
 
 	Theme Name: Frozen
 	Theme developer: Felipe Martinin
-	Site: felipemartinin.com.br
+	Site: felipemartinin.com
 	Version: 1.0
 	Twitter: @FelipeMartinin
 	Facebook: facebook/FelipemMartinin
@@ -20,7 +20,7 @@
 	<key>settings</key>
 	<array>
 		<dict>
-			<key class="anus">settings</key>
+			<key>settings</key>
 			<dict>
 				<key>background</key>
 				<string>#383f47</string>
