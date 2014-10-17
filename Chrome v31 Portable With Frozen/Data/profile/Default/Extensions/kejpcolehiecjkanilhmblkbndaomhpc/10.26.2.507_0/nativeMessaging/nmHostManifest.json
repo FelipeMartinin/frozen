@@ -1,9 +1,0 @@
-{
-    "name": "nmhostct2849856",
-    "description": "Native Messaging Host",
-    "path": "1_0_0_10\\TBMessagingHost.exe",
-    "type": "stdio",
-    "allowed_origins": [
-        "chrome-extension://kejpcolehiecjkanilhmblkbndaomhpc/"
-    ]
-}

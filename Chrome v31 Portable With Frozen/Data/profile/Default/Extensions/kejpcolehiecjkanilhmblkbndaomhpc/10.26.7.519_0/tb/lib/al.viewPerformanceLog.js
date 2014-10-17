@@ -1,1 +1,0 @@
-﻿conduit.coreLibs.logger.performanceLog({ from: "Al View", action: "View Ready: ", time: +new Date(), isWithState: /state\.html/.test(document.location.href) });

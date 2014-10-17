@@ -10,7 +10,6 @@
   * [About Frozen](#about)
   * [Sublime Text](#sublime-text)
   * [Chrome Inspector](#chrome-devtools)
-  * [Credits](#credits)
 
 * [Clique aqui para ver as informações em português](http://felipemartinin.com.br/portfolio/frozen/)
 
@@ -22,6 +21,8 @@
 * Slogan: freeze your mind
 * Theme Author: Felipe Martinin
 * URL: felipemartinin.com.br
+* Twitter: @FelipeMartinin
+* Facebook: facebook.com/FelipeMartinin
 
 Frozen is a theme for Sublime Text and Google Chrome DevTools. It was developed with the aim to be a theme with a modern look, congenial and never bores the views after hours coding.
 
@@ -50,7 +51,7 @@ Complete installation guide in the folder.
 
 Free to download and install via the [Chrome Webstore](https://chrome.google.com/webstore/detail/frozen-devtools-theme/gbaddinigglahkekcppiongkmgmpahml)
 
-Ffter installing you need to enable custom themes:
+After installing you need to enable custom themes:
 - navigate to `chrome://flags/`
 - enable `Developer Tools experiments`
 - reload chrome
@@ -59,9 +60,9 @@ Ffter installing you need to enable custom themes:
 - click `allow custom ui themes`
 - reload devtools for theme to fully apply
 
-## manual installation:
+## Manual installation:
 
-### version 33+
+### Version 33+
 
 1. clone this repo somewhere
 
@@ -75,12 +76,6 @@ Ffter installing you need to enable custom themes:
 
 6. optionally restart (required for some systems)
 
-## Credits:
-
-Theme by: Felipe Martinin
-Authot URL: felipemartinin.com
-Twitter: @FelipeMartinin
-Facebook: facebook.com/FelipeMartinin
 
 
 
