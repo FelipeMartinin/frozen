@@ -1157,7 +1157,7 @@ built on the chrome version 31.0.1650.63m
 }
 #-blink-dev-tools #search-results-pane-file-based .parent:hover {
   background-color: #8fc6ee !important;
-  color: #b88fff !important;
+  color: #8fc6ee !important;
 }
 #-blink-dev-tools #search-results-pane-file-based .parent .search-result-file-name {
   color: #888888 !important;
@@ -1348,7 +1348,7 @@ built on the chrome version 31.0.1650.63m
   color: #E0E0E0 !important;
 }
 #-blink-dev-tools .suggest-box .source-code .suffix {
-  color: #b88fff !important;
+  color: #8fc6ee !important;
 }
 #-blink-dev-tools #network-container:not(.brief-mode) .network-log-grid.data-grid td.name-column:hover {
   text-decoration: none !important;
@@ -1621,10 +1621,10 @@ built on the chrome version 31.0.1650.63m
   background-color: #394048 !important;
 }
 #-blink-dev-tools .overview-grid-dividers-background {
-  background-color: red !important;
+  background-color: #394048 !important;
 }
 #-blink-dev-tools #timeline-overview-container {
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: #394048 !important;
 }
 #-blink-dev-tools #timeline-overview-container canvas {
   background-color: transparent !important;
@@ -1690,7 +1690,7 @@ built on the chrome version 31.0.1650.63m
   color: #E0E0E0 !important;
 }
 #-blink-dev-tools #profile-views .data-grid button {
-  color: #b88fff !important;
+  color: #8fc6ee !important;
 }
 #-blink-dev-tools .heap-snapshot-view tr:not(.selected) td.object-column span.highlight {
   background-color: #a9edfe !important;
