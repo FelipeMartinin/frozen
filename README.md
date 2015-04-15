@@ -33,7 +33,7 @@ Start using Frozen now, and have a new experience in making codes.
 
 ## Sublime Text
 
-![Sublime Text Preview](https://raw2.github.com/FelipeMartinin/frozen/master/frozen-for-sublime-text/screen/sublime-screen.png)
+![Sublime Text Preview](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/sublime-screen.png)
 
 #### Install manually
 
