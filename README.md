@@ -1,6 +1,6 @@
 # Frozen - Freeze Your Mind
 
-![Frozen](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/Frozen-Logo.png)
+![Frozen](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/images/Frozen-Logo.png)
 
 > A Sublime Text and Google Chrome DevTools Theme
 
@@ -15,7 +15,7 @@
 
 ## About
 
-![Frozen Screen](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/frozen-screen.png)
+![Frozen Screen](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/images/frozen-screen.png)
 
 * Theme name: Frozen
 * Slogan: freeze your mind
@@ -33,14 +33,14 @@ Start using Frozen now, and have a new experience in making codes.
 
 ## Sublime Text
 
-![Sublime Text Preview](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/sublime-screen.png)
+![Sublime Text Preview](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/images/sublime-screen.png)
 
 #### Install manually
 
 Complete installation guide in the folder.
 
 ## Chrome DevTools
-![Chrome Preview](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/chrome-screen.png)
+![Chrome Preview](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/images/chrome-screen.png)
 
 
 ## Installation Guide
