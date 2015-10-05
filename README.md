@@ -1,4 +1,5 @@
 # Frozen - Freeze Your Mind
+v3.0.0
 
 ![Frozen](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/images/Frozen-Logo.png)
 
@@ -11,16 +12,15 @@
   * [Sublime Text](#sublime-text)
   * [Chrome Inspector](#chrome-devtools)
 
-* [Clique aqui para ver as informações em português](http://felipemartinin.com.br/portfolio/frozen/)
 
 ## About
 
 ![Frozen Screen](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/images/frozen-screen.png)
 
 * Theme name: Frozen
-* Slogan: freeze your mind
+* Slogan: Cool your mind
 * Theme Author: Felipe Martinin
-* URL: felipemartinin.com.br
+* URL: felipemartinin.com
 * Twitter: @FelipeMartinin
 * Facebook: facebook.com/FelipeMartinin
 
