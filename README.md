@@ -1,4 +1,4 @@
-# Frozen - Freeze Your Mind
+# Frozen - Cool Your Mind
 v3.0.0
 
 ![Frozen](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/images/Frozen-Logo.png)
@@ -7,10 +7,9 @@ v3.0.0
 
 ## Navigation
 
-* English
-  * [About Frozen](#about)
-  * [Sublime Text](#sublime-text)
-  * [Chrome Inspector](#chrome-devtools)
+* [About Frozen](#about)
+* [Sublime Text](#sublime-text)
+* [Chrome Inspector](#chrome-devtools)
 
 
 ## About
@@ -45,36 +44,18 @@ Complete installation guide in the folder.
 
 ## Installation Guide
 
-### Automated Installation:
-
-### Chrome Webstore
 
 Free to download and install via the [Chrome Webstore](https://chrome.google.com/webstore/detail/frozen-devtools-theme/gbaddinigglahkekcppiongkmgmpahml)
 
-After installing you need to enable custom themes:
-- navigate to `chrome://flags/`
-- enable `Developer Tools experiments`
-- reload chrome
-- open devtools
-- click settings > experiments
+After install and enable in settings> extentions,  you need to enable custom themes to make it works:
+- Navigate to `chrome://flags/`
+- Search by: `Developer Tools Experiments` and click on enable
+- Click on "Relunch Now" button at the bottom  and wait the browser relunch
+- Now, open the devtools
+- Go to the settings (gear icon) > experiments
 - click `allow custom ui themes`
 - reload devtools for theme to fully apply
 
-## Manual installation:
-
-### Version 33+
-
-1. clone this repo somewhere
-
-2. in chrome, open chrome://extensions
-
-3. select "Developer mode"
-
-4. click on "Load unpacked extension"
-
-5. select the folder "frozen-for-chrome" in the directory
-
-6. optionally restart (required for some systems)
 
 
 
