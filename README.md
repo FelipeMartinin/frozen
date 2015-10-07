@@ -1,7 +1,7 @@
 # Frozen - Cool Your Mind
 v3.0.0
 
-![Frozen](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/images/Frozen-Logo.png)
+![Frozen](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/assets/images/Frozen-Logo.png)
 
 > A Sublime Text and Google Chrome DevTools Theme
 
@@ -14,7 +14,7 @@ v3.0.0
 
 ## About
 
-![Frozen Screen](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/images/frozen-screen.png)
+![Frozen Screen](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/assets/images/frozen-screen.png)
 
 * Theme name: Frozen
 * Slogan: Cool your mind
@@ -22,6 +22,7 @@ v3.0.0
 * URL: felipemartinin.com
 * Twitter: @FelipeMartinin
 * Facebook: facebook.com/FelipeMartinin
+
 
 Frozen is a theme for Sublime Text and Google Chrome DevTools. It was developed with the aim to be a theme with a modern look, congenial and never bores the views after hours coding.
 
@@ -32,14 +33,14 @@ Start using Frozen now, and have a new experience in making codes.
 
 ## Sublime Text
 
-![Sublime Text Preview](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/images/sublime-screen.png)
+![Sublime Text Preview](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/assets/images/sublime-screen.png)
 
 #### Install manually
 
-Complete installation guide in the folder.
+Complete installation guide in the `assets folder.
 
 ## Chrome DevTools
-![Chrome Preview](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/images/chrome-screen.png)
+![Chrome Preview](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/assets/images/chrome-screen.png)
 
 
 ## Installation Guide
@@ -57,6 +58,10 @@ After install and enable in settings> extentions,  you need to enable custom the
 - reload devtools for theme to fully apply
 
 
+## Contribution
+
+
+This theme is also yours. So feel free to help us improve it. We are waiting for your pull request.
 
 
 
