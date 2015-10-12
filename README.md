@@ -37,7 +37,21 @@ Start using Frozen now, and have a new experience in making codes.
 
 #### Install manually
 
-Complete installation guide in the `assets folder.
+1. Download this repository, extract and rename the folder **"frozen-for-sublime-text"** to **"Frozen"**.
+
+2. Move the folder inside your sublime Packages directory. **(Preferences > Browse packages...)**
+
+3. Activate the theme with the following preferences at  **(Preferences > Setting - User)**:
+
+```json
+"theme": "Frozen.sublime-theme",
+"color_scheme": "Packages/Frozen/schemes/Frozen.tmTheme",
+```
+
+***Note*** : Remember to restart Sublime Text after activating the theme.
+
+**Credits** : The third version of this theme was rebuild over the [Material Theme](https://github.com/equinusocio/material-theme)
+
 
 ## Chrome DevTools
 ![Chrome Preview](https://raw.githubusercontent.com/FelipeMartinin/frozen/master/assets/images/chrome-screen.png)
