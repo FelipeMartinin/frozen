@@ -1,7 +1,7 @@
 {
 	"name": "Frozen - A Chrome Devtools Theme",
 	"short_name": "Frozen",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"devtools_page": "devtools.html",
 	"homepage_url": "http://felipemartinin.github.io/frozen/",
 	"manifest_version": 2,

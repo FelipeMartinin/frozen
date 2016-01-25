@@ -2931,6 +2931,12 @@ label.checkbox,
   border-top: none !important;
   border-bottom: #919598 !important;
 }
+
+.tabbed-pane-tab-slider,
+::shadow .tabbed-pane-tab-slider {
+  display: none !important;
+}
+
 body .toolbar-background,
 body.undocked.platform-mac-mountain-lion.inactive .toolbar-background,
 body.undocked.platform-mac-mountain-lion .toolbar-background,
